@@ -63,8 +63,8 @@ auto-migrated: 1
 <h2 id="donate_to_owasp">Donate to OWASP</h2>
 <div class="center" style="width: auto; margin-left: auto; margin-right: auto;">
 <div class="center" style="width: auto; margin-left: auto; margin-right: auto;">
-<p>{{#widget:PayPal Donation</p></td>
-<p>{{#widget:PayPal Donation</p></td>
+<p>#widget:PayPal Donation</p></td>
+<p>#widget:PayPal Donation</p></td>
 </div>
 <h2 id="get_involved">Get Involved</h2>
 <ul>
