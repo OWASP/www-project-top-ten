@@ -1,0 +1,52 @@
+---
+
+layout: col-document
+title: Top 10 2017 A1-Injection
+author:
+contributors:
+tags: OWASP Top Ten 2017, Top Ten, A1
+document: OWASP Top Ten 2017
+order: 6
+exploitability: 3
+prevalence: 2
+detectability: 3
+technical: 3
+
+---
+
+{% include impacts.html %}
+
+* **Threat Agents/Attack Vectors**: Almost any source of data can be an injection vector, environment variables, parameters, external and internal web services, and all types of users. Injection flaws occur when an attacker can send hostile data to an interpreter.
+* **Security Weakness**: Injection flaws are very prevalent, particularly in legacy code. Injection vulnerabilities are often found in SQL, LDAP, XPath, or NoSQL queries, OS commands, XML parsers, SMTP headers, expression languages, and ORM queries.
+Injection flaws are easy to discover when examining code. Scanners and fuzzers can help attackers find injection flaws.
+* **Impacts**: Injection can result in data loss, corruption, or disclosure to unauthorized parties, loss of accountability, or denial of access. Injection can sometimes lead to complete host takeover. The business impact depends on the needs of the application and data.
+
+---
+
+### Is the Application Vulnerable?
+
+An application is vulnerable to attack when:
+
+* User-supplied data is not validated, filtered, or sanitized by the application.
+* Dynamic queries or non-parameterized calls without context-aware escaping are used directly in the interpreter.
+* Hostile data is used within object-relational mapping (ORM) search parameters to extract additional, sensitive records.
+* Hostile data is directly used or concatenated, such that the SQL or command contains both structure and hostile data in dynamic queries, commands, or stored procedures.
+* Some of the more common injections are SQL, NoSQL, OS command, Object Relational Mapping (ORM), LDAP, and Expression Language (EL) or Object Graph Navigation Library (OGNL) injection. The concept is identical among all interpreters. Source code review is the best method of detecting if applications are vulnerable to injections, closely followed by thorough automated testing of all parameters, headers, URL, cookies, JSON, SOAP, and XML data inputs. Organizations can include static source ([SAST](/www-community/Source_Code_Analysis_Tools)) and dynamic application test ([DAST](/www-community/Vulnerability_Scanning_Tools)) tools into the CI/CD pipeline to identify newly introduced injection flaws prior to production deployment.
+
+### Example Attack Scenarios
+
+**Scenario #1**: An application uses untrusted data in the construction of the following vulnerable SQL call:
+
+    String query = "SELECT * FROM accounts WHERE custID='" + request.getParameter("id") + "'";
+
+*Scenario #2*: Similarly, an application’s blind trust in frameworks may result in queries that are still vulnerable, (e.g. Hibernate Query Language (HQL)):
+
+    Query HQLQuery = session.createQuery("FROM accounts WHERE custID='" + request.getParameter("id") + "'");
+
+In both cases, the attacker modifies the ‘id’ parameter value in their browser to send: ' or '1'='1. For example:
+
+    http://example.com/app/accountView?id=' or '1'='1
+
+This changes the meaning of both queries to return all the records from the accounts table. More dangerous attacks could modify or delete data, or even invoke stored procedures.
+
+

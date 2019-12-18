@@ -1,0 +1,34 @@
+<p>
+    {% case page.exploitability %}
+      {% when 1 %}
+      <i class="fa fa-info-circle" style="color:yellow;background-color:black;border-radius:16px;"></i><span style="padding-left: 5px; padding-right:">Exploitability</span>
+      {% when 2 %}
+      <i class="fa fa-exclamation-circle" style="color:orange;padding-right:5px;"></i>Exploitability
+      {% when 3 %}
+      <i class="fa fa-exclamation-triangle" style="color:red;padding-right:5px;"></i> Exploitability
+    {% endcase %}
+    {% case page.prevalence %}
+      {% when 1 %}
+      <i class="fa fa-info-circle" style="color:yellow;background-color:black;border-radius:16px;padding-left:20px;"></i><span style="padding-left: 5px;">Prevalence</span>
+      {% when 2 %}
+      <i class="fa fa-exclamation-circle" style="color:orange;padding-right:5px;padding-left:20px;"></i>Prevalence
+      {% when 3 %}
+      <i class="fa fa-exclamation-triangle" style="color:red;padding-right:5px;padding-left:20px;"></i>Prevalence
+    {% endcase %}
+    {% case page.detectability %}
+      {% when 1 %}
+      <i class="fa fa-info-circle" style="color:yellow;background-color:black;border-radius:16px;padding-left:20px;"></i><span style="padding-left: 5px;">Detectability</span>
+      {% when 2 %}
+      <i class="fa fa-exclamation-circle" style="color:orange;padding-right:5px;padding-left:20px;"></i>Detectability
+      {% when 3 %}
+      <i class="fa fa-exclamation-triangle" style="color:red;padding-right:5px;padding-left:20px;"></i> Detectability
+    {% endcase %}
+    {% case page.technical %}
+      {% when 1 %}
+      <i class="fa fa-info-circle" style="color:yellow;background-color:black;border-radius:16px;padding-left:20px;"></i><span style="padding-left: 5px;">Technical</span>
+      {% when 2 %}
+      <i class="fa fa-exclamation-circle" style="color:orange;padding-right:5px;padding-left:20px;"></i>Technical
+      {% when 3 %}
+      <i class="fa fa-exclamation-triangle" style="color:red;padding-right:5px;padding-left:20px;"></i> Technical
+    {% endcase %}
+    </p>

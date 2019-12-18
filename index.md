@@ -5,10 +5,6 @@ title: OWASP Top Ten
 tags: example-tag
 level: 0
 type: documentation
-
-auto-migrated: 1
-auto-migrated: 1
-
 auto-migrated: 1
 
 ---
