@@ -1,7 +1,7 @@
 ---
 
 layout: col-document
-title: Top 10 2017 A1-Injection
+title: A1-Injection
 author:
 contributors:
 tags: OWASP Top Ten 2017, Top Ten, A1
@@ -39,7 +39,7 @@ An application is vulnerable to attack when:
 
     String query = "SELECT * FROM accounts WHERE custID='" + request.getParameter("id") + "'";
 
-*Scenario #2*: Similarly, an application’s blind trust in frameworks may result in queries that are still vulnerable, (e.g. Hibernate Query Language (HQL)):
+**Scenario #2**: Similarly, an application’s blind trust in frameworks may result in queries that are still vulnerable, (e.g. Hibernate Query Language (HQL)):
 
     Query HQLQuery = session.createQuery("FROM accounts WHERE custID='" + request.getParameter("id") + "'");
 
@@ -49,4 +49,23 @@ In both cases, the attacker modifies the ‘id’ parameter value in their brows
 
 This changes the meaning of both queries to return all the records from the accounts table. More dangerous attacks could modify or delete data, or even invoke stored procedures.
 
+### References
 
+#### OWASP 
+
+* [OWASP Proactive Controls: Parameterize Queries](/www-project-proactive-controls)
+* [OWASP ASVS: V5 Input Validation and Encoding](/www-project-application-security-verification-standard)
+* [OWASP Testing Guide: SQL Injection, Command Injection, and ORM Injection](https://www2.owasp.org/www-project-testing/#div-downloads)
+* [OWASP Cheat Sheet: Injection Prevention](https://cheatsheetseries.owasp.org/cheatsheets/Injection_Prevention_Cheat_Sheet.html)
+* [OWASP Cheat Sheet: SQL Injection Prevention](https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html)
+* [OWASP Cheat Sheet: Injection Prevention in Java](https://cheatsheetseries.owasp.org/cheatsheets/Injection_Prevention_Cheat_Sheet_in_Java.html)
+* [OWASP Cheat Sheet: Query Parameterization](https://cheatsheetseries.owasp.org/cheatsheets/Query_Parameterization_Cheat_Sheet.html)
+* [OWASP Automated Threats to Web Applications – OAT-014](/www-project-automated-threats-to-web-applications/)
+
+#### External 
+
+* [CWE-77: Command Injection](https://cwe.mitre.org/data/definitions/77.html) 
+* [CWE-89: SQL Injection](https://cwe.mitre.org/data/definitions/89.html)
+* [CWE-564: Hibernate Injection](https://cwe.mitre.org/data/definitions/564.html)
+* [CWE-917: Expression Language Injection](https://cwe.mitre.org/data/definitions/917.html)
+* [PortSwigger: Server-side template injection](https://portswigger.net/kb/issues/00101080_serversidetemplateinjection)
