@@ -14,7 +14,7 @@ order: 0
 <ul>
 {% for ttp in top_ten_pages %}
 {% unless ttp.order == 0 %}
-<li><a href="{{ ttp.name | remove: '.md' }}">{{ ttp.title }}</a></li>
+<li><a href="{{ ttp.url }}">{{ ttp.title }}</a></li>
 {% endunless %}
 {% endfor %}
 </ul>
