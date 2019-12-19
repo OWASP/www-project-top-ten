@@ -7,7 +7,7 @@ contributors:
 tags: OWASP Top Ten 2017, Top Ten
 document: OWASP Top Ten 2017
 order: 1
-permalink: /OWASP_Top_Ten_2017
+permalink: OWASP_Top_Ten_2017
 
 ---
 
