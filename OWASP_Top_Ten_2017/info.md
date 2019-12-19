@@ -1,14 +1,4 @@
----
-
-layout: col-sidebar
-title: OWASP Top Ten 2017 Table of Contents
-author:
-contributors:
-tags: OWASP Top Ten 2017, Top Ten
-document: OWASP Top Ten 2017
-order: 0
-
----
+### Table of Contents
 
 {% assign top_ten_pages = site.pages | where:"document","OWASP Top Ten 2017" | sort: "order" %}
 <ul>
