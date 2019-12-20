@@ -22,4 +22,4 @@ Our methodology includes three likelihood factors for each weakness (prevalence,
 
 The following illustrates our calculation of the risk for [A6:2017-Security Misconfiguration](Top_10-2017_A6-Security_Misconfiguration.md)
 
-![A6:2017-Security Misconfiguration Image](/www-project-top-ten/assets/images/A6-Risk-Calculation)
+![A6:2017-Security Misconfiguration Image](/www-project-top-ten/assets/images/A6-Risk-Calculation.png)
