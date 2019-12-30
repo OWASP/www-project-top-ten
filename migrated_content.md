@@ -19,23 +19,23 @@ auto-migrated: 1
 <table>
 <tbody>
 <tr class="odd">
-<p>The <a href="Media:OWASP_Top_10-2017_(en).pdf.pdf" title="wikilink">OWASP Top 10 - 2017</a> is now available.</p>
+<p>The <a href="/www-pdf-archive/OWASP_Top_10-2017_(en).pdf.pdf" title=>OWASP Top 10 - 2017</a> is now available.</p>
 <h2 id="owasp_top_10_most_critical_web_application_security_risks">OWASP Top 10 Most Critical Web Application Security Risks</h2>
 <p>The OWASP Top 10 is a powerful awareness document for web application security. It represents a broad consensus about the most critical security risks to web applications. Project members include a variety of security experts from around the world who have shared their expertise to produce this list.</p>
 <p>We urge all companies to adopt this awareness document within their organization and start the process of ensuring that their web applications minimize these risks. Adopting the OWASP Top 10 is perhaps the most effective first step towards changing the software development culture within your organization into one that produces secure code.</p>
 <h2 id="translation_efforts">Translation Efforts</h2>
 <p>The OWASP Top 10 has been translated to many different languages by numerous volunteers. These translations are available as follows:</p>
 <ul>
-<li><a href="Top10#Translation_Efforts_2" title="wikilink">OWASP Top 10 - 2017 translations are currently underway</a></li>
-<li><a href="Top10#OWASP_Top_10_for_2013" title="wikilink">All versions of the OWASP Top 10 - 2013</a></li>
-<li><a href="Top10#OWASP_Top_10_for_2010" title="wikilink">All versions of the OWASP Top 10 - 2010</a></li>
+<li><a href="Top10#Translation_Efforts_2" title=>OWASP Top 10 - 2017 translations are currently underway</a></li>
+<li><a href="Top10#OWASP_Top_10_for_2013" title=>All versions of the OWASP Top 10 - 2013</a></li>
+<li><a href="Top10#OWASP_Top_10_for_2010" title=>All versions of the OWASP Top 10 - 2010</a></li>
 </ul>
 <h2 id="related_projects">Related Projects</h2>
 <ul>
-<li><a href="OWASP_Mobile_Security_Project#Top_Ten_Mobile_Risks" title="wikilink">OWASP Mobile Top 10 Risks</a></li>
+<li><a href="OWASP_Mobile_Security_Project#Top_Ten_Mobile_Risks" title=>OWASP Mobile Top 10 Risks</a></li>
 </ul>
 <ul>
-<li><a href="OWASP_Proactive_Controls" title="wikilink">Top 10 Proactive Controls</a></li>
+<li><a href="OWASP_Proactive_Controls" title=>Top 10 Proactive Controls</a></li>
 </ul>
 <h2 id="project_sponsors">Project Sponsors</h2>
 <p>The OWASP Top 10 - 2017 project is sponsored by</p>
@@ -45,18 +45,18 @@ auto-migrated: 1
 <td><h2 id="quick_download">Quick Download</h2>
 <ul>
 <ul>
-<li><a href="Media:OWASP_Top_10-2017_(en).pdf.pdf" title="wikilink">OWASP Top 10 - 2017 - PDF</a></li>
-<li><a href="Media:OWASP_Top_10-2017_(en).pdf.pdf" title="wikilink">OWASP Top 10 - 2017 - PDF</a></li>
-<li><a href=":Category:OWASP_Top_Ten_2017_Project" title="wikilink">OWASP Top 10 - 2017 - wiki</a></li>
-<li><a href=":Category:OWASP_Top_Ten_2017_Project" title="wikilink">OWASP Top 10 - 2017 - wiki</a></li>
+<li><a href="Media:OWASP_Top_10-2017_(en).pdf.pdf" title=>OWASP Top 10 - 2017 - PDF</a></li>
+<li><a href="Media:OWASP_Top_10-2017_(en).pdf.pdf" title=>OWASP Top 10 - 2017 - PDF</a></li>
+<li><a href=":Category:OWASP_Top_Ten_2017_Project" title=>OWASP Top 10 - 2017 - wiki</a></li>
+<li><a href=":Category:OWASP_Top_Ten_2017_Project" title=>OWASP Top 10 - 2017 - wiki</a></li>
 <li>Historic:</li>
 <li>Historic:</li>
 </ul>
 </ul>
-<p>:* <a href="Media:OWASP_Top_10_-_2013.pdf" title="wikilink">OWASP Top 10 2013 - PDF</a></p>
-<p>:* <a href="Media:OWASP_Top_10_-_2013.pdf" title="wikilink">OWASP Top 10 2013 - PDF</a></p>
-<p>:* <a href="Top_10_2013" title="wikilink">OWASP Top 10 2013 - wiki</a></p>
-<p>:* <a href="Top_10_2013" title="wikilink">OWASP Top 10 2013 - wiki</a></p>
+<p>:* <a href="Media:OWASP_Top_10_-_2013.pdf" title=>OWASP Top 10 2013 - PDF</a></p>
+<p>:* <a href="Media:OWASP_Top_10_-_2013.pdf" title=>OWASP Top 10 2013 - PDF</a></p>
+<p>:* <a href="Top_10_2013" title=>OWASP Top 10 2013 - wiki</a></p>
+<p>:* <a href="Top_10_2013" title=>OWASP Top 10 2013 - wiki</a></p>
 <p>:* <a href="https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/owasptop10/OWASP_Top-10_2013%20-%20Presentation.pptx">OWASP Top 10 2013 Presentation (PPTX)</a>.</p>
 <p>:* <a href="https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/owasptop10/OWASP_Top-10_2013%20-%20Presentation.pptx">OWASP Top 10 2013 Presentation (PPTX)</a>.</p>
 <h2 id="donate_to_owasp">Donate to OWASP</h2>
@@ -79,9 +79,9 @@ auto-migrated: 1
 </ul>
 <h2 id="project_leaders">Project Leaders</h2>
 <ul>
-<li><a href="User:vanderaj" title="wikilink">Andrew van der Stock</a></li>
-<li><a href="User:Neil_Smithline" title="wikilink">Neil Smithline</a></li>
-<li><a href="User:T.Gigler" title="wikilink">Torsten Gigler</a></li>
+<li><a href="User:vanderaj" title=>Andrew van der Stock</a></li>
+<li><a href="User:Neil_Smithline" title=>Neil Smithline</a></li>
+<li><a href="User:T.Gigler" title=>Torsten Gigler</a></li>
 </ul></td>
 </tr>
 </tbody>
@@ -110,11 +110,11 @@ with some hints to help you with your translation.
 ### 2017 Completed Translations:
 
   - <b>Chinese:</b> <u>[OWASP Top 10-2017 -
-    中文版（PDF)](Media:OWASP_Top_10_2017_%E4%B8%AD%E6%96%87%E7%89%88v1.3.pdf "wikilink")</u>
+    中文版（PDF)](Media:OWASP_Top_10_2017_%E4%B8%AD%E6%96%87%E7%89%88v1.3.pdf )</u>
 
 <!-- end list -->
 
-1.  项目组长：[王颉](User:Jie_Wang "wikilink")（wangj@owasp.org.cn）
+1.  项目组长：[王颉](User:Jie_Wang )（wangj@owasp.org.cn）
 2.  翻译人员：陈亮、王厚奎、王颉、王文君、王晓飞、吴楠、徐瑞祝、夏天泽、杨璐、张剑钟、赵学文（排名不分先后，按姓氏拼音排列）
 3.  审查人员：Rip、包悦忠、李旭勤、杨天识、张家银（排名不分先后，按姓氏拼音排列）
 4.  汇编人员：赵学文
@@ -127,7 +127,7 @@ with some hints to help you with your translation.
 <!-- end list -->
 
   - <b>German:</b> <u>[OWASP Top 10 2017 in German V1.0
-    (Pdf)](media:OWASP_Top_10-2017_de_V1.0.pdf "wikilink")</u>
+    (Pdf)](media:OWASP_Top_10-2017_de_V1.0.pdf )</u>
     compiled by Christian Dresen, Alexios Fakos, Louisa Frick, Torsten
     Gigler, Tobias Glemser, Dr. Frank Gut, Dr. Ingo Hanke, Dr. Thomas
     Herzog, Dr. Markus Koegel, Sebastian Klipper, Jens Liebau, Ralf
@@ -136,15 +136,15 @@ with some hints to help you with your translation.
 <!-- end list -->
 
   - <b>Hebrew:</b> <u>[OWASP Top 10-2017 - Hebrew
-    (PDF)](Media:OWASP-Top-10-2017-he.pdf "wikilink")</u> 
-    <u>[(PPTX)](Media:OWASP-Top-10-2017-he.pptx "wikilink")</u>
+    (PDF)](Media:OWASP-Top-10-2017-he.pdf )</u> 
+    <u>[(PPTX)](Media:OWASP-Top-10-2017-he.pptx )</u>
     translated by Eyal Estrin (Twitter: @eyalestrin) and Omer Levi
     Hevroni (Twitter: @omerlh).
 
 <!-- end list -->
 
   - <b>Japanese:</b> <u>[OWASP Top 10-2017 - 日本語版
-    (PDF)](Media:OWASP_Top_10-2017%28ja%29.pdf "wikilink")</u>
+    (PDF)](Media:OWASP_Top_10-2017%28ja%29.pdf )</u>
     translated and reviewed by Akitsugu ITO, Albert Hsieh, Chie TAZAWA,
     Hideko IGARASHI, Hiroshi TOKUMARU, Naoto KATSUMI, Riotaro OKADA,
     Robert DRACEA, Satoru TAKAHASHI, Sen UENO, Shoichi NAKATA, Takanori
@@ -153,8 +153,8 @@ with some hints to help you with your translation.
 <!-- end list -->
 
   - <b>Korean:</b> <u>[OWASP Top 10-2017 - 한글
-    (PDF)](Media:OWASP_Top_10-2017-ko.pdf "wikilink")</u> 
-    <u>[(PPTX)](Media:OWASP_Top_10-2017-ko.pptx "wikilink")</u>
+    (PDF)](Media:OWASP_Top_10-2017-ko.pdf )</u> 
+    <u>[(PPTX)](Media:OWASP_Top_10-2017-ko.pptx )</u>
     번역 프로젝트 관리 및 감수 : 박형근(Hyungkeun Park) / 감수(ㄱㄴㄷ순) : 강용석(YongSeok
     Kang), 박창렴(Park Changryum), 조민재(Johnny Cho) / 편집 및 감수 : 신상원(Shin
     Sangwon) / 번역(ㄱㄴㄷ순) : 김영하(Youngha Kim), 박상영(Sangyoung Park),
@@ -164,7 +164,7 @@ with some hints to help you with your translation.
 <!-- end list -->
 
   - <b>Portuguese:</b> <u>[OWASP Top 10 2017 - Portuguese
-    (PDF)](Media:OWASP_Top_10-2017-pt_pt.pdf "wikilink")</u> <u>[(ODP)](https://github.com/OWASP/Top10/raw/master/2017/OWASP%20Top%2010-2017-pt_pt.odp)</u>
+    (PDF)](Media:OWASP_Top_10-2017-pt_pt.pdf )</u> <u>[(ODP)](https://github.com/OWASP/Top10/raw/master/2017/OWASP%20Top%2010-2017-pt_pt.odp)</u>
     translated by Anabela Nogueira, Carlos Serrão, Guillaume Lopes, João
     Pinto, João Samouco, Kembolle A. Oliveira, Paulo A. Silva, Ricardo
     Mourato, Rui Silva, Sérgio Domingues, Tiago Reis, Vítor Magano.
@@ -172,25 +172,25 @@ with some hints to help you with your translation.
 <!-- end list -->
 
   - <b>Russian:</b> <u>[OWASP Top 10-2017 - на русском языке
-    (PDF)](Media:OWASP_Top_10-2017-ru.pdf "wikilink")</u>
+    (PDF)](Media:OWASP_Top_10-2017-ru.pdf )</u>
     translated and reviewed by JZDLin
     ([@JZDLin](https://github.com/JZDLin)), Oleksii Skachkov
     ([@hamster4n](https://github.com/hamster4n)), Ivan Kochurkin
     ([@KvanTTT](https://github.com/KvanTTT)) and [Taras
-    Ivashchenko](User:Taras_Ivashchenko "wikilink")
+    Ivashchenko](User:Taras_Ivashchenko )
 
 <!-- end list -->
 
   - <b>Spanish:</b> <u>[OWASP Top 10-2017 - Español
-    (PDF)](Media:OWASP-Top-10-2017-es.pdf "wikilink")</u>
+    (PDF)](Media:OWASP-Top-10-2017-es.pdf )</u>
 
 <!-- end list -->
 
 1.  [Gerardo
-    Canedo](User:Gerardo_Canedo "wikilink")（Gerardo.Canedo@owasp.org -
+    Canedo](User:Gerardo_Canedo )（Gerardo.Canedo@owasp.org -
     \[Twitter: @GerardoMCanedo\])
 2.  [Cristian
-    Borghello](User:Cristian_Borghello "wikilink")（Cristian.Borghello@owasp.org
+    Borghello](User:Cristian_Borghello )（Cristian.Borghello@owasp.org
     - \[Twitter: @seguinfo\])
 
 ## Historic:
@@ -249,13 +249,13 @@ with some hints to help you with your translation.
     Prunet: michel.prunet@owasp.org, Olivier Revollat:
     revollat@gmail.com, Aymeric Tabourin: aymeric.tabourin@orange.com
   - German 2013: [OWASP Top 10 2013 - German
-    PDF](media:OWASP_Top_10_2013_DE_Version_1_0.pdf "wikilink")
+    PDF](media:OWASP_Top_10_2013_DE_Version_1_0.pdf )
     top10@owasp.de which is Frank Dölitzscher, Torsten Gigler, Tobias
     Glemser, Dr. Ingo Hanke, Thomas Herzog, [Kai
-    Jendrian](User:Kai_Jendrian "wikilink"), [Ralf
-    Reinhardt](User:Ralf_Reinhardt "wikilink"), Michael Schäfer
+    Jendrian](User:Kai_Jendrian ), [Ralf
+    Reinhardt](User:Ralf_Reinhardt ), Michael Schäfer
   - Hebrew 2013: [OWASP Top 10 2013 -
-    Hebrew](OWASP_Top10_Hebrew "wikilink")
+    Hebrew](OWASP_Top10_Hebrew )
     [PDF](https://www.owasp.org/images/1/1b/OWASP_Top_10_2013-Hebrew.pdf)
     Translated by: Or Katz, Eyal Estrin, Oran Yitzhak, Dan Peled, Shay
     Sivan.
@@ -344,10 +344,10 @@ with some hints to help you with your translation.
     Jocelyn.aubert@owasp.org, Eric.Garreau@gemalto.com,
     Guillaume.Huysmans@gemalto.com
   - German: [OWASP Top 10 2010 - German
-    PDF](media:OWASPTop10_2010_DE_Version_1_0.pdf "wikilink")
+    PDF](media:OWASPTop10_2010_DE_Version_1_0.pdf )
     top10@owasp.de which is Frank Dölitzscher, Tobias Glemser, Dr. Ingo
-    Hanke, [Kai Jendrian](User:Kai_Jendrian "wikilink"), [Ralf
-    Reinhardt](User:Ralf_Reinhardt "wikilink"), Michael Schäfer
+    Hanke, [Kai Jendrian](User:Kai_Jendrian ), [Ralf
+    Reinhardt](User:Ralf_Reinhardt ), Michael Schäfer
   - Indonesian: [OWASP Top 10 2010 - Indonesian
     PDF](https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/owasptop10/OWASP%20Top%2010%20-%202010%20Indonesian.pdf)
     Tedi Heriyanto (coordinator), Lathifah Arief, Tri A Sundara, Zaki
@@ -369,7 +369,7 @@ with some hints to help you with your translation.
     PDF](https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/owasptop10/OWASPTop%2010%20-%202010%20Vietnamese.pdf)
     Translation lead by Cecil Su - Translation Team: Dang Hoang Vu,
     Nguyen Ba Tien, Nguyen Tang Hung, Luong Dieu Phuong, Huynh Thien Tam
-  - Hebrew: [OWASP Top 10 Hebrew Project](OWASP_Top10_Hebrew "wikilink")
+  - Hebrew: [OWASP Top 10 Hebrew Project](OWASP_Top10_Hebrew )
     -- [OWASP Top 10 2010 - Hebrew
     PDF](https://www.owasp.org/images/c/cd/OWASP_Top_10_Heb.pdf). Lead
     by Or Katz, see translation page for list of contributors.
@@ -389,7 +389,7 @@ comment period after the release candidate was released in Feb. 2013.
 
   - [OWASP Top 10 2013 document
     (PDF)](https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/owasptop10/OWASP%20Top%2010%20-%202013.pdf).
-  - [OWASP Top 10 2013 - Wiki.](Top_10_2013 "wikilink")
+  - [OWASP Top 10 2013 - Wiki.](Top_10_2013 )
   - [OWASP Top 10 2013 - Arabic
     (PDF)](https://www.owasp.org/images/6/6a/OWASP_TOP_10_2013_Arabic.pdf).
   - [OWASP Top 10 2013 - Chinese
@@ -399,8 +399,8 @@ comment period after the release candidate was released in Feb. 2013.
   - [OWASP Top 10 2013 - French
     (PDF)](https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/owasptop10/OWASP%20Top%2010%20-%202013%20-%20French.pdf).
   - [OWASP Top 10 2013 - German
-    (PDF)](media:OWASP_Top_10_2013_DE_Version_1_0.pdf "wikilink")
-  - [OWASP Top 10 2013 - Hebrew](OWASP_Top10_Hebrew "wikilink")
+    (PDF)](media:OWASP_Top_10_2013_DE_Version_1_0.pdf )
+  - [OWASP Top 10 2013 - Hebrew](OWASP_Top10_Hebrew )
     [(PDF)](https://www.owasp.org/images/1/1b/OWASP_Top_10_2013-Hebrew.pdf)
   - [OWASP Top 10 2013 - Italian
     (PDF)](https://www.owasp.org/images/c/c9/OWASP_Top_10_-_2013_-_Italiano.pdf)
@@ -420,29 +420,29 @@ comment period after the release candidate was released in Feb. 2013.
 For 2013, the OWASP Top 10 Most Critical Web Application Security Risks
 are:
 
-  - [A1 Injection](Top_10_2013-A1-Injection "wikilink")
+  - [A1 Injection](Top_10_2013-A1-Injection )
   - [A2 Broken Authentication and Session
-    Management](Top_10_2013-A2-Broken_Authentication_and_Session_Management "wikilink")
+    Management](Top_10_2013-A2-Broken_Authentication_and_Session_Management )
   - [A3 Cross-Site Scripting
-    (XSS)](Top_10_2013-A3-Cross-Site_Scripting_\(XSS\) "wikilink")
+    (XSS)](Top_10_2013-A3-Cross-Site_Scripting_\(XSS\) )
   - [A4 Insecure Direct Object
-    References](Top_10_2013-A4-Insecure_Direct_Object_References "wikilink")
+    References](Top_10_2013-A4-Insecure_Direct_Object_References )
   - [A5 Security
-    Misconfiguration](Top_10_2013-A5-Security_Misconfiguration "wikilink")
+    Misconfiguration](Top_10_2013-A5-Security_Misconfiguration )
   - [A6 Sensitive Data
-    Exposure](Top_10_2013-A6-Sensitive_Data_Exposure "wikilink")
+    Exposure](Top_10_2013-A6-Sensitive_Data_Exposure )
   - [A7 Missing Function Level Access
-    Control](Top_10_2013-A7-Missing_Function_Level_Access_Control "wikilink")
+    Control](Top_10_2013-A7-Missing_Function_Level_Access_Control )
   - [A8 Cross-Site Request Forgery
-    (CSRF)](Top_10_2013-A8-Cross-Site_Request_Forgery_\(CSRF\) "wikilink")
+    (CSRF)](Top_10_2013-A8-Cross-Site_Request_Forgery_\(CSRF\) )
   - [A9 Using Components with Known
-    Vulnerabilities](Top_10_2013-A9-Using_Components_with_Known_Vulnerabilities "wikilink")
+    Vulnerabilities](Top_10_2013-A9-Using_Components_with_Known_Vulnerabilities )
   - [A10 Unvalidated Redirects and
-    Forwards](Top_10_2013-A10-Unvalidated_Redirects_and_Forwards "wikilink")
+    Forwards](Top_10_2013-A10-Unvalidated_Redirects_and_Forwards )
 
 If you are interested, the methodology for how the Top 10 is produced is
 now documented here: [OWASP Top 10 Development
-Methodology](Top_10_2013/ProjectMethodology "wikilink")
+Methodology](Top_10_2013/ProjectMethodology )
 
 Please help us make sure every developer in the ENTIRE WORLD knows about
 the OWASP Top 10 by helping to spread the word\!\!\!
@@ -540,13 +540,13 @@ The OWASP Top 10 project is sponsored by
 
 On April 19, 2010 the final version of the OWASP Top 10 for 2010 was
 released, and here is the associated [press
-release](OWASPTop10-2010-PressRelease "wikilink"). This version was
+release](OWASPTop10-2010-PressRelease ). This version was
 updated based on numerous comments received during the comment period
 after the release candidate was released in Nov. 2009.
 
   - [OWASP Top 10 - 2010
     Document](https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/owasptop10/OWASP%20Top%2010%20-%202010.pdf)
-  - [OWASP Top 10 - 2010 - wiki](Top_10_2010 "wikilink")
+  - [OWASP Top 10 - 2010 - wiki](Top_10_2010 )
   - [OWASP Top 10 - 2010
     Presentation](https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/owasptop10/OWASP_Top_10_-_2010%20Presentation.pptx)
   - [OWASP Top 10 Video of the Presentation above - this focused alot on
@@ -560,19 +560,19 @@ after the release candidate was released in Nov. 2009.
 For 2010, the OWASP Top 10 Most Critical Web Application Security Risks
 are:
 
-  - [A1: Injection](Top_10_2010-A1 "wikilink")
-  - [A2: Cross-Site Scripting (XSS)](Top_10_2010-A2 "wikilink")
+  - [A1: Injection](Top_10_2010-A1 )
+  - [A2: Cross-Site Scripting (XSS)](Top_10_2010-A2 )
   - [A3: Broken Authentication and Session
-    Management](Top_10_2010-A3 "wikilink")
-  - [A4: Insecure Direct Object References](Top_10_2010-A4 "wikilink")
-  - [A5: Cross-Site Request Forgery (CSRF)](Top_10_2010-A5 "wikilink")
-  - [A6: Security Misconfiguration](Top_10_2010-A6 "wikilink")
-  - [A7: Insecure Cryptographic Storage](Top_10_2010-A7 "wikilink")
-  - [A8: Failure to Restrict URL Access](Top_10_2010-A8 "wikilink")
+    Management](Top_10_2010-A3 )
+  - [A4: Insecure Direct Object References](Top_10_2010-A4 )
+  - [A5: Cross-Site Request Forgery (CSRF)](Top_10_2010-A5 )
+  - [A6: Security Misconfiguration](Top_10_2010-A6 )
+  - [A7: Insecure Cryptographic Storage](Top_10_2010-A7 )
+  - [A8: Failure to Restrict URL Access](Top_10_2010-A8 )
   - [A9: Insufficient Transport Layer
-    Protection](Top_10_2010-A9 "wikilink")
+    Protection](Top_10_2010-A9 )
   - [A10: Unvalidated Redirects and
-    Forwards](Top_10_2010-A10 "wikilink")
+    Forwards](Top_10_2010-A10 )
 
 ## Introduction
 
@@ -591,7 +591,7 @@ all the translated versions.
 
   - [OWASP Top 10 2010 -
     PDF](https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/owasptop10/OWASP%20Top%2010%20-%202010.pdf)
-  - [OWASP Top 10 2010 - wiki](Top_10_2010 "wikilink")
+  - [OWASP Top 10 2010 - wiki](Top_10_2010 )
 
 2010 Translations:
 
@@ -600,7 +600,7 @@ all the translated versions.
   - [OWASP Top 10 2010 - French
     PDF](https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/owasptop10/OWASP%20Top%2010%20-%202010%20French.pdf)
   - [OWASP Top 10 2010 - German
-    PDF](media:OWASPTop10_2010_DE_Version_1_0.pdf "wikilink")
+    PDF](media:OWASPTop10_2010_DE_Version_1_0.pdf )
   - [OWASP Top 10 2010 - Hebrew
     PDF](https://www.owasp.org/images/c/cd/OWASP_Top_10_Heb.pdf)
   - [OWASP Top 10 2010 - Indonesian
@@ -631,10 +631,10 @@ Previous versions:
 
   - [OWASP Top 10 2007 -
     PDF](https://www.owasp.org/images/e/e8/OWASP_Top_10_2007.pdf)
-  - [OWASP Top 10 2007 - wiki](Top_10_2007 "wikilink")
+  - [OWASP Top 10 2007 - wiki](Top_10_2007 )
   - [OWASP Top 10 2007 - PDF Translations are
     here](https://www.owasp.org/index.php/Category:OWASP_Top_Ten_Project#tab=Project_Details)
-  - [OWASP Top 10 2004 - wiki](Top_10_2004 "wikilink")
+  - [OWASP Top 10 2004 - wiki](Top_10_2004 )
 
 # Project Details
 
@@ -679,24 +679,24 @@ a simple way to communicate security to end users is effective.
 
 <!-- end list -->
 
-  - [OWASP](OWASP_Top_10/Mapping_to_WHID "wikilink")
+  - [OWASP](OWASP_Top_10/Mapping_to_WHID )
     OWASP Top 10 Mapped to the Web Hacking Incident Database
 
 <!-- end list -->
 
-  - [OWASP](OWASP_Mobile_Security_Project#tab=Top_Ten_Mobile_Risks "wikilink")
+  - [OWASP](OWASP_Mobile_Security_Project#tab=Top_Ten_Mobile_Risks )
     OWASP Mobile Top 10 Risks
 
 <!-- end list -->
 
-  - [OWASP](OWASP_Top_Ten_Cheat_Sheet "wikilink")
+  - [OWASP](OWASP_Top_Ten_Cheat_Sheet )
     OWASP Top 10 Cheat Sheet
 
 __NOTOC__ <headertabs />
 
-[Category:OWASP_Project](Category:OWASP_Project "wikilink")
-[Category:OWASP_Document](Category:OWASP_Document "wikilink")
-[Category:OWASP_Download](Category:OWASP_Download "wikilink")
-[Category:OWASP_Release_Quality_Document](Category:OWASP_Release_Quality_Document "wikilink")
-[Category:Popular](Category:Popular "wikilink")
-[Category:SAMM-EG-1](Category:SAMM-EG-1 "wikilink")
+[Category:OWASP_Project](Category:OWASP_Project )
+[Category:OWASP_Document](Category:OWASP_Document )
+[Category:OWASP_Download](Category:OWASP_Download )
+[Category:OWASP_Release_Quality_Document](Category:OWASP_Release_Quality_Document )
+[Category:Popular](Category:Popular )
+[Category:SAMM-EG-1](Category:SAMM-EG-1 )
