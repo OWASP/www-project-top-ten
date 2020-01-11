@@ -7,6 +7,7 @@ tags: top10
 ---
 
 ## Project Sponsors
+The OWASP Top 10 - 2017 project was sponsored by Autodesk. Thanks to [Aspect Security](https://www.aspectsecurity.com/) for sponsoring earlier versions.
 
 [!(/assets/images/corp-member-logo/autodesk.png)](http://www.autodesk.com/)
 
