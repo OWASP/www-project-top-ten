@@ -6,8 +6,8 @@
 * [Current Version (2017)](OWASP_Top_Ten_2017)
 
 ### Downloads or Social Links
-* [Download](/www-pdf-archive/OWASP_Top_10-2017_%28en%29.pdf.pdf)
+* [Download](/www-pdf-archive/OWASP_Top_10-2017_%28en%29.pdf.pdf){:target='_blank'}
 * [Social Link](#)
 
 ### Code Repository
-* [repo](https://github.com/OWASP/Top10)
+* [repo](https://github.com/OWASP/Top10){:target='_blank'}
