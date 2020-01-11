@@ -12,6 +12,8 @@ pitch: The OWASP Top 10 is the reference standard for the most critical web appl
 
 The OWASP Top 10 is a powerful awareness document for web application security. It represents a broad consensus about the most critical security risks to web applications. Project members include a variety of security experts from around the world who have shared their expertise to produce this list.
 
+<p class="callout-mono right">Adopting the Top 10 is the first step toward secure coding.</p>
+
 We urge all companies to adopt this awareness document within their organization and start the process of ensuring that their web applications minimize these risks. Adopting the OWASP Top 10 is perhaps the most effective first step towards changing the software development culture within your organization into one that produces secure code.
 
 ## OWASP Top 10 Most Critical Web Application Security Risks
