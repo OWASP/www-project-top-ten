@@ -16,7 +16,7 @@ The OWASP Top 10 is a powerful awareness document for web application security. 
 
 We urge all companies to adopt this awareness document within their organization and start the process of ensuring that their web applications minimize these risks. Adopting the OWASP Top 10 is perhaps the most effective first step towards changing the software development culture within your organization into one that produces secure code.
 
-## OWASP Top 10 Most Critical Web Application Security Risks
+## Top 10 Web Application Security Risks
 
 1. [**Injection**](/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A1-Injection). Injection flaws, such as SQL, NoSQL, OS, and LDAP injection, occur when untrusted data is sent to an interpreter as part of a command or query. The attacker's hostile data can trick the interpreter into executing unintended commands or accessing data without proper authorization.
 2. [**Broken Authentication**](/www-project-top-ten/OWASP_Top_Ten_2017/Top_10-2017_A2-Broken_Authentication). Application functions related to authentication and session management are often implemented incorrectly, allowing attackers to compromise passwords, keys, or session tokens, or to exploit other implementation flaws to assume other users' identities temporarily or permanently.
