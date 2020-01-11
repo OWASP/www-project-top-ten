@@ -8,9 +8,9 @@ tags: top10
 
 ## Project Sponsors
 
-[!(assets/images/autodesk.png)](http://www.autodesk.com/)
+[!(/assets/images/corp-member-logo/autodesk.png)](http://www.autodesk.com/)
 
-### Individual Sponsors
+## Individual Supporters
 
 {% assign individual_sponsors = site.data.ow_attributions | uniq %}
 {% for person in individual_sponsors %}
