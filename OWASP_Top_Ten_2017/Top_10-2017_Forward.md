@@ -1,7 +1,7 @@
 ---
 
 layout: col-document
-title: Foreward
+title: Foreword
 author:
 contributors:
 tags: OWASP Top Ten 2017, Top Ten
