@@ -1,6 +1,6 @@
 ---
-title: Translation Efforts
-layout:  col-sidebar
+title: "Translation Efforts"
+layout: col-sidebar
 tab: true
 order: 2
 tags: top10
