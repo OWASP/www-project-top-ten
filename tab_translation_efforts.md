@@ -1,5 +1,5 @@
 ---
-title: "Translation Efforts"
+title: Translation_Efforts
 layout: col-sidebar
 tab: true
 order: 2
