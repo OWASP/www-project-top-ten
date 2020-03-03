@@ -27,7 +27,7 @@ Attackers can detect broken authentication using manual means and exploit them u
 
 Confirmation of the user's identity, authentication, and session management are critical to protect against authentication-related attacks. There may be authentication weaknesses if the application:
 
-* Permits automated attacks such as [credential stuffing](/www-community/attacks/Credental_stuffing), where the attacker has a list of valid usernames and passwords.
+* Permits automated attacks such as [credential stuffing](/www-community/attacks/Credential_stuffing), where the attacker has a list of valid usernames and passwords.
 * Permits brute force or other automated attacks.
 * Permits default, weak, or well-known passwords, such as "Password1" or "admin/admin“.
 * Uses weak or ineffective credential recovery and forgot-password processes, such as "knowledge-based answers", which cannot be made safe.
