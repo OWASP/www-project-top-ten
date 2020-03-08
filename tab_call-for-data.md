@@ -18,9 +18,9 @@ Plan to leverage the OWASP Azure Cloud Infrastructure to collect, analyze, and s
 We plan to support both known and pseudo-anonymous contributions. The preference is for contributions to be known; this immensely helps with the validation/quality/confidence of the data submitted. If the submitter prefers to have their data stored anonymously and even go as far as submitting the data anonymously, then it will have to be classified as "unverified" vs. "verified".
 
 ### Verified Data Contribution
-Scenario 1: The submitter is known and has agreed to be identified as a contributing party.<br>
-Scenario 2: The submitter is known but would rather not be publicly identified.<br>
-Scenario 3: The submitter is known but does not want it recorded in the dataset.<br>
+Scenario 1: The submitter is known and has agreed to be identified as a contributing party.<br/>
+Scenario 2: The submitter is known but would rather not be publicly identified.<br/>
+Scenario 3: The submitter is known but does not want it recorded in the dataset.<br/>
 
 ### Unverified Data Contribution
 Scenario 4: The submitter is anonymous.  (Should we support?)
@@ -37,31 +37,31 @@ There are a few ways that data can be contributed:
 We plan to accept contributions to the Top 10 2020 during March-May of 2020 for data dating from 2017 to current.
 
 ## Data Structure
-The following data elements are required(!) or optional. <br>
-The more information provided the more accurate our analysis can be.<br>
-At a bare minimum, we need the time period, total number of applications tested in the dataset, and the list of CWEs and counts of how many applications contained that CWE.<br>
-If at all possible, please provide the additional metadata, because that will greatly help us gain more insights into the current state of testing and vulnerabilities.<br>
+The following data elements are **required** or optional. <br/>
+The more information provided the more accurate our analysis can be.<br/>
+At a bare minimum, we need the time period, total number of applications tested in the dataset, and the list of CWEs and counts of how many applications contained that CWE.<br/>
+If at all possible, please provide the additional metadata, because that will greatly help us gain more insights into the current state of testing and vulnerabilities.<br/>
 
 
 ### Metadata
-Contributor Name (org or anon)<br>
-Contributor Contact Email<br>
-(!)Time period (2019, 2018, 2017)<br>
-(!)Number of applications tested<br>
-Type of testing (TaH, HaT, Tools)<br>
-Primary Language (code)<br>
-Geographic Region (Global, North America, EU, Asia, other)<br>
-Primary Industry (Multiple, Financial, Industrial, Software, ??)<br>
-Whether or not data contains retests or the same applications multiple times (T/F)<br>
+* Contributor Name (org or anon)<br/>
+* Contributor Contact Email<br/>
+* **Time period (2019, 2018, 2017)**<br/>
+* **Number of applications tested**<br/>
+* Type of testing (TaH, HaT, Tools)<br/>
+* Primary Language (code)<br/>
+* Geographic Region (Global, North America, EU, Asia, other)<br/>
+* Primary Industry (Multiple, Financial, Industrial, Software, ??)<br/>
+* Whether or not data contains retests or the same applications multiple times (T/F)<br/>
 
 ### CWE Data
-(!)A list of CWEs w/ count of applications found to contain that CWE<br>
+* **A list of CWEs w/ count of applications found to contain that CWE**<br/>
 
 
 #### Note:
-If a contributor has two types of datasets, one from HaT and one from TaH sources, then it is recommended to submit them as two separate datasets.<br>
-*HaT = Human assisted Tools (higher volume/frequency, primarily from tooling)<br>
-*TaH = Tool assisted Human (lower volume/frequency, primarily from human testing) <br>
+If a contributor has two types of datasets, one from HaT and one from TaH sources, then it is recommended to submit them as two separate datasets.<br/>
+*HaT = Human assisted Tools (higher volume/frequency, primarily from tooling)*<br/>
+*TaH = Tool assisted Human (lower volume/frequency, primarily from human testing)*<br/>
 
 
 ## Process
