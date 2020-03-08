@@ -15,7 +15,7 @@ To collect the most comprehensive dataset related to identified application vuln
 Plan to leverage the OWASP Azure Cloud Infrastructure to collect, analyze, and store the data contributed. 
 
 ## Contributions
-We plan to support both known and pseudo-anonymous contributions. The preference is for contributions to be known; this immensely helps with the validation/quality/confidence of the data submitted. If the submitter prefers to have their data stored anonymously and even go as far as submitting the data anonymously, then it will have to be classified as “unverified” vs. “verified”.
+We plan to support both known and pseudo-anonymous contributions. The preference is for contributions to be known; this immensely helps with the validation/quality/confidence of the data submitted. If the submitter prefers to have their data stored anonymously and even go as far as submitting the data anonymously, then it will have to be classified as "unverified" vs. "verified".
 
 ### Verified Data Contribution
 Scenario 1: The submitter is known and has agreed to be identified as a contributing party.<br>
@@ -30,7 +30,7 @@ The analysis of the data will be conducted with a careful distinction when the u
 ## Contribution Process
 There are a few ways that data can be contributed:
 1.	Email a CSV/Excel file with the dataset(s) to brian.glas@owasp.org
-2.	Upload a CSV/Excel file to a “contribution folder” (coming soon)
+2.	Upload a CSV/Excel file to a "contribution folder" (coming soon)
 
 
 ## Contribution Period
