@@ -42,3 +42,4 @@ Project Sponsorship<br>
 Thanks to Autodesk for sponsoring the OWASP Top 10 - 2017.
 
 Organizations and individuals that have provided vulnerability prevalence data or other assistance are listed on the Acknowledgements page.
+
