@@ -1,0 +1,36 @@
+site:
+    baseURL:                    /
+    pdfDocument:                https://wiki.owasp.org/images/7/72/OWASP_Top_10-2017_%28en%29.pdf.pdf
+
+tableOfContents:                Table of Contents
+applicationSpecific:            Application Specific
+appSpecific:                    App. Specific
+applicationBusinessSpecific:    Application / Business Specific
+appBusinessSpecific:            App / Business Specific
+threatAgents:                   Threat Agents
+attackVectors:                  Attack Vectors
+securityWeakness:               Security Weakness
+impacts:                        Impacts
+technicalImpacts:               Technical Impacts
+technical:                      Technical
+businessImpacts:                Business Impacts
+businessQuestionmark:           Business ?
+exploitability:                 Exploitability
+easy:                           EASY
+average:                        AVERAGE
+difficult:                      DIFFICULT
+prevalence:                     Prevalence
+veryWidespread:                 VERY WIDESPREAD
+widespread:                     WIDESPREAD
+common:                         COMMON
+uncommon:                       UNCOMMON
+detectability:                  Detectability
+severe:                         SEVERE
+moderate:                       MODERATE
+minor:                          MINOR
+undefined:                      undefined
+score:                          Score
+isTheApplicationVulnerable:     Is the Application Vulnerable?
+howToPrevent:                   How to Prevent
+exampleAttackScenarios:         Example Attack Scenarios
+references:                     References
