@@ -1,0 +1,92 @@
+<center><table style=" width: 100%; align:center; border-collapse: collapse; text-align:center; margin: 0px 0px 10px 0px; border: 3px solid #444444; background-color:
+{%- case page.year -%}
+ {%- when 2017 -%} #F2F1FF
+ {%- when 2013 -%} #F8FFF8
+ {%- else -%} #F2F2F2
+{%- endcase -%}
+; padding=2;">
+<tr style="font-weight: bold; background-color:
+{%- case page.year -%}
+ {%- when 2017 -%} #4a1647
+ {%- when 2013 -%} #4d953d
+ {%- else -%} #4F81BD
+{%- endcase -%}
+; border: 3px solid #444444; height: 2em; font-size: 130%; color: #FFFFFF; text-shadow: 2px 2px 8px #000000;">
+{% case page.year %}
+ {%- when 2017 -%}
+ <th width="33%" colspan="2" style="border: 3px solid #444444;"> {%- translate threatAgents -%} / {%- translate attackVectors -%}</th>
+ {%- else -%}
+ <th width="16.5%" style="border: 3px solid #444444;"> {%- t threatAgents -%}</th>
+ <th width="16.5%" style="border: 3px solid #444444;"> {%- t attackVectors -%}</th>
+{% endcase %}
+<th width="33%" colspan="2" style="border: 3px solid #444444;"> {%- t securityWeakness -%}</th>
+{% case page.year %}
+ {%- when 2017 -%}
+ <th width="33%" colspan="2" style="border: 3px solid #444444;"> {%- t impacts -%}</th>
+ {%- else -%}
+ <th width="16.5%" style="border: 3px solid #444444;"> {%- t technicalImpacts -%}</th>
+ <th width="16.5%" style="border: 3px solid #444444;"> {%- t businessImpacts -%}</th>
+{% endcase %}
+</tr>
+<tr>
+<td style="font-weight: bold; border: 3px solid #444444; background-color: #D9D9D9; color: #000000;">
+{%- case page.year -%}
+ {%- when 2017 -%} {%- t appSpecific -%}
+ {%- else -%} {%- t applicationSpecific -%}
+{%- endcase -%}
+</td>
+<td style="font-weight: bold; vertical-align: top; border: 3px solid #444444; 
+{%- case page.exploitability -%}
+ {%- when 1 -%}
+ background-color: #FFFF00; color: #000000;" width="16.5%">
+ <i class="fa fa-info-circle" style="color:yellow; background-color:black;"></i><br>
+ {%- when 2 -%} background-color: #FFB200; color: #000000;" width="16.5%">
+ <i class="fa fa-exclamation-circle" style="color:black;"></i><br>
+ {%- when 3 -%} background-color: #FF0000; color: #000000;" width="16.5%">
+ <i class="fa fa-exclamation-triangle" style="color:white;"></i><br>
+ {%- else -%} background-color: #D9D9D9; color: #000000;" width="16.5%">
+ <i class="fa fa-exclamation-triangle" style="color:red"></i> {%- t undefined -%}<br>
+{%- endcase -%}
+{%- t exploitability -%}: {{page.exploitability}} </td>
+<td style="font-weight: bold; vertical-align: top; border: 3px solid #444444; 
+{%- case page.prevalence -%}
+ {%- when 1 -%} background-color: #FFFF00; color: #000000;" width="16.5%">
+ <i class="fa fa-info-circle" style="color:yellow; background-color:black;"></i><br>
+ {%- when 2 -%} background-color: #FFB200; color: #000000" width="16.5%">
+ <i class="fa fa-exclamation-circle" style="color:black;"></i><br>
+ {%- when 3 -%} background-color: #FF0000; color: #000000" width="16.5%">
+ <i class="fa fa-exclamation-triangle" style="color:white;"></i><br>
+ {%- else -%} background-color: #D9D9D9; color: #000000" width="16.5%">
+ <i class="fa fa-exclamation-triangle" style="color:red;"></i> {%- t undefined  -%}<br>
+{%- endcase -%}
+{%- t prevalence -%}: {{page.prevalence}} </td>
+<td style="font-weight: bold; vertical-align: top; border: 3px solid #444444; 
+{%- case page.detectability -%}
+ {%- when 1 -%} background-color: #FFFF00; color: #000000;" width="16.5%">
+ <i class="fa fa-info-circle" style="color:yellow; background-color:black"></i><br>
+ {%- when 2 -%} background-color: #FFB200; color: #000000;" width="16.5%">
+ <i class="fa fa-exclamation-circle" style="color:black;"></i><br>
+ {%- when 3 -%} background-color: #FF0000; color: #000000;" width="16.5%">
+ <i class="fa fa-exclamation-triangle" style="color:white;"></i><br>
+ {%- else -%}   background-color: #D9D9D9; color: #000000;" width="16.5%">
+ <i class="fa fa-exclamation-triangle" style="color:red;"></i> {%- t undefined -%}<br>
+{%- endcase -%}
+{%- t detectability -%}: {{page.detectability}} </td>
+<td style="font-weight: bold; vertical-align: top; border: 3px solid #444444; 
+{%- case page.technical -%}
+ {%- when 1 -%} background-color: #FFFF00; color: #000000;" width="16.5%">
+ <i class="fa fa-info-circle" style="color:yellow; background-color:black;"></i><br>
+ {%- when 2 -%} background-color: #FFB200; color: #000000;" width="16.5%">
+ <i class="fa fa-exclamation-circle" style="color:black;"></i><br>
+ {%- when 3 -%} background-color: #FF0000; color: #000000;" width="16.5%">
+ <i class="fa fa-exclamation-triangle" style="color:white;"></i><br>
+ {%- else -%}   background-color: #D9D9D9; color: #000000;" width="16.5%">
+ <i class="fa fa-exclamation-triangle" style="color:red;"></i> {%- t undefined -%}<br>
+{%- endcase -%}
+{%- t technical -%}: {{ page.technical }} </td>
+<td style="font-weight: bold; background-color: #D9D9D9; color: #000000; border: 3px solid #444444">
+{%- case page.year -%}
+ {%- when 2017 -%} {%- t businessQuestionmark -%}
+ {%- else -%} {%- t applicationBusinessSpecific -%}
+{%- endcase -%} </td>
+</tr>
