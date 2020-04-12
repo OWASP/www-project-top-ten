@@ -1,12 +1,33 @@
-{%- if {{include.pos}} == "firstLeft" -%}
+{%- case include.pos -%}
+ {%- when "firstLeft" -%}
 <tr>
- {%- elsif {{include.pos}} == "left" -%}
+<td
+ {%- when "firstWhole" -%}
+<tr>
+<td colspan="2"
+ {%- when "firstLongLeft" -%}
+<tr>
+<td rowspan="2"
+ {%- when "left" -%}
 </div></td></tr>
 <tr>
- {%- elsif {{include.pos}} == "right" -%}
+<td
+ {%- when "right" -%}
 </div></td>
-{%- endif -%}
-<td style="vertical-align: top; padding: 5px; width: 50%; border: 3px solid #4a1647; background-color: #F2F1FF;">
+<td
+ {%- when "whole" -%}
+</div></td></tr>
+<tr>
+<td colspan="2"
+ {%- when "longLeft" -%}
+</div></td></tr>
+<tr>
+<td rowspan="2"
+ {%-  when "longRight" -%}
+</div></td>
+<td rowspan="2"
+{%- endcase %}
+style="vertical-align: top; padding: 5px; width: 50%; border: 3px solid #4a1647; background-color: #F2F1FF;">
 <div style="font-style: bold; color: #4a1647; border-bottom: #999999 solid 1px; margin-bottom: 3px; padding-bottom: 3px; font-size: 150%;">
  {%- if {{include.token}} -%} {%- t {{include.token}} -%}
  {%- else -%} {{include.text}}
