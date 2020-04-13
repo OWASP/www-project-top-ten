@@ -59,10 +59,10 @@ Confirmation of the user's identity, authentication, and session management are 
 
 #### OWASP
 
-* [OWASP Proactive Controls: Implement Identity and Authentication Controls](/www-community/www-project-proactive-controls)
-* [OWASP Application Security Verification Standard: V2 Authentication](/www-community/www-project-application-security-verification-standard)
-* [OWASP Application Security Verification Standard: V3 Session Management](/www-community/www-project-application-security-verification-standard)
-* [OWASP Testing Guide: Identity, Authentication](/www-community/www-project-testing)
+* [OWASP Proactive Controls: Implement Identity and Authentication Controls](/www-project-proactive-controls/)
+* [OWASP Application Security Verification Standard: V2 Authentication](/www-project-application-security-verification-standard)
+* [OWASP Application Security Verification Standard: V3 Session Management](/www-project-application-security-verification-standard)
+* [OWASP Testing Guide: Identity, Authentication](/www-pdf-archive/OTGv4.pdf)
 * [OWASP Cheat Sheet: Authentication](https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html)
 * [OWASP Cheat Sheet: Credential Stuffing](https://cheatsheetseries.owasp.org/cheatsheets/Credential_Stuffing_Prevention_Cheat_Sheet.html)
 * [OWASP Cheat Sheet: Forgot Password](https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html)
