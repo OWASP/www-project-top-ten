@@ -8,7 +8,7 @@ lang: en
 layout: full-width-document
 author:
 contributors:
-tags: OWASP Top Ten 2017, Top Ten, A7, xss
+tags: OWASP Top Ten 2017, Top Ten, A7:2017, xss
 exploitability: 3
 prevalence: 3
 detectability: 3

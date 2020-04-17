@@ -8,7 +8,7 @@ lang: en
 layout: full-width-document
 author:
 contributors:
-tags: OWASP Top Ten 2017, Top Ten, A2
+tags: OWASP Top Ten 2017, Top Ten, A2:2017
 exploitability: 3
 prevalence: 2
 detectability: 2

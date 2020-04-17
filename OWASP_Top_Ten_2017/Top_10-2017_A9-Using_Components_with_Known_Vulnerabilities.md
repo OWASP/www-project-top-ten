@@ -1,4 +1,5 @@
 ---
+
 document: OWASP Top Ten 2017
 year: 2017
 order: 14
@@ -7,7 +8,7 @@ lang: en
 layout: full-width-document
 author:
 contributors:
-tags: OWASP Top Ten 2017, Top Ten, A9
+tags: OWASP Top Ten 2017, Top Ten, A9:2017
 exploitability: 2
 prevalence: 3
 detectability: 2
