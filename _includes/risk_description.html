@@ -1,3 +1,11 @@
+{%- comment -%} ---------------------------------------------------------------------------
+ include:       risk_description.html
+ description:   Description for the Risk Factors Attack Vectors, Security Weakness and
+                Impacts by the Top 10 Category
+ usage:         {%- include risk_description.html pos='firstLeft' -%}
+ parameters:    
+                pos:       <firstLeft|mid|right|left>
+--------------------------------------------------------- {%- endcomment -%}
 {%- if {{include.pos}} == "firstLeft" -%}
 <tr>
  {%- elsif {{include.pos}} == "left" -%}

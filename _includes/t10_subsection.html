@@ -1,3 +1,13 @@
+{%- comment -%} ---------------------------------------------------------------------------
+ include:       t10_subsection.html
+ description:   Print boxes and a headline for Top 10 subsections
+ usage:         {%- include t10_subsection.html pos='firstLeft' width='67%' -%}
+ parameters:    pos:        firstLeft, firstWhole, firstLongLeft, 
+                            left, right, whole, longLeft, longRight
+                width:      x%  => define the width of this column (default: 50%)
+                token:      use a token assigned in the i18n file to print text
+                text:       else: print an arbitary text 
+------------------------------------------------------------------------ {%- endcomment -%}
 {%- case include.pos -%}
  {%- when "firstLeft" -%}
 <tr>
