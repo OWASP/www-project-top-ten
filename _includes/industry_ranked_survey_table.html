@@ -1,0 +1,44 @@
+{%- comment -%} ---------------------------------------------------------------------------
+ include:       industry_ranked_survey_table.html
+ description:   A tble that presents the results of the industry ranked survey. This fixes a Jekyll issue inside tables.
+ usage:         {% include industry_ranked_survey_table.html %}
+ parameters:    (none)
+------------------------------------------------------------------------ {%- endcomment -%} 
+{::nomarkdown}
+<center><table>
+<thead>
+<tr style="font-weight: bold; background-color: #4a1647; border: 3px solid #444444; height: 1.2em; font-size: 130%; color: #FFFFFF; text-shadow: 2px 2px 8px #000000;">
+ <th style="text-align: center">Rank</th>
+ <th style="text-align: left">Survey Vulnerability Categories</th>
+ <th style="text-align: center">Score</th>
+</tr>
+</thead>
+<tbody>
+<tr style="background-color: #F2F1FF; border: 3px solid #444444;">
+ <td style="text-align: center">1</td>
+ <td style="text-align: left">Exposure of Private Information (‘Privacy Violation’) [CWE-359]</td>
+ <td style="text-align: center">748</td>
+</tr>
+<tr style="background-color: #F2F1FF; border: 3px solid #444444;">
+ <td style="text-align: center">2</td>
+ <td style="text-align: left">Cryptographic Failures [CWE-310/311/312/326/327]</td>
+ <td style="text-align: center">584</td>
+</tr>
+<tr style="background-color: #F2F1FF; border: 3px solid #444444;">
+ <td style="text-align: center">3</td>
+ <td style="text-align: left">Deserialization of Untrusted Data [CWE-502]</td>
+ <td style="text-align: center">514</td>
+</tr>
+<tr style="background-color: #F2F1FF; border: 3px solid #444444;">
+ <td style="text-align: center">4</td>
+ <td style="text-align: left">Authorization Bypass Through User-Controlled Key <br />(IDOR &amp; Path Traversal) [CWE-639]</td>
+ <td style="text-align: center">493</td>
+</tr>
+<tr style="background-color: #F2F1FF; border: 3px solid #444444;">
+ <td style="text-align: center">5</td>
+ <td style="text-align: left">Insufficient Logging and Monitoring [CWE-223 / CWE-778]</td>
+ <td style="text-align: center">440</td>
+</tr>
+</tbody>
+</table></center>
+{:/}
