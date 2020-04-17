@@ -1,4 +1,5 @@
 ### Leaders
-* [Leader Name](mailto://leader.email@owasp.org)
-* [Leader Name](mailto://leader.email@owasp.org)
-* [Leader Name](mailto://leader.email@owasp.org)
+
+* [Neil Smithline](mailto:neil.smithline@owasp.org)
+* [Andrew van der Stock](mailto:vanderaj@owasp.org)
+* [Torsten Gigler](mailto:)

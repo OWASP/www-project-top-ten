@@ -1,3 +1,17 @@
-__pycache__
-env
-.vscode
+/Gemfile
+/Gemfile.lock
+/favicon.ico
+_site/
+
+# Eclipse
+# -------
+*.project
+*.settings
+
+# IntelliJ
+# --------
+.idea/
+*.iml
+
+# Old_copies
+*.bak

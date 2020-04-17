@@ -1,0 +1,15 @@
+{%- comment -%} ---------------------------------------------------------------------------
+ include:       t10_subsection_inner_round_box.html
+ description:   Generates a round box inside a subsection of Top10. This fixes a Jekyll issue inside tables.
+ usage:         {% include t10_subsection_inner_round_box.html
+                            topic='**Application Security Education:**'
+                            description="The OWASP Education..."
+                %}
+ parameters:    topic:       Headline or (Marddown-)Link
+                description: Text with optional links in Markdown style
+------------------------------------------------------------------------ {%- endcomment -%}
+</div><center><div style="background: linear-gradient(#FFF, #ded6df); padding: 5px 10px 5px 10px; border:2px solid #666; border-radius:15px; -moz-border-radius:15px; font-size: 100%; font-weight: normal; text-align: left; line-height: 1.3em; position: relative; margin-bottom: 1em; max-width: 97%;">
+<p><b> <div markdown="span"> {{ include.topic }} </div></b></p>
+<dl><dd> <div markdown="span"> {{ include.description }} </div></dd></dl>
+</div></center>
+<div markdown="span">
