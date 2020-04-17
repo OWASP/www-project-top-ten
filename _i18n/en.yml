@@ -7,12 +7,16 @@ applicationSpecific:            Application Specific
 appSpecific:                    App. Specific
 applicationBusinessSpecific:    Application / Business Specific
 appBusinessSpecific:            App / Business Specific
+businessSpecific:               Business Specific
+risk:                           RISK
 threatAgents:                   Threat Agents
 attackVectors:                  Attack Vectors
 securityWeakness:               Security Weakness
+weakness:                       Weakness
 impacts:                        Impacts
 technicalImpacts:               Technical Impacts
 technical:                      Technical
+business:                       Business
 businessImpacts:                Business Impacts
 businessQuestionmark:           Business ?
 exploitability:                 Exploitability
