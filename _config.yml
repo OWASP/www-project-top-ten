@@ -8,7 +8,7 @@ plugins:
 languages:          ['en']
 
 # If not config, the first item of languages will be used as the default.
-language_default:   'en'
+default_lang:   'en'
 
 languageNames:
   de: Deutsch
