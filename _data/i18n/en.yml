@@ -1,4 +1,4 @@
-baseURL:                        /
+baseURL:                        /OWASP_Top_Ten_2017/
 pdfDocument:                    https://wiki.owasp.org/images/7/72/OWASP_Top_10-2017_%28en%29.pdf.pdf
 tableOfContents:                Table of Contents
 applicationSpecific:            Application Specific
