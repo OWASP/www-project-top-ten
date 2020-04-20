@@ -3,7 +3,7 @@
 <ul>
 {%- for ttp in top_ten_pages -%}
 {%- unless ttp.order == 0 %}
-<li><a href="/www-project-top-ten{{ ttp.url }}">{{ ttp.title }}</a></li>
+<li><a href="{{site.baseurl}}{{ ttp.url }}">{{ ttp.title }}</a></li>
 {%- endunless -%}
 {% endfor %}
 </ul>
