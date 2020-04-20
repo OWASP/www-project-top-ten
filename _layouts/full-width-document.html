@@ -49,17 +49,17 @@
         <tr style="background-color: white; border: 0;">
             <td style="width: 33%; text-align: left; border: 0;">
             {%- if previous -%}
-                {%- assign href = previous.url | replace: "www2.", "" | replace: ".html", "" | replace: 'http://', 'https://' -%}
+                {%- assign href = site.baseurl | append: previous.url | replace: "www2.", "" | replace: ".html", "" | replace: 'http://', 'https://' -%}
                 <a href="{{ href }}"><span style="font-size:120%;">&#8592;&#160;</span>{{ previous.title }}</a>
             {%- endif -%}
             </td>
             <td style="width: 33%; text-align: center; border: 0;">
-            <center><a href="{{site.github.url}}" title="{{site.project.name}}"> {{site.project.name}} </a><br>
+            <center><a href="{{site.baseurl}}Top_10-2017_Table_of_Contents" title="{%- include i18n.html token='tableOfContents' -%}"> {%- include i18n.html token='tableOfContents' -%} </a><br>
                  <p><a href="{%- include i18n.html token='pdfDocument' -%}" title="{{page.document}} ({{page.lang}}).pdf"> PDF version</a></p>
             </center></td>
             <td style="width: 33%; text-align:right; border: 0;">
             {%- if next -%}
-                {%- assign href = next.url | replace: "www2.", ""  | replace: ".html", "" | replace: 'http://', 'https://' -%}
+                {%- assign href = site.baseurl | append: next.url | replace: "www2.", ""  | replace: ".html", "" | replace: 'http://', 'https://' -%}
                 <a href="{{ href }}">{{ next.title }}<span style="font-size:120%;">&#160;&#8594;</span></a>
             {%- endif -%}
             </td>
@@ -75,7 +75,7 @@
             <tr style="background-color: white; border: 0;">
             <td style="width: 33%; text-align: left; border: 0;">
             {%- if previous -%}
-                {%- assign href = previous.url | replace: "www2.", "" | replace: ".html", "" | replace: 'http://', 'https://' -%}
+                {%- assign href = site.baseurl | append: previous.url | replace: "www2.", "" | replace: ".html", "" | replace: 'http://', 'https://' -%}
                 <a href="{{ href }}"><span style="font-size:120%;">&#8592;&#160;</span>{{ previous.title }}</a>
             {%- endif -%}
             </td>
@@ -85,7 +85,7 @@
             </center></td>
             <td style="width: 33%; text-align:right; border: 0;">
             {%- if next -%}
-                {%- assign href = next.url | replace: "www2.", ""  | replace: ".html", "" | replace: 'http://', 'https://' -%}
+                {%- assign href = site.baseurl | append: next.url | replace: "www2.", ""  | replace: ".html", "" | replace: 'http://', 'https://' -%}
                 <a href="{{ href }}">{{ next.title }}<span style="font-size:120%;">&#160;&#8594;</span></a>
             {%- endif -%}
             </td>
