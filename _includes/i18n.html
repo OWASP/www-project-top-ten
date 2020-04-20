@@ -1,0 +1,24 @@
+{%- comment -%} ---------------------------------------------------------------------------
+ include:       i18n.html
+ description:   Include to translate tokens to test in different languages
+                A Default langiage should be defined in <site.default_lang>
+                Tokens need to be defines in '_data/i18n/<lang>.yml'
+                jekyll-multiple-languages-plugin
+ usage:         {%- include i18n token='exploitability' lang='en' -%}
+ parameters:    site.default_lang:
+                            en => Default language
+                page.lang:  en => language
+                lang:       en => Opitianally defined by include
+                token:      token assigned in the '_data/i18n/<lang>.yml' file
+debug:          <!-- include site.default_lang=\'{{site.default_lang}}\' page.lang=\'{{page.lang}}\' lang=\'{{include.lang}}\' token=\'{{include.token}}\' --->
+------------------------------------------------------------------------ {%- endcomment -%}
+{%- if include.lang == nil or include.lang == "" -%}
+    {%- if page.lang == nil or page.lang == "" -%}
+        {%- assign _lang=site.default_lang -%}
+    {%- else -%}
+        {%- assign _lang=page.lang -%}
+    {%- endif -%}
+{%- else -%}
+    {%- assign _lang=include.lang -%}
+{%- endif -%}
+{{site.data.i18n[_lang][include.token] }}
