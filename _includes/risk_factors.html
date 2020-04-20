@@ -22,11 +22,11 @@
      {%- include risk_factors_technical_names.html likelihood=include.technical -%}: {{include.technical}} </td>
  {%- else -%}
     {%- include risk_factors_color.html likelihood=include.exploitability width=include.width icons=include.icons -%}
-     {%- t exploitability -%}: {{include.exploitability}} </td>
+     {%- include i18n.html token='exploitability' -%}: {{include.exploitability}} </td>
     {% include risk_factors_color.html likelihood=include.prevalence width=include.width icons=include.icons -%}
-     {%- t prevalence -%}: {{include.prevalence}} </td>
+     {%- include i18n.html token='prevalence' -%}: {{include.prevalence}} </td>
     {% include risk_factors_color.html likelihood=include.detectability width=include.width icons=include.icons -%}
-     {%- t detectability -%}: {{include.detectability}} </td>
+     {%- include i18n.html token='detectability' -%}: {{include.detectability}} </td>
     {% include risk_factors_color.html likelihood=include.technical width=include.width icons=include.icons -%}
-     {%- t technical -%}: {{include.technical}} </td>
+     {%- include i18n.html token='technical' -%}: {{include.technical}} </td>
 {% endcase %}

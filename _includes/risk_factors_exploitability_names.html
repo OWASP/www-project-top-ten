@@ -6,9 +6,9 @@
  ------------------------------------------------------------------------ {%- endcomment -%}
 {%- case include.likelihood -%}
  {%- when 1 -%}
-  {%- t difficult -%}
+  {%- include i18n.html token='difficult' -%}
  {%- when 2 -%}
-  {%- t average -%}
+  {%- include i18n.html token='average' -%}
  {%- when 3 -%}
-  {%- t easy -%}
+  {%- include i18n.html token='easy' -%}
 {%- endcase -%}

@@ -30,5 +30,5 @@
    {%- if include.icons==1 -%}
     <i class="fa fa-exclamation-triangle" style="color:red;"></i><br>
    {%- endif -%}
-   {%- t undefined %} '{{include.likelihood}}'
+   {%- include i18n.html token='undefined' %} '{{include.likelihood}}'
 {%- endcase -%}

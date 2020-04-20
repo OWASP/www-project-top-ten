@@ -15,24 +15,24 @@
 <tr style="font-weight: bold; background-color: {{th_color}}; border: 3px solid #444444; height: 2em; font-size: 130%; color: #FFFFFF; text-shadow: 2px 2px 8px #000000;">
 {% case page.year %}
  {%- when 2017 -%}
- <th width="33%" colspan="2" style="border: 3px solid #444444;"> {%- translate threatAgents %} / {% translate attackVectors -%}</th>
+ <th width="33%" colspan="2" style="border: 3px solid #444444;"> {%- include i18n.html token='threatAgents' %} / {% include i18n.html token='attackVectors' -%}</th>
  {%- else -%}
- <th width="16.5%" style="border: 3px solid #444444;"> {%- t threatAgents -%}</th>
- <th width="16.5%" style="border: 3px solid #444444;"> {%- t attackVectors -%}</th>
+ <th width="16.5%" style="border: 3px solid #444444;"> {%- include i18n.html token='threatAgents' -%}</th>
+ <th width="16.5%" style="border: 3px solid #444444;"> {%- include i18n.html token='attackVectors' -%}</th>
 {% endcase %}
-<th width="33%" colspan="2" style="border: 3px solid #444444;"> {%- t securityWeakness -%}</th>
+<th width="33%" colspan="2" style="border: 3px solid #444444;"> {%- include i18n.html token='securityWeakness' -%}</th>
 {% case page.year %}
  {%- when 2017 -%}
- <th width="33%" colspan="2" style="border: 3px solid #444444;"> {%- t impacts -%}</th>
+ <th width="33%" colspan="2" style="border: 3px solid #444444;"> {%- include i18n.html token='impacts' -%}</th>
  {%- else -%}
- <th width="16.5%" style="border: 3px solid #444444;"> {%- t technicalImpacts -%}</th>
- <th width="16.5%" style="border: 3px solid #444444;"> {%- t businessImpacts -%}</th>
+ <th width="16.5%" style="border: 3px solid #444444;"> {%- include i18n.html token='technicalImpacts' -%}</th>
+ <th width="16.5%" style="border: 3px solid #444444;"> {%- include i18n.html token='businessImpacts' -%}</th>
 {% endcase %}
 </tr>
 <tr>
- <td style="border: 3px solid #444444; background-color: #D9D9D9; color: #000000;"><b>{%- t applicationSpecific -%}</b></td>
+ <td style="border: 3px solid #444444; background-color: #D9D9D9; color: #000000;"><b>{%- include i18n.html token='applicationSpecific' -%}</b></td>
  {% include risk_factors.html exploitability=3 prevalence=3 detectability=3 technical=2 width='16.5%' %}
- <td style="border: 3px solid #444444; background-color: #D9D9D9; color: #000000;"><b>{%- t businessSpecific -%}</b></td>
+ <td style="border: 3px solid #444444; background-color: #D9D9D9; color: #000000;"><b>{%- include i18n.html token='businessSpecific' -%}</b></td>
 </tr>
 <tr>
  <td rowspan="3" style="border: 0px solid #444444; background-color: #F2F1FF;"> &nbsp; </td>
