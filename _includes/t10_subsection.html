@@ -44,7 +44,7 @@
 {%- endcase %}
 style="vertical-align: top; padding: 5px; width: {{_width}}; border: 3px solid #4a1647; background-color: #F2F1FF;">
 <div style="font-style: bold; color: #4a1647; border-bottom: #999999 solid 1px; margin-bottom: 3px; padding-bottom: 3px; font-size: 150%;">
- {%- if {{include.token}} -%} {%- t {{include.token}} -%}
+ {%- if {{include.token}} -%} {%- include i18n.html token=include.token -%}
  {%- else -%} {{include.text}}
  {%- endif -%}
 </div>
