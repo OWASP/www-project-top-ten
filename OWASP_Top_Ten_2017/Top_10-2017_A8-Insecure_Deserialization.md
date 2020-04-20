@@ -64,7 +64,7 @@ An attacker changes the serialized object to give themselves admin privileges:<b
 
 {%- include t10_subsection.html token="references" pos="right" -%}
 **OWASP**<br>
-* [OWASP heat Sheet: Deserialization](https://cheatsheetseries.owasp.org/cheatsheets/Deserialization_Cheat_Sheet.html)<br>
+* [OWASP Cheat Sheet: Deserialization](https://cheatsheetseries.owasp.org/cheatsheets/Deserialization_Cheat_Sheet.html)<br>
 * [OWASP Proactive Controls: Validate All Inputs](/www-project-proactive-controls)<br>
 * [OWASP Application Security Verification Standard](/www-project-application-security-verification-standard)<br>
 * [OWASP AppSecEU 2016: Surviving the Java Deserialization Apocalypse](https://speakerdeck.com/pwntester/surviving-the-java-deserialization-apocalypse)<br>
