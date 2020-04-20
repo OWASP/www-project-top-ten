@@ -7,7 +7,7 @@
 
 ### Downloads or Social Links
 * [Download](/www-pdf-archive/OWASP_Top_10-2017_%28en%29.pdf.pdf){:target='_blank' rel='noopener'}
-* [Social Link](#)
+* [Twitter](https://twitter.com/owasptop10)
 
 ### Code Repository
 * [repo](https://github.com/OWASP/Top10){:target='_blank' rel='noopener'}
