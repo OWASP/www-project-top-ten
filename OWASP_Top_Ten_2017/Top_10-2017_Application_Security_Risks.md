@@ -16,7 +16,7 @@ tags: OWASP Top Ten 2017, Top Ten
 {%- include t10_subsection.html text="What are Application Security Risks?" pos="firstWhole" -%}
 Attackers can potentially use many different paths through your application to do harm to your business or organization. Each of these paths represents a risk that may, or may not, be serious enough to warrant attention.<br>
 <br>
-![Risks 2017 Image](/assets/images/Risks-2017.png){:width="80%"}
+![Risks 2017 Image]({{site.baseurl}}/assets/images/Risks-2017.png){:width="80%"}
 <br>
 <br>
 Sometimes these paths are trivial to find and exploit, and sometimes they are extremely difficult. Similarly, the harm that is caused may be of no consequence, or it may put you out of business. To determine the risk to your organization, you can evaluate the likelihood associated with each threat agent, attack vector, and security weakness and combine it with an estimate of the technical and business impact to your organization. Together, these factors determine your overall risk.
