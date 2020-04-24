@@ -59,7 +59,7 @@ Applications belong to the most complex systems humans regularly create and main
 {% include t10_subsection_inner_round_box.html
    topic='**Retiring Systems:**' 
    description="
-       * Any required data should be archived. All other data should be securely wiped.<b r>
+       * Any required data should be archived. All other data should be securely wiped.<br>
        * Securely retire the application, including deleting unused accounts and roles and permissions.<br>
        * Set your application's state to retired in the CMDB."
 %}
