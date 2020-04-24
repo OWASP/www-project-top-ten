@@ -19,7 +19,7 @@ Modern risks move quickly, so the days of scanning or penetration testing an app
 <br>
 {% include t10_subsection_inner_round_box.html
    topic='**Understand the Threat Model:**'
-   description="Before you start testing, be sure you understand what’s important to spend time on. Priorities come from the threat model, so if you don’t have one, you need to create one before testing. Consider using [OWASP ASVS](/www-project-application-security-verification-standard) and the [OWASP Testing Guide](/www-project-testing) as an input and don’t rely on tool vendors to decide what’s important for your business."
+   description="Before you start testing, be sure you understand what’s important to spend time on. Priorities come from the threat model, so if you don’t have one, you need to create one before testing. Consider using [OWASP ASVS](/www-project-application-security-verification-standard) and the [OWASP Web Security Testing Guide](https://owasp.org/www-project-web-security-testing-guide/) as an input and don’t rely on tool vendors to decide what’s important for your business."
 %}
 {% include t10_subsection_inner_round_box.html
    topic='**Understand Your SDLC:**'
