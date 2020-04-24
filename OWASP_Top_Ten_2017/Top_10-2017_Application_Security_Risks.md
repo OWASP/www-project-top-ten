@@ -43,5 +43,5 @@ Where possible, the names of the risks in the Top 10 are aligned with [Common We
 * [NIST Cyber Framework (US)](https://www.nist.gov/cyberframework)<br>
 * [ASD Strategic Mitigations (AU)](https://www.asd.gov.au/infosec/mitigationstrategies.htm)<br>
 * [NIST CVSS 3.0](https://nvd.nist.gov/vuln-metrics/cvss/v3-calculator)<br>
-* [Microsoft Threat Modelling Tool](https://www.microsoft.com/en-us/download/details.aspx?id=49168)<br>
+* [Microsoft Threat Modelling Tool](https://aka.ms/tmt)<br>
 {% include t10_subsection_end.html %}

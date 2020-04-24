@@ -68,7 +68,7 @@ Numerous public XXE issues have been discovered, including attacking embedded de
 {%- include t10_subsection.html token="references" pos="right" -%}
 **OWASP**<br>
 * [OWASP Application Security Verification Standard](/www-project-application-security-verification-standard)<br>
-* [OWASP Testing Guide: Testing for XML Injection](/www-project-testing)<br>
+* [OWASP Testing Guide: Testing for XML Injection](/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/07-Testing_for_XML_Injection)<br>
 * [OWASP XXE Vulnerability](/www-community/vulnerabilities/XML_External_Entity_(XXE)_Processing)<br>
 * [OWASP Cheat Sheet: XXE Prevention](https://cheatsheetseries.owasp.org/cheatsheets/XML_External_Entity_Prevention_Cheat_Sheet.html)<br>
 * [OWASP Cheat Sheet: XML Security](https://cheatsheetseries.owasp.org/cheatsheets/XML_Security_Cheat_Sheet.html)<br>

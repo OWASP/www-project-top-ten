@@ -64,9 +64,9 @@ If an unauthenticated user can access either page, it’s a flaw. If a non-admin
 
 {%- include t10_subsection.html token="references" pos="right" -%}
 **OWASP**<br>
-* [OWASP Proactive Controls: Access Controls](/www-project-proactive-controls)<br>
+* [OWASP Proactive Controls: Enforce Access Controls](/www-project-proactive-controls/v3/en/c7-enforce-access-controls)<br>
 * [OWASP Application Security Verification Standard: V4 Access Control](/www-project-application-security-verification-standard)<br>
-* [OWASP Testing Guide: Authorization Testing](/www-project-testing)<br>
+* [OWASP Testing Guide: Authorization Testing](/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/05-Authorization_Testing/README)<br>
 * [OWASP Cheat Sheet: Access Control](https://cheatsheetseries.owasp.org/cheatsheets/Access_Control_Cheat_Sheet.html)<br>
 <br>
 **External**<br>

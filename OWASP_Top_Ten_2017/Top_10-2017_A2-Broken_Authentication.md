@@ -29,7 +29,7 @@ Attackers have to gain access to only a few accounts, or just one admin account 
 {%- include t10_subsection_begin.html -%}
 {%- include t10_subsection.html token="isTheApplicationVulnerable" pos="firstLeft" -%}
 Confirmation of the user's identity, authentication, and session management are critical to protect against authentication-related attacks. There may be authentication weaknesses if the application:<br>
-* Permits automated attacks such as [credential stuffing](/www-community/attacks/Credental_stuffing), where the attacker has a list of valid usernames and passwords.<br>
+* Permits automated attacks such as [credential stuffing](/www-community/attacks/Credential_stuffing), where the attacker has a list of valid usernames and passwords.<br>
 * Permits brute force or other automated attacks.<br>
 * Permits default, weak, or well-known passwords, such as "Password1" or "admin/admin“.<br>
 * Uses weak or ineffective credential recovery and forgot-password processes, such as "knowledge-based answers", which cannot be made safe.<br>
@@ -49,7 +49,7 @@ Confirmation of the user's identity, authentication, and session management are 
 * Use a server-side, secure, built-in session manager that generates a new random session ID with high entropy after login. Session IDs should not be in the URL, be securely stored and invalidated after logout, idle, and absolute timeouts.
 
 {%- include t10_subsection.html token="exampleAttackScenarios" pos="left" -%}
-**Scenario #1**: [Credential stuffing](/www-community/attacks/Credental_stuffing), the use of [lists of known passwords](https://github.com/danielmiessler/SecLists), is a common attack. If an application does not implement automated threat or credential stuffing protections, the application can be used as a password oracle to determine if the credentials are valid.<br>
+**Scenario #1**: [Credential stuffing](/www-community/attacks/Credential_stuffing), the use of [lists of known passwords](https://github.com/danielmiessler/SecLists), is a common attack. If an application does not implement automated threat or credential stuffing protections, the application can be used as a password oracle to determine if the credentials are valid.<br>
 
 **Scenario #2**: Most authentication attacks occur due to the continued use of passwords as a sole factor. Once considered best practices, password rotation and complexity requirements are viewed as encouraging users to use, and reuse, weak passwords. Organizations are recommended to stop these practices per NIST 800-63 and use multi-factor authentication.<br>
 
@@ -57,15 +57,15 @@ Confirmation of the user's identity, authentication, and session management are 
 
 {%- include t10_subsection.html token="references" pos="right" -%}
 **OWASP**<br>
-* [OWASP Proactive Controls: Implement Identity and Authentication Controls](/www-community/www-project-proactive-controls)<br>
-* [OWASP Application Security Verification Standard: V2 Authentication](/www-community/www-project-application-security-verification-standard)<br>
-* [OWASP Application Security Verification Standard: V3 Session Management](/www-community/www-project-application-security-verification-standard)<br>
-* [OWASP Testing Guide: Identity, Authentication](/www-community/www-project-testing)<br>
+* [OWASP Proactive Controls: Implement Digital Identity](/www-project-proactive-controls/v3/en/c6-digital-identity)<br>
+* [OWASP Application Security Verification Standard: V2 Authentication](/www-project-application-security-verification-standard)<br>
+* [OWASP Application Security Verification Standard: V3 Session Management](/www-project-application-security-verification-standard)<br>
+* [OWASP Testing Guide: Identity,](/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/03-Identity_Management_Testing/README) [Authentication](/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/04-Authentication_Testing/README)<br>
 * [OWASP Cheat Sheet: Authentication](https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html)<br>
 * [OWASP Cheat Sheet: Credential Stuffing](https://cheatsheetseries.owasp.org/cheatsheets/Credential_Stuffing_Prevention_Cheat_Sheet.html)<br>
 * [OWASP Cheat Sheet: Forgot Password](https://cheatsheetseries.owasp.org/cheatsheets/Forgot_Password_Cheat_Sheet.html)<br>
 * [OWASP Cheat Sheet: Session Management](https://cheatsheetseries.owasp.org/cheatsheets/Session_Management_Cheat_Sheet.html)<br>
-* [OWASP Automated Threats Handbook](/www-community/www-project-automated-threats-to-web-applications)<br>
+* [OWASP Automated Threats Handbook](/www-project-automated-threats-to-web-applications/)<br>
 <br>
 **External**<br>
 * [NIST 800-63b: 5.1.1 Memorized Secrets](https://pages.nist.gov/800-63-3/sp800-63b.html#memsecret)<br>

@@ -60,9 +60,9 @@ This changes the meaning of both queries to return all the records from the acco
 
 {%- include t10_subsection.html token="references" pos="right" -%}
 **OWASP**<br>
-* [OWASP Proactive Controls: Parameterize Queries](/www-project-proactive-controls)<br>
+* [OWASP Proactive Controls: Secure Database Access](/www-project-proactive-controls/v3/en/c3-secure-database)<br>
 * [OWASP ASVS: V5 Input Validation and Encoding](/www-project-application-security-verification-standard)<br>
-* [OWASP Testing Guide: SQL Injection, Command Injection, and ORM Injection](https://www2.owasp.org/www-project-testing/#div-downloads)<br>
+* [OWASP Testing Guide: SQL Injection,](/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/05-Testing_for_SQL_Injection) [Command Injection](/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/12-Testing_for_Command_Injection), and [ORM Injection](/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/07-Input_Validation_Testing/05.7-Testing_for_ORM_Injection)<br>
 * [OWASP Cheat Sheet: Injection Prevention](https://cheatsheetseries.owasp.org/cheatsheets/Injection_Prevention_Cheat_Sheet.html)<br>
 * [OWASP Cheat Sheet: SQL Injection Prevention](https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html)<br>
 * [OWASP Cheat Sheet: Injection Prevention in Java](https://cheatsheetseries.owasp.org/cheatsheets/Injection_Prevention_Cheat_Sheet_in_Java.html)<br>

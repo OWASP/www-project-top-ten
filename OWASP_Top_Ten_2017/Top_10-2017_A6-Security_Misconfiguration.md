@@ -56,8 +56,8 @@ Secure installation processes should be implemented, including:<br>
 
 {%- include t10_subsection.html token="references" pos="right" -%}
 **OWASP**<br>
-* [OWASP Testing Guide: Configuration Management](/www-project-testing)<br>
-* [OWASP Testing Guide: Testing for Error Codes](/www-project-testing)<br>
+* [OWASP Testing Guide: Configuration Management](/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/02-Configuration_and_Deployment_Management_Testing/README)<br>
+* [OWASP Testing Guide: Testing for Error Codes](/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/01-Testing_for_Error_Code)<br>
 For additional requirements in this area, see the [Application Security Verification Standard V19 Configuration](/www-project-application-security-verification-standard).<br>
 <br>
 **External**<br>

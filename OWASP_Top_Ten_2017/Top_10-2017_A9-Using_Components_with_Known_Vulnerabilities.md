@@ -56,7 +56,7 @@ There are automated tools to help attackers find unpatched or misconfigured syst
 **OWASP**<br>
 * [OWASP Application Security Verification Standard: V1 Architecture, design and threat modelling](/www-project-application-security-verification-standard)<br>
 * [OWASP Dependency Check (for Java and .NET libraries)](/www-project-dependency-check)<br>
-* [OWASP Testing Guide - Map Application Architecture (OTG-INFO-010)](/www-project-testing)<br>
+* [OWASP Testing Guide - Map Application Architecture (OTG-INFO-010)](/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/01-Information_Gathering/10-Map_Application_Architecture)<br>
 * [OWASP Virtual Patching Best Practices](/www-community/Virtual_Patching_Best_Practices)<br>
 <br>
 **External**<br>
