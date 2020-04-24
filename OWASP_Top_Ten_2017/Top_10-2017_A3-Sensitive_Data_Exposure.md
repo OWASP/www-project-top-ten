@@ -66,7 +66,7 @@ Do the following, at a minimum, and consult the references:<br>
 * [OWASP Testing Guide: Testing for weak cryptography](/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/README)<br>
 <br>
 **External**<br>
-* [CWE-220: Exposure of sens. information through data queries](https://cwe.mitre.org/data/definitions/220.html)<br>
+* [CWE-202: Exposure of sens. information through data queries](https://cwe.mitre.org/data/definitions/202.html)<br>
 * [CWE-310: Cryptographic Issues](https://cwe.mitre.org/data/definitions/310.html)<br>
 * [CWE-311: Missing Encryption](https://cwe.mitre.org/data/definitions/311.html)<br>
 * [CWE-312: Cleartext Storage of Sensitive Information](https://cwe.mitre.org/data/definitions/312.html)<br>
