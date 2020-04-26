@@ -1,0 +1,11 @@
+{%- comment -%} ---------------------------------------------------------------------------
+ include:       nav_top_center_link.html
+ description:   Provides additional Links to the Center of the Top Navigation
+                E.g. used by the layout 'full-width-document.html'
+ usage:         {%- include nav_top_center_link.html -%}
+ parameters: (none)    
+ ------------------------------------------------------------------------ {%- endcomment -%}
+            <td style="width: 33%; text-align: center; border: 0;">
+            <center><a href="{{site.baseurl}}{{page.dir}}" title="{{page.document}}"> {{page.document}} </a><br>
+                  <p><a href="{%- include i18n.html token='pdfDocument' -%}" title="{{page.document}} ({{page.lang}}).pdf"> PDF version</a></p>
+            </center></td>
