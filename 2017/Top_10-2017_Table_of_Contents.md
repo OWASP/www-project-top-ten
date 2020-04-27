@@ -10,6 +10,7 @@ author:
 contributors:
 tags: OWASP Top Ten 2017, Top Ten
 permalink: OWASP_Top_Ten_2017/
+redirect_from: OWASP_Top_Ten_2017/Top_10-2017_Table_of_Contents.html
 
 ---
 {%- include t10_subsection_begin.html -%}

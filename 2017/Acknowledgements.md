@@ -9,6 +9,7 @@ layout: full-width-document
 author:
 contributors:
 tags: OWASP Top Ten 2017, Top Ten
+redirect_from: OWASP_Top_Ten_2017/Top_10-2017_Acknowledgements.html
 
 ---
 
