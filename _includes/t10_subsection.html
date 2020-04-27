@@ -1,0 +1,51 @@
+{%- comment -%} ---------------------------------------------------------------------------
+ include:       t10_subsection.html
+ description:   Print boxes and a headline for Top 10 subsections
+ usage:         {%- include t10_subsection.html pos='firstLeft' width='67%' -%}
+ parameters:    pos:        firstLeft, firstWhole, firstLongLeft, 
+                            left, right, whole, longLeft, longRight
+                width:      x%  => define the width of this column (default: 50%)
+                token:      use a token assigned in the i18n file to print text
+                text:       else: print an arbitary text 
+------------------------------------------------------------------------ {%- endcomment -%}
+{%- if include.width == nil or include.width == "" -%}
+    {%- assign _width='50%' -%}
+{%- else -%}
+    {%- assign _width=include.width -%}
+{%- endif -%}
+{%- case include.pos -%}
+ {%- when "firstLeft" -%}
+<tr>
+<td 
+ {%- when "firstWhole" -%}
+<tr>
+<td colspan="2"
+ {%- when "firstLongLeft" -%}
+<tr>
+<td rowspan="2"
+ {%- when "left" -%}
+</div></td></tr>
+<tr>
+<td
+ {%- when "right" -%}
+</div></td>
+<td
+ {%- when "whole" -%}
+</div></td></tr>
+<tr>
+<td colspan="2"
+ {%- when "longLeft" -%}
+</div></td></tr>
+<tr>
+<td rowspan="2"
+ {%-  when "longRight" -%}
+</div></td>
+<td rowspan="2"
+{%- endcase %}
+style="vertical-align: top; padding: 5px; width: {{_width}}; border: 3px solid #4a1647; background-color: #F2F1FF;">
+<div style="font-style: bold; color: #4a1647; border-bottom: #999999 solid 1px; margin-bottom: 3px; padding-bottom: 3px; font-size: 150%;">
+ {%- if {{include.token}} -%} {%- include i18n.html token=include.token -%}
+ {%- else -%} {{include.text}}
+ {%- endif -%}
+</div>
+<div markdown="span">

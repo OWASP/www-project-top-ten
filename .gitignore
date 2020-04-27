@@ -12,3 +12,6 @@ _site/
 # --------
 .idea/
 *.iml
+
+# Old_copies
+*.bak

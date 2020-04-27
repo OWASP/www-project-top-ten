@@ -1,0 +1,14 @@
+{%- comment -%} ---------------------------------------------------------------------------
+ include:       risk_factors_technical_names.html
+ description:   Define the names of risk factor elements by the likelihood/severity
+ usage:         {%- include risk_factors_technical_names.html likelihood=1 -%}
+ parameters:    likelihood/severity: 1-3 => 1-Low to 3-High
+ ------------------------------------------------------------------------ {%- endcomment -%}
+{%- case include.likelihood -%}
+ {%- when 1 -%}
+  {%- include i18n.html token='minor' -%}
+ {%- when 2 -%}
+  {%- include i18n.html token='moderate' -%}
+ {%- when 3 -%}
+  {%- include i18n.html token='severe' -%}
+{%- endcase -%}

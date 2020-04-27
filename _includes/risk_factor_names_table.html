@@ -1,0 +1,29 @@
+{%- comment -%} ---------------------------------------------------------------------------
+ include:       risk_factor_names_table.html
+ description:   Table is included by the page 'Top_10-2017_Application_Security_Risks.md'
+ usage:         {% include risk_factor_names_table.html %}
+ parameters:    (none)
+------------------------------------------------------------------------ {%- endcomment -%} 
+<!-- Risk Factor Names Table ---> 
+{::nomarkdown}
+<center><table style="align:center; border-collapse: collapse; text-align:center; margin: 0px 5px 0px 5px; border: 3px solid #444444; background-color: #F2F1FF; padding=2; width: 98%;">
+<tr style="background-color: #4a1647; height: 2em; color: #FFFFFF;  text-shadow: 2px 2px 8px #444444; ">
+    <th style="border: 3px solid #444444;" width="13%">{%- include i18n.html token='threatAgents' -%}</th>
+    <th style="border: 3px solid #444444;">{%- include i18n.html token='exploitability' -%}</th>
+    <th style="border: 3px solid #444444;">{%- include i18n.html token='weakness' -%}<br>{%- include i18n.html token='prevalence' -%}</th>
+    <th style="border: 3px solid #444444;">{%- include i18n.html token='weakness' -%}<br>{%- include i18n.html token='detectability' -%}</th>
+    <th style="border: 3px solid #444444;">{%- include i18n.html token='technical' -%}<br>{%- include i18n.html token='impacts' -%}</th>
+    <th style="border: 3px solid #444444;" width="13%">{%- include i18n.html token='business' -%}<br>{%- include i18n.html token='impacts' -%}</th>
+</tr>
+<tr style="font-size: 90%;"><td style="border: 3px solid #444444;" rowspan="3"><b>{%- include i18n.html token='appSpecific' -%}</b></td>
+    {% include risk_factors.html type="names" exploitability=3 prevalence=3 detectability=3 technical=3 width='18.5%' %}
+    <td style="border: 3px solid #444444;" rowspan="3"><b>{%- include i18n.html token='appBusinessSpecific' -%}</b></td>
+</tr>
+<tr style="font-size: 90%;">
+    {% include risk_factors.html type="names" exploitability=2 prevalence=2 detectability=2 technical=2 width='18.5%' %}
+</tr>
+<tr style="font-size: 90%;">
+    {% include risk_factors.html type="names" exploitability=1 prevalence=1 detectability=1 technical=1 width='18.5%' %}
+</tr>
+</table></center>
+{:/}

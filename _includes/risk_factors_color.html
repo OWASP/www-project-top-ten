@@ -1,0 +1,34 @@
+{%- comment -%} ---------------------------------------------------------------------------
+ include:       risk_factors_color.html
+ description:   Define the color of risk factor elements by the likelihood
+ usage:         {%- include risk_factors_color.html likelihood=1 icons=1 -%}
+ parameters:    likelihood: 1-3 => 1-Low to 3-High => color
+                width:      x%  => define the width of all columns (default: 16.5%)
+                icons:      1   => optional additional icons#
+ debug:         <!-- risk_factors_color.html likelihood='{{include.likelihood}}' width='{{include.width}}' icons='{{include.icons}}' --->
+------------------------------------------------------------------------ {%- endcomment -%}
+{%- if include.width == nil or include.width == "" -%}
+    {%- assign _width='16.5%' -%}
+{%- else -%}
+    {%- assign _width=include.width -%}
+{%- endif -%}
+<td style="font-weight: bold; border: 3px solid #444444; 
+{%- case include.likelihood -%}
+ {%- when 1 -%} background-color: #FFFF00; color: #000000" width="{{_width}}">
+  {%- if include.icons==1 -%}
+   <i class="fa fa-info-circle" style="color:yellow; background-color:black;"></i><br>
+  {%- endif -%}
+ {%- when 2 -%} background-color: #FC9803; color: #000000" width="{{_width}}">
+   {%- if include.icons==1 -%}
+    <i class="fa fa-exclamation-circle" style="color:black;"></i><br>
+   {%- endif -%}
+ {%- when 3 -%} background-color: #E65000; color: #FFFFFF" width="{{_width}}">
+   {%- if include.icons==1 -%}
+    <i class="fa fa-exclamation-triangle" style="color:white;"></i><br>
+   {%- endif -%}
+ {%- else -%} background-color: #D9D9D9; color: #000000" width="{{_width}}">
+   {%- if include.icons==1 -%}
+    <i class="fa fa-exclamation-triangle" style="color:red;"></i><br>
+   {%- endif -%}
+   {%- include i18n.html token='undefined' %} '{{include.likelihood}}'
+{%- endcase -%}

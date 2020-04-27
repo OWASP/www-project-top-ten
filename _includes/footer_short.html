@@ -1,0 +1,28 @@
+{%- comment -%} ---------------------------------------------------------------------------
+ include:       footer_short.html
+ description:   Footer for documentation Projects to deliver content.
+                It does *not* add sponsors via the include member.html.
+                E.g. used by the layout 'full-width-document.html'
+ usage:         {%- include footer_short.html -%}
+ parameters:    (none)   
+ ------------------------------------------------------------------------ {%- endcomment -%}
+<footer>
+  <section class="footer-wrapper">
+    {% include social.html %}
+    <nav class="bot-nav" role="navigation" aria-label="secondary navigation">
+      <ul>
+        <li><a href="/">HOME</a></li>
+        <li><a href="/projects/">PROJECTS</a></li>
+        <li><a href="/chapters/">CHAPTERS</a></li>
+        <li><a href="/events/">EVENTS</a></li>
+        <li><a href="/about/">ABOUT</a></li>
+        <li><a href="/www-policy/operational/privacy">PRIVACY</a></li>
+        <li><a href="/sitemap/">SITEMAP</a></li>
+        <li><a href="/contact/">CONTACT</a></li>
+      </ul>
+    </nav>
+    <p class="disclaimer">
+        Open Web Application Security Project, OWASP, Global AppSec, AppSec Days, AppSec California, SnowFROC, LASCON, and the OWASP logo are trademarks of the OWASP Foundation. Unless otherwise specified, all content on the site is Creative Commons Attribution-ShareAlike v4.0 and provided without warranty of service or accuracy. For more information, please refer to our <a href="/www-policy/operational/general-disclaimer.html">General Disclaimer</a>. Copyright {{ "now" | date: "%Y" }}, OWASP Foundation, Inc.      
+    </p>
+  </section>
+</footer>

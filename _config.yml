@@ -1,3 +1,16 @@
-remote_theme: "owasp/www--site-theme"
+remote_theme:   "owasp/www--site-theme"
 plugins:
  - jekyll-include-cache-0.2.0
+  
+project:
+    name:       "OWASP Top Ten Project"
+
+# The all languages used
+languages:      ['en']
+
+# If not config, the first item of languages will be used as the default.
+default_lang:   'en'
+
+languageNames:
+  de: Deutsch
+  en: English

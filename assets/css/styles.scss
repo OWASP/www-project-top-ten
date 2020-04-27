@@ -1,0 +1,31 @@
+---
+---
+@import "main";
+
+.mytable { 
+    border-collapse: collapse;
+}
+
+.mytable thead { 
+    font-weight: 700;
+}
+
+.mytable td, .table tr {
+    margin: 0px 0px 0px 0px; border: 0px; background-color: transparent; padding: 2;
+}
+
+.mytable tbody tr:nth-child(odd) { background-color: transparent; } 
+
+table { 
+    border-collapse: collapse;
+}
+
+table thead { 
+    font-weight: 700;
+}
+
+table td, .table tr {
+    margin: 0px 0px 0px 0px; border: 0px; background-color: transparent; padding: 2;
+}
+
+table tbody tr:nth-child(odd) { background-color: transparent; } 

@@ -1,0 +1,20 @@
+{%- comment -%} ---------------------------------------------------------------------------
+ include:       risk_description.html
+ description:   Description for the Risk Factors Attack Vectors, Security Weakness and
+                Impacts by the Top 10 Category
+ usage:         {%- include risk_description.html pos='firstLeft' -%}
+ parameters:    
+                pos:       <firstLeft|mid|right|left>
+--------------------------------------------------------- {%- endcomment -%}
+{%- if {{include.pos}} == "firstLeft" -%}
+<tr>
+ {%- elsif {{include.pos}} == "left" -%}
+</div></td></tr>
+<tr>
+ {%- elsif {{include.pos}} == "mid" -%}
+</div></td>
+ {%- elsif {{include.pos}} == "right" -%}
+</div></td>
+{%- endif -%}
+ <td colspan="2" style="vertical-align: top; text-align: left; border: 3px solid #444444; background-color: #F2F1FF;">
+<div markdown="span">

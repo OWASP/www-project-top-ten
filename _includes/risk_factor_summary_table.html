@@ -1,0 +1,81 @@
+{%- comment -%} ---------------------------------------------------------------------------
+ include:       risk_factor_summary_table.html
+ description:   Table is included by the page 'Top_10-2017_Details_About_Risk_Factors.md'
+ usage:         {%- include risk_factor_summary_table.html -%}
+ parameters:    (none)
+------------------------------------------------------------------------ {%- endcomment -%} 
+<!-- Risk Factor Summary Table ---> 
+</div><br>
+<center>
+<table style="align:center; border-collapse: collapse; text-align:center; margin: 0px 5px 0px 5px; border: 3px solid #444444; background-color: #F2F1FF; padding=2;" width="98%">
+<tr style="background-color: #4a1647; height: 2em; font-size: 110%; color: #FFFFFF;  text-shadow: 2px 2px 8px #444444; ">
+    <th style="border: 3px solid #444444;">{%- include i18n.html token='risk' -%}</th>
+    <th style="border: 3px solid #444444;" width="9.5%">{%- include i18n.html token='threatAgents' -%}</th>
+    <th style="border: 3px solid #444444;">{%- include i18n.html token='attackVectors' -%}<div style="font-size: 80%;">({%- include i18n.html token='exploitability' -%})</div></th>
+    <th style="border: 3px solid #444444;">{%- include i18n.html token='securityWeakness' -%}<div style="font-size: 80%;">({%- include i18n.html token='prevalence' -%})</div></th>
+    <th style="border: 3px solid #444444;">{%- include i18n.html token='securityWeakness' -%}<div style="font-size: 80%;">({%- include i18n.html token='detectability' -%})</div></th>
+    <th style="border: 3px solid #444444;">{%- include i18n.html token='impacts' -%}<div style="font-size: 80%;">({%- include i18n.html token='technical' -%})</div></th>
+    <th style="border: 3px solid #444444;" width="9.5%">{%- include i18n.html token='impacts' -%}<div style="font-size: 80%;">({%- include i18n.html token='business' -%})</div></th>
+    <th style="border: 3px solid #444444;" width="6%">{%- include i18n.html token='score' -%}</th>
+</tr>
+<tr><td style="border: 3px solid #444444;"><b><a href="Top_10-2017_A1-Injection.html">A1:2017-Injection</a></b></td>
+    <td style="border: 3px solid #444444;"><b>{%- include i18n.html token='appSpecific' -%}</b></td>
+    {% include risk_factors.html type="names" exploitability=3 prevalence=2 detectability=3 technical=3 width='14%' %}
+    <td style="border: 3px solid #444444"><b>{%- include i18n.html token='appSpecific' -%}</b></td>
+    <td style="border: 3px solid #444444"><b>8.0</b></td></tr>
+    
+<tr><td style="border: 3px solid #444444;"><b><a href="Top_10-2017_A2-Broken_Authentication.html">A2:2017-Broken Authentication</a></b></td>
+    <td style="border: 3px solid #444444;"><b>{%- include i18n.html token='appSpecific' -%}</b></td>
+    {% include risk_factors.html type="names"  exploitability=3 prevalence=2 detectability=2 technical=3 width='14%' %}
+    <td style="border: 3px solid #444444"><b>{%- include i18n.html token='appSpecific' -%}</b></td>
+    <td style="border: 3px solid #444444"><b>7.0</b></td></tr>
+
+<tr><td style="border: 3px solid #444444;"><b><a href="Top_10-2017_A3-Sensitive_Data_Exposure.html">A3:2017-Sensitive Data Exposure</a></b></td>
+    <td style="border: 3px solid #444444;"><b>{%- include i18n.html token='appSpecific' -%}</b></td>
+    {% include risk_factors.html type="names"  exploitability=2 prevalence=3 detectability=2 technical=3 width='14%' %}
+    <td style="border: 3px solid #444444"><b>{%- include i18n.html token='appSpecific' -%}</b></td>
+    <td style="border: 3px solid #444444"><b>7.0</b></td></tr>
+
+<tr><td style="border: 3px solid #444444;"><b><a href="Top_10-2017_A4-XML_External_Entities_(XXE).html">A4:2017-XML External Entities (XXE)</a></b></td>
+    <td style="border: 3px solid #444444;"><b>{%- include i18n.html token='appSpecific' -%}</b></td>
+    {% include risk_factors.html type="names"  exploitability=2 prevalence=2 detectability=3 technical=3 width='14%' %}
+    <td style="border: 3px solid #444444"><b>{%- include i18n.html token='appSpecific' -%}</b></td>
+    <td style="border: 3px solid #444444"><b>7.0</b></td></tr>
+
+<tr><td style="border: 3px solid #444444;"><b><a href="Top_10-2017_A5-Broken_Access_Control.html">A5:2017-Broken Access Control</a></b></td>
+    <td style="border: 3px solid #444444;"><b>{%- include i18n.html token='appSpecific' -%}</b></td>
+    {% include risk_factors.html type="names"  exploitability=2 prevalence=2 detectability=2 technical=3 width='14%' %}
+    <td style="border: 3px solid #444444"><b>{%- include i18n.html token='appSpecific' -%}</b></td>
+    <td style="border: 3px solid #444444"><b>6.0</b></td></tr>
+
+<tr><td style="border: 3px solid #444444;"><b><a href="Top_10-2017_A6-Security_Misconfiguration.html">A6:2017-Security Misconfiguration</a></b></td>
+    <td style="border: 3px solid #444444;"><b>{%- include i18n.html token='appSpecific' -%}</b></td>
+    {% include risk_factors.html type="names"  exploitability=3 prevalence=3 detectability=3 technical=2 width='14%' %}
+    <td style="border: 3px solid #444444"><b>{%- include i18n.html token='appSpecific' -%}</b></td>
+    <td style="border: 3px solid #444444"><b>6.0</b></td></tr>
+
+<tr><td style="border: 3px solid #444444;"><b><a href="Top_10-2017_A7-Cross-Site_Scripting_(XSS).html">A7:2017-Cross-Site Scripting (XSS)</a></b></td>
+    <td style="border: 3px solid #444444;"><b>{%- include i18n.html token='appSpecific' -%}</b></td>
+    {% include risk_factors.html type="names" exploitability=3 prevalence=3 detectability=3 technical=2 width='14%' %}
+    <td style="border: 3px solid #444444"><b>{%- include i18n.html token='appSpecific' -%}</b></td>
+    <td style="border: 3px solid #444444"><b>6.0</b></td></tr>
+
+<tr><td style="border: 3px solid #444444;"><b><a href="Top_10-2017_A8-Insecure_Deserialization.html">A8:2017-Insecure Deserialization</a></b></td>
+    <td style="border: 3px solid #444444;"><b>{%- include i18n.html token='appSpecific' -%}</b></td>
+    {% include risk_factors.html type="names" exploitability=1 prevalence=2 detectability=2 technical=3 width='14%' %}
+    <td style="border: 3px solid #444444"><b>{%- include i18n.html token='appSpecific' -%}</b></td>
+    <td style="border: 3px solid #444444"><b>5.0</b></td></tr>
+
+<tr><td style="border: 3px solid #444444;"><b><a href="Top_10-2017_A9-Using_Components_with_Known_Vulnerabilities.html">A9:2017-Using Components with Known Vulnerabilities</a></b></td>
+    <td style="border: 3px solid #444444;"><b>{%- include i18n.html token='appSpecific' -%}</b></td>
+    {% include risk_factors.html type="names" exploitability=2 prevalence=3 detectability=2 technical=2 width='14%' %}
+    <td style="border: 3px solid #444444"><b>{%- include i18n.html token='appSpecific' -%}</b></td>
+    <td style="border: 3px solid #444444"><b>4.7</b></td></tr>
+
+<tr><td style="border: 3px solid #444444;"><b><a href="Top_10-2017_A10-Insufficient_Logging%252526Monitoring.html">A10:2017-Insufficient Logging &amp; Monitoring</a></b></td>
+    <td style="border: 3px solid #444444;"><b>{%- include i18n.html token='appSpecific' -%}</b></td>
+    {% include risk_factors.html type="names" exploitability=2 prevalence=3 detectability=1 technical=2 width='14%' %}
+    <td style="border: 3px solid #444444"><b>{%- include i18n.html token='appSpecific' -%}</b></td>
+    <td style="border: 3px solid #444444"><b>4.0</b></td></tr>
+</table></center><br> <!-- End Risk Factor Summary Table -->
+<div markdown="span">

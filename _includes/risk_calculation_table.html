@@ -1,0 +1,58 @@
+{%- comment -%} ---------------------------------------------------------------------------
+ include:       risk_calculation_table.html
+ description:   Table is included by the page 'Top_10-2017_Note_About_Risks.md'
+ usage:         {%- include risk_calculation_table.html -%}
+ parameters:    (none)
+------------------------------------------------------------------------ {%- endcomment -%} 
+</div><br>
+{%- case page.year -%}
+ {%- when 2017 -%} {%- assign th_color= '#4a1647' -%}
+ {%- when 2013 -%} {%- assign th_color= '#4d953d' -%}
+ {%- else -%}      {%- assign th_color= '#4F81BD' -%}
+{%- endcase -%}
+<!-- Risk Calculation Table ---> 
+<center><table style=" width: 97%; align:center; border-collapse: collapse; text-align:center; margin: 0px 0px 10px 0px; border: 3px solid #444444; background-color: transparent; padding=2;">
+<tr style="font-weight: bold; background-color: {{th_color}}; border: 3px solid #444444; height: 2em; font-size: 130%; color: #FFFFFF; text-shadow: 2px 2px 8px #000000;">
+{% case page.year %}
+ {%- when 2017 -%}
+ <th width="33%" colspan="2" style="border: 3px solid #444444;"> {%- include i18n.html token='threatAgents' %} / {% include i18n.html token='attackVectors' -%}</th>
+ {%- else -%}
+ <th width="16.5%" style="border: 3px solid #444444;"> {%- include i18n.html token='threatAgents' -%}</th>
+ <th width="16.5%" style="border: 3px solid #444444;"> {%- include i18n.html token='attackVectors' -%}</th>
+{% endcase %}
+<th width="33%" colspan="2" style="border: 3px solid #444444;"> {%- include i18n.html token='securityWeakness' -%}</th>
+{% case page.year %}
+ {%- when 2017 -%}
+ <th width="33%" colspan="2" style="border: 3px solid #444444;"> {%- include i18n.html token='impacts' -%}</th>
+ {%- else -%}
+ <th width="16.5%" style="border: 3px solid #444444;"> {%- include i18n.html token='technicalImpacts' -%}</th>
+ <th width="16.5%" style="border: 3px solid #444444;"> {%- include i18n.html token='businessImpacts' -%}</th>
+{% endcase %}
+</tr>
+<tr>
+ <td style="border: 3px solid #444444; background-color: #D9D9D9; color: #000000;"><b>{%- include i18n.html token='applicationSpecific' -%}</b></td>
+ {% include risk_factors.html exploitability=3 prevalence=3 detectability=3 technical=2 width='16.5%' %}
+ <td style="border: 3px solid #444444; background-color: #D9D9D9; color: #000000;"><b>{%- include i18n.html token='businessSpecific' -%}</b></td>
+</tr>
+<tr>
+ <td rowspan="3" style="border: 0px solid #444444; background-color: #F2F1FF;"> &nbsp; </td>
+ <td style="text-align: center; padding: 4px; font-size: 200%; font-weight: bold; border: 3px solid #444444;">3</td>
+ <td style="text-align: center; padding: 4px; font-size: 200%; font-weight: bold; border: 3px solid #444444;">3</td>
+ <td style="text-align: center; padding: 4px; font-size: 200%; font-weight: bold; border: 3px solid #444444;">3</td>
+ <td style="border: 0px solid #444444; background-color: #F2F1FF;">&nbsp;</td>
+ <td rowspan="3" style="border: 0px solid #444444; background-color: #F2F1FF;"> &nbsp; </td>
+</tr>
+<tr>
+ <td colspan="3" style="border: 1px solid #444444; background-color: #D9D9D9; text-align: center; padding: 4px;">
+ <span style="font-weight: bold; font-size: 150%; color: red;">Likelihood Rating: 3.0</span><br/>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Average of Exploitability, Prevalence and Detectability)</td>
+ <td style="border: 1px solid #444444; background-color: #D9D9D9; text-align: center; padding: 4px;"><span style="font-weight: bold; font-size: 150%; color: red;">*&nbsp;2&nbsp;&nbsp;</span></td>
+ </tr>
+<tr>
+ <td style="border: 0px solid #444444; background-color: #F2F1FF;">&nbsp;</td>
+ <td colspan="3"  style="border: 1px solid #444444; background-color: #D9D9D9; text-align: center; padding: 4px;">
+  <span style="font-weight: bold; font-size: 150%; color: red;">Risk Ranking: 6.0</span><br/>
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Likelihood * Impact)</td>
+</tr>
+</table></center> <!-- End Risk Calculation Table -->
+<div markdown="span">

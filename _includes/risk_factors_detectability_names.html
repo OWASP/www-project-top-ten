@@ -1,0 +1,14 @@
+{%- comment -%} ---------------------------------------------------------------------------
+ include:       risk_factors_detectability_names.html
+ description:   Define the names of risk factor elements by the likelihood
+ usage:         {%- include risk_factors_detectability_names.html likelihood=1 -%}
+ parameters:    likelihood: 1-3 => 1-Low to 3-High
+ ------------------------------------------------------------------------ {%- endcomment -%}
+{%- case include.likelihood -%}
+ {%- when 1 -%}
+  {%- include i18n.html token='difficult' -%}
+ {%- when 2 -%}
+  {%- include i18n.html token='average' -%}
+ {%- when 3 -%}
+  {%- include i18n.html token='easy' -%}
+{%- endcase -%}
