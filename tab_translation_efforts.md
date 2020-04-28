@@ -1,5 +1,6 @@
 ---
 title: Translation_Efforts
+displaytext: Translation Efforts
 layout: col-sidebar
 tab: true
 order: 2

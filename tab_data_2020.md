@@ -1,5 +1,6 @@
 ---
 title: Data_2020
+displaytext: Data 2020
 layout:  col-sidebar
 tab: true
 order: 4
