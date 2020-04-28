@@ -37,7 +37,7 @@ You are likely vulnerable:<br>
 * If you do not scan for vulnerabilities regularly and subscribe to security bulletins related to the components you use.<br>
 * If you do not fix or upgrade the underlying platform, frameworks, and dependencies in a risk-based, timely fashion. This commonly happens in environments when patching is a monthly or quarterly task under change control, which leaves organizations open to many days or months of unnecessary exposure to fixed vulnerabilities.<br>
 * If software developers do not test the compatibility of updated, upgraded, or patched libraries.<br>
-* If you do not secure the components' configurations (see  [A6:2017-Security Misconfiguration](Top_10-2017_A6-Security_Misconfiguration)).
+* If you do not secure the components' configurations (see  [A6:2017-Security Misconfiguration](A6-Security_Misconfiguration.md)).
 
 {%- include t10_subsection.html token="howToPrevent" pos="right" -%}
 There should be a patch management process in place to:<br>
