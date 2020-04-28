@@ -36,7 +36,7 @@ Confirmation of the user's identity, authentication, and session management are 
 * Permits brute force or other automated attacks.<br>
 * Permits default, weak, or well-known passwords, such as "Password1" or "admin/admin“.<br>
 * Uses weak or ineffective credential recovery and forgot-password processes, such as "knowledge-based answers", which cannot be made safe.<br>
-* Uses plain text, encrypted, or weakly hashed passwords (see [A3:2017-Sensitive Data Exposure](A3-Sensitive_Data_Exposure.md)).<br>
+* Uses plain text, encrypted, or weakly hashed passwords (see [A3:2017-Sensitive Data Exposure](A3-Sensitive_Data_Exposure)).<br>
 * Has missing or ineffective multi-factor authentication.<br>
 * Exposes Session IDs in the URL (e.g., URL rewriting).<br>
 * Does not rotate Session IDs after successful login.<br>

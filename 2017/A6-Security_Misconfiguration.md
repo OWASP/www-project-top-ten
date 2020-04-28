@@ -39,14 +39,14 @@ The application might be vulnerable if the application is:<br>
 * For upgraded systems, latest security features are disabled or not configured securely.<br>
 * The security settings in the application servers, application frameworks (e.g. Struts, Spring, ASP.NET), libraries, databases, etc. not set to secure values.<br>
 * The server does not send security headers or directives or they are not set to secure values.<br>
-* The software is out of date or vulnerable (see [A9:2017-Using Components with Known Vulnerabilities](A9-Using_Components_with_Known_Vulnerabilities.md).<br>
+* The software is out of date or vulnerable (see [A9:2017-Using Components with Known Vulnerabilities](A9-Using_Components_with_Known_Vulnerabilities).<br>
 Without a concerted, repeatable application security configuration process, systems are at a higher risk.
 
 {%- include t10_subsection.html token="howToPrevent" pos="right" -%}
 Secure installation processes should be implemented, including:<br>
 * A repeatable hardening process that makes it fast and easy to deploy another environment that is properly locked down. Development, QA, and production environments should all be configured identically, with different credentials used in each environment. This process should be automated to minimize the effort required to setup a new secure environment.<br>
 * A minimal platform without any unnecessary features, components, documentation, and samples. Remove or do not install unused features and frameworks.<br>
-* A task to review and update the configurations appropriate to all security notes, updates and patches as part of the patch management process (see [A9:2017-Using Components with Known Vulnerabilities](A9-Using_Components_with_Known_Vulnerabilities.md)). In particular, review cloud storage permissions (e.g. S3 bucket permissions).<br>
+* A task to review and update the configurations appropriate to all security notes, updates and patches as part of the patch management process (see [A9:2017-Using Components with Known Vulnerabilities](A9-Using_Components_with_Known_Vulnerabilities)). In particular, review cloud storage permissions (e.g. S3 bucket permissions).<br>
 * A segmented application architecture that provides effective, secure separation between components or tenants, with segmentation, containerization, or cloud security groups (ACLs).<br>
 * Sending security directives to clients, e.g. [Security Headers](/www-project-secure-headers).<br>
 * An automated process to verify the effectiveness of the configurations and settings in all environments.
