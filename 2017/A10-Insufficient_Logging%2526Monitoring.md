@@ -13,7 +13,9 @@ exploitability: 2
 prevalence: 3
 detectability: 1
 technical: 2
-redirect_from: OWASP_Top_Ten_2017/Top_10-2017_A10-Insufficient_Logging%2526Monitoring.html
+redirect_from:
+  - OWASP_Top_Ten_2017/Top_10-2017_A10-Insufficient_Logging%2526Monitoring.html
+  - OWASP_Top_Ten_2017/Top_10-2017_A10-Insufficient_Logging%2526Monitoring
 
 ---
 

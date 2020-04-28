@@ -13,7 +13,9 @@ exploitability: 2
 prevalence: 3
 detectability: 2
 technical: 2
-redirect_from: OWASP_Top_Ten_2017/Top_10-2017_A9-Using_Components_with_Known_Vulnerabilities.html
+redirect_from:
+  - OWASP_Top_Ten_2017/Top_10-2017_A9-Using_Components_with_Known_Vulnerabilities.html
+  - OWASP_Top_Ten_2017/Top_10-2017_A9-Using_Components_with_Known_Vulnerabilities
 
 ---
 
