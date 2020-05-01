@@ -20,9 +20,9 @@
   <p>
     <hr>
   </p>
-  {%- if page.oldfooter -%}
-    {%- include member.html -%}
-  {% else %}
+  {%- if page.altfooter -%}
     {%- include altmember.html -%}
+  {% else %}
+    {%- include member.html -%}
   {% endif %}
 </footer>
