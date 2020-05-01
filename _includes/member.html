@@ -33,7 +33,7 @@
               $("#corp_member_div").html(htmlstring);
               
           var randi = Math.floor(Math.random() * members.length);
-          htmlstring = '<h3>Spotlight to a supporter: ' + members[randi]["name"] + '</h3>';
+          htmlstring = '<h3>Spotlight to supporter ' + members[randi]["name"] + ': </h3>';
           htmlstring += '<a href="'+ members[randi]["url"] + '" rel="sponsored nopener noreferrer" target="_blank" onclick="handleOutboundLinkClicks(event);"><img src="https://owasp.org' + members[randi]["image"] + '" alt="image" /></a>';
           htmlstring += '<p>' + members[randi]["description"] + '</p>';
           $(".member-spotlight").html(htmlstring);
@@ -41,15 +41,15 @@
         });
       </script>
       <div class="alt-member-wrapper" >
-        <section class="member-list" style="width: 70%">
+        <section class="member-list">
           <h2>Corporate Supporters</h2>
-          <div id="corp_member_div">
+          <div id="corp_member_div" style="width: 70%">
           </div>
+          <section class="member-spotlight" style="width: 30%" >
+          </section>
           <div class="member-cta">
             <a class="callout-link" href="/supporters">Become a corporate supporter</a>
           </div>
-        </section>
-        <section class="member-spotlight" style="width: 30%" >
         </section>
       </div>
     </section>
