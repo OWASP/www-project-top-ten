@@ -29,7 +29,7 @@ OWASP recommends organizations establish an application security program to gain
    topic='**Risk Based Portfolio Approach:**' 
    description="
        * Identify the [protection needs](/www-project-samm) of your [application portfolio](/www-project-samm) from a business perspective. This should be driven in part by privacy laws and other regulations relevant to the data asset being protected.<br>
-       * Establish a [common risk rating model (old wiki)](https://wiki.owasp.org/index.php/OWASP_Risk_Rating_Methodology) with a consistent set of likelihood and impact factors reflective of your organization's tolerance for risk.<br>
+       * Establish a [common risk rating model](/www-community/OWASP_Risk_Rating_Methodology) with a consistent set of likelihood and impact factors reflective of your organization's tolerance for risk.<br>
        * Accordingly measure and prioritize all your applications and APIs. Add the results to your CMDB.<br>
        * Establish assurance guidelines to properly define coverage and level of rigor required."
 %}
