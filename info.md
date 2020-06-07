@@ -7,7 +7,7 @@
 
 ### Downloads or Social Links
 * [Download](/www-pdf-archive/OWASP_Top_10-2017_%28en%29.pdf.pdf){:target='_blank' rel='noopener'}
-* [Other languages &rarr; tab 'translation_efforts']({{site.baseurl}}/#div-translation_efforts)
+* [Other languages &rarr; tab 'Translation Efforts']({{site.baseurl}}/#div-translation_efforts)
 * [Twitter](https://twitter.com/owasptop10)
 
 ### Code Repository
