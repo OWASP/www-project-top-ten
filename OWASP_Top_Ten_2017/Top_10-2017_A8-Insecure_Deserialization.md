@@ -71,7 +71,7 @@ An attacker changes the serialized object to give themselves admin privileges:<b
 * [OWASP AppSecUSA 2017: Friday the 13th JSON Attacks](https://speakerdeck.com/pwntester/friday-the-13th-json-attacks)<br>
 <br>
 **External**<br>
-* [CWE-502: eserialization of Untrusted Data](https://cwe.mitre.org/data/definitions/502.html)<br>
+* [CWE-502: Deserialization of Untrusted Data](https://cwe.mitre.org/data/definitions/502.html)<br>
 * [Java Unmarshaller Security](https://github.com/mbechler/marshalsec)<br>
 * [OWASP AppSec Cali 2015: Marshalling Pickles](http://frohoff.github.io/appseccali-marshalling-pickles/)
 {% include t10_subsection_end.html %}
