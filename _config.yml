@@ -14,3 +14,6 @@ default_lang:   'en'
 languageNames:
   de: Deutsch
   en: English
+
+code_user: OWASP
+code_repo: Top10
