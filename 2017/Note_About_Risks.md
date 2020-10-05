@@ -9,6 +9,9 @@ layout: full-width-document
 author:
 contributors:
 tags: OWASP Top Ten 2017, Top Ten
+redirect_from:
+  - OWASP_Top_Ten_2017/Top_10-2017_Note_About_Risks.html
+  - OWASP_Top_Ten_2017/Top_10-2017_Note_About_Risks
 
 ---
 
@@ -22,7 +25,7 @@ Our methodology includes three likelihood factors for each weakness (prevalence,
 <br>
 **Note**: This approach does not take the likelihood of the threat agent into account. Nor does it account for any of the various technical details associated with your particular application. Any of these factors could significantly affect the overall likelihood of an attacker finding and exploiting a particular vulnerability. This rating does not take into account the actual impact on your business. *Your organization* will have to decide how much security risk from applications and APIs *the organization* is willing to accept given your culture, industry, and regulatory environment. The purpose of the OWASP Top 10 is not to do this risk analysis for you.
 <br>
-The following illustrates our calculation of the risk for [A6:2017-Security Misconfiguration](Top_10-2017_A6-Security_Misconfiguration.md).
+The following illustrates our calculation of the risk for [A6:2017-Security Misconfiguration](A6_2017-Security_Misconfiguration).
 <br>
 {% include risk_calculation_table.html %}
 {% include t10_subsection_end.html %}

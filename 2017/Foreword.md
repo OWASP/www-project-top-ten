@@ -9,6 +9,9 @@ layout: full-width-document
 author:
 contributors:
 tags: OWASP Top Ten 2017, Top Ten
+redirect_from:
+  - OWASP_Top_Ten_2017/Top_10-2017_Foreword.html
+  - OWASP_Top_Ten_2017/Top_10-2017_Foreword
 
 ---
 
@@ -22,7 +25,7 @@ Although the original goal of the OWASP Top 10 project was simply to raise aware
 <br>
 In this release, issues and recommendations are written concisely and in a testable way to assist with the adoption of the OWASP Top 10 in application security programs. We encourage large and high performing organizations to use the [OWASP Application Security Verification Standard (ASVS)](/www-project-application-security-verification-standard) if a true standard is required, but for most, the OWASP Top 10 is a great start on the application security journey.
 <br>
-We have written up a range of suggested next steps for different users of the OWASP Top 10, including [What's Next for Developers](Top_10-2017_What%2527s_Next_for_Developers), [What's Next for Security Testers](Top_10-2017_What%2527s_Next_for_Security_Testers), [What's Next for Organizations](Top_10-2017_What%2527s_Next_for_Organizations), which is suitable for CIOs and CISOs, and [What's Next for Application Managers](Top_10-2017_What%2527s_Next_for_Application_Managers), which is suitable for application managers or anyone responsible for the lifecycle of the application.
+We have written up a range of suggested next steps for different users of the OWASP Top 10, including [What's Next for Developers](What%2527s_Next_for_Developers), [What's Next for Security Testers](What%2527s_Next_for_Security_Testers), [What's Next for Organizations](What%2527s_Next_for_Organizations), which is suitable for CIOs and CISOs, and [What's Next for Application Managers](What%2527s_Next_for_Application_Managers), which is suitable for application managers or anyone responsible for the lifecycle of the application.
 <br>
 In the long term, we encourage all software development teams and organizations to create an application security program that is compatible with your culture and technology. These programs come in all shapes and sizes. Leverage your organization's existing strengths to measure and improve your application security program using the [Software Assurance Maturity Model](/www-project-samm).
 <br>
@@ -42,5 +45,5 @@ Lastly, we wish to thank the founding leadership of the OWASP Top 10 project, Da
 {%- include t10_subsection.html text="Project Sponsorship" pos="whole" -%}
 Thanks to [Autodesk](https://www.autodesk.com/) for sponsoring the OWASP Top 10 - 2017.
 <br>
-Organizations and individuals that have provided vulnerability prevalence data or other assistance are listed on the [Acknowledgements page](Top_10-2017_Acknowledgements).
+Organizations and individuals that have provided vulnerability prevalence data or other assistance are listed on the [Acknowledgements page](Acknowledgements).
 {% include t10_subsection_end.html %}

@@ -13,6 +13,11 @@ exploitability: 2
 prevalence: 3
 detectability: 1
 technical: 2
+redirect_from:
+  - OWASP_Top_Ten_2017/Top_10-2017_A10-Insufficient_Logging%2526Monitoring.html
+  - OWASP_Top_Ten_2017/Top_10-2017_A10-Insufficient_Logging%2526Monitoring
+  - OWASP_Top_Ten_2017/Top_10-2017_A10-Insufficient_Logging%252526Monitoring.html
+  - OWASP_Top_Ten_2017/Top_10-2017_A10-Insufficient_Logging%252526Monitoring
 
 ---
 
@@ -39,7 +44,7 @@ Insufficient logging, detection, monitoring and active response occurs any time:
 * Penetration testing and scans by [DAST](/www-community/Vulnerability_Scanning_Tools) tools (such as [OWASP ZAP](/www-project-zap)) do not trigger alerts.<br>
 * The application is unable to detect, escalate, or alert for active attacks in real time or near real time.<br>
 
-You are vulnerable to information leakage if you make logging and alerting events visible to a user or an attacker (see [A3:2017-Sensitive Data Exposure](Top_10-2017_A3-Sensitive_Data_Exposure)).
+You are vulnerable to information leakage if you make logging and alerting events visible to a user or an attacker (see [A3:2017-Sensitive Data Exposure](A3_2017-Sensitive_Data_Exposure)).
 
 {%- include t10_subsection.html token="howToPrevent" pos="right" -%}
 As per the risk of the data stored or processed by the application:<br>

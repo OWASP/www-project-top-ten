@@ -8,7 +8,11 @@ layout: full-width-document
 author:
 contributors:
 tags: OWASP Top Ten 2017, Top Ten
-
+redirect_from:
+  - OWASP_Top_Ten_2017/Top_10-2017_What%2527s_Next_for_Organizations.html
+  - OWASP_Top_Ten_2017/Top_10-2017_What%2527s_Next_for_Organizations
+  - OWASP_Top_Ten_2017/Top_10-2017_What%252527s_Next_for_Organizations.html
+  - OWASP_Top_Ten_2017/Top_10-2017_What%252527s_Next_for_Organizations
 
 ---
 

@@ -1,6 +1,7 @@
 remote_theme:   "owasp/www--site-theme"
 plugins:
  - jekyll-include-cache-0.2.0
+ - jekyll-redirect-from
   
 project:
     name:       "OWASP Top Ten Project"

@@ -9,6 +9,9 @@ layout: full-width-document
 author:
 contributors:
 tags: OWASP Top Ten 2017, Top Ten
+redirect_from:
+  - OWASP_Top_Ten_2017/Top_10-2017_Acknowledgements.html
+  - OWASP_Top_Ten_2017/Top_10-2017_Acknowledgements
 
 ---
 
@@ -27,4 +30,4 @@ We’d like to thank the individual contributors who spent many hours collective
 <br>
 And everyone else who provided feedback via Twitter, email, and other means.
 <br>
-We would be remiss not to mention that Dirk Wetter, Jim Manico, and Osama Elnaggar have provided extensive assistance. Also, Chris Frohoff and Gabriel Lawrence provided invaluable support in the writing of the new [A8:2017-Insecure Deserialization](Top_10-2017_A8-Insecure_Deserialization.html) risk.
+We would be remiss not to mention that Dirk Wetter, Jim Manico, and Osama Elnaggar have provided extensive assistance. Also, Chris Frohoff and Gabriel Lawrence provided invaluable support in the writing of the new [A8:2017-Insecure Deserialization](A8_2017-Insecure_Deserialization) risk.
