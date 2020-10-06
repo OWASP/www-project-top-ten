@@ -13,6 +13,9 @@ exploitability: 2
 prevalence: 2
 detectability: 3
 technical: 3
+redirect_from:
+  - OWASP_Top_Ten_2017/Top_10-2017_A4-XML_External_Entities_(XXE).html
+  - OWASP_Top_Ten_2017/Top_10-2017_A4-XML_External_Entities_(XXE)
 
 ---
 

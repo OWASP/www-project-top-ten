@@ -1,0 +1,47 @@
+<section class="member">
+    {% assign site_base_url = 'https://owasp.org' %}
+      <script type="text/javascript">
+        var members = [];
+        $(function() {
+          
+          corp_members = YAML.load('{{site_base_url}}/assets/sitedata/corp_members.yml');
+          $.each(corp_members, function (index) {
+            members.push(this);
+            });
+            var randomIndexUsed = [];
+            var counter = 0;
+            var numberOfImages = 10;
+            if(members.length > 0)
+            {
+              var htmlstring = "";
+              while (counter < numberOfImages)
+              {
+                  var randomIndex;
+                  var img;
+    
+                  randomIndex = Math.floor(Math.random() * members.length);
+    
+                  if (randomIndexUsed.indexOf(randomIndex) == "-1")
+                  {
+                      counter++;
+                      htmlstring += '<a href="'+ members[randomIndex]["url"] + '" class="alt-member-logo" rel="sponsored noopener noreferrer" target="_blank" onclick="handleOutboundLinkClicks(event);"><img src="https://owasp.org' + members[randomIndex]["image"] + '" alt="image"/></a>';
+                      
+                      randomIndexUsed.push(randomIndex);
+                  }
+              }
+    
+              $("#corp_member_div").html(htmlstring);
+            }
+        });
+      </script>
+      <div class="alt-member-wrapper">
+        <section class="member-list">
+          <h2>A selection of our Corporate Supporters</h2>
+          <div id="corp_member_div">
+          </div>
+          <div class="member-cta">
+            <a class="callout-link" href="/supporters">Become a corporate supporter</a>
+          </div>
+        </section>
+      </div>
+    </section>

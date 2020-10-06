@@ -13,6 +13,9 @@ exploitability: 2
 prevalence: 3
 detectability: 2
 technical: 3
+redirect_from:
+  - OWASP_Top_Ten_2017/Top_10-2017_A3-Sensitive_Data_Exposure.html
+  - OWASP_Top_Ten_2017/Top_10-2017_A3-Sensitive_Data_Exposure
 
 ---
 
