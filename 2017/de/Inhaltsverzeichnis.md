@@ -25,7 +25,7 @@ redirect_from:
 &bull; <a href="{{site.baseurl}}{{ ttp.url }}">{{ ttp.title }}</a><br>
 {% endfor %}
 <br>
-Project Page: <a href="{{site.github.url}}" title="{{site.project.name}}"> {{site.project.name}}</a><br>
+Projekt Seite: <a href="{{site.github.url}}" title="{{site.project.name}}"> {{site.project.name}}</a><br>
 <div>
 {%- include t10_subsection.html pos="right" text="Über OWASP" -%}
 Das Open Web Application Security Project (OWASP) ist eine offene Community. OWASP möchte Organisationen in die Lage versetzen, sichere und vertrauenswürdige Anwendungen zu entwickeln, zu kaufen und zu betreiben. 
