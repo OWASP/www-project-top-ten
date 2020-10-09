@@ -6,7 +6,7 @@ order: 6
 en: Top_10
 title: 2017 Top 10
 lang: de
-layout: full-width-document2
+layout: full-width-document
 author:
 contributors:
 tags: OWASP Top Ten 2017 (de), Top Ten, de
