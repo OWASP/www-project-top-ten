@@ -3,7 +3,7 @@
 document: OWASP Top Ten 2017 (de)
 year: 2017
 order: 16
-en: A10_2017-Insufficient_Logging%2526Monitoring
+en: A10_2017-Insufficient_Logging%26Monitoring
 title: A10:2017-Unzureichendes Logging & Monitoring
 lang: de
 layout: full-width-document

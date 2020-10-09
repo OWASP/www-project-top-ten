@@ -3,7 +3,7 @@
 document: OWASP Top Ten 2017 (de)
 year: 2017
 order: 20
-en: What%2526s_Next_for_Application_Managers
+en: What%27s_Next_for_Application_Managers
 title: Nächste Schritte für Anwendungs-Verantwortliche
 lang: de
 layout: full-width-document

@@ -3,7 +3,7 @@
 document: OWASP Top Ten 2017 (de)
 year: 2017
 order: 19
-en: What%2526s_Next_for_Organizations
+en: What%27s_Next_for_Organizations
 title: Nächste Schritte für Organisationen
 lang: de
 layout: full-width-document
@@ -11,7 +11,7 @@ author:
 contributors:
 tags: OWASP Top Ten 2017 (de), Top Ten, de
 redirect_from:
-  - 2017/de/What%2526s_Next_for_Organizations
+  - 2017/de/What%2527s_Next_for_Organizations
 
 ---
 

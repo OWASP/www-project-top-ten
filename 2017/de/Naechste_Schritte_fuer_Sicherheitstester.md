@@ -3,7 +3,7 @@
 document: OWASP Top Ten 2017 (de)
 year: 2017
 order: 18
-en: What%2526s_Next_for_Security_Testers
+en: What%27s_Next_for_Security_Testers
 title: Nächste Schritte für Sicherheitstester
 lang: de
 layout: full-width-document
@@ -11,7 +11,7 @@ author:
 contributors:
 tags: OWASP Top Ten 2017 (de), Top Ten, de
 redirect_from:
-  - 2017/de/What%2526s_Next_for_Security_Testers
+  - 2017/de/What%2527s_Next_for_Security_Testers
 
 ---
 
