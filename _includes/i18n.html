@@ -20,4 +20,8 @@ debug:          <!-- include site.default_lang=\'{{site.default_lang}}\' page.la
 {%- else -%}
     {%- assign _lang=include.lang -%}
 {%- endif -%}
-{{site.data.i18n[_lang][include.token] }}
+{%- if site.data.i18n[_lang][include.token] != nil -%}
+    {{ site.data.i18n[_lang][include.token] }}
+{%- else -%}
+    &lt;Error: Add in 'data/{{ _lang }}.yml' the translation for token '{{ include.token }}', please.&gt;
+{%- endif -%}

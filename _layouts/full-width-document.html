@@ -19,13 +19,20 @@
 
     <main role="main">
       <div class="main-wrapper">
-
-{%- assign spages = site.pages | where_exp: "page", "page.tags contains page.document" | sort: "order" -%}
+{%- assign page_document = page.document -%}
+{%- assign page_lang     = page.lang -%}
+{%- assign page_year     = page.year -%}
+{%- assign previous      = nil -%}
+{%- assign next          = nil -%}
+{%- assign spages = site.pages | where_exp: "page", "page.document == page_document" 
+                               | where:     "year", page_year
+                               | sort:      "order" -%}
 {%- assign getnext = false -%}
 {%- assign getprevious = true -%}
+{%- assign other_lang = "" -%}
 {%- for cs in spages -%}
     {%- if cs.path contains 'index.md' -%}
-    {%- continue -%}
+        {%- continue -%}
     {%- endif -%}
     {%- if getnext -%}
         {%- assign next = cs -%}
@@ -34,16 +41,56 @@
     {%- if cs.url == page.url -%}
         {%- assign getnext = true -%}
         {%- assign getprevious = false -%}
+        {%- if cs.lang == "en" -%}
+            {%- assign page_en = cs.name | replace: ".md", "" -%}
+        {%- else -%}
+            {%- if cs.en != nil and cs.en != "" -%}
+                {%- assign page_en = cs.en -%}
+            {%- endif -%}
+        {%- endif -%}
     {%- endif -%}
     {%- if getprevious -%}
         {%- assign previous = cs -%}
     {%- endif -%}
 {%- endfor -%}
-
     <div id="main" class="page-body tab" role="tabpanel" aria-labelledby="main-link" tabindex="0">
         <div class="doc-title">{{ page.document }}</div>
-        <h1 class="page-title">{{ page.title }}</h1>
-
+        <table style="width: 100%; margin: 0; border: 0; padding: 0; border: 0; background-color: white;">
+        <tr style="background-color: white; border: 0; margin:0;">
+            <td style="width: 67%; text-align: left; border: 0; border-width: 0; margin:0;">
+                <h1 class="page-title">{{ page.title }}</h1>
+            </td>
+            <td style="width: 33%; text-align: right; border: 0; border-width: 0; margin:0;">
+                {%- if page_en != nil and page_en != "" and site.languages.size > 1 -%}
+                    Languages: 
+                    {% for lang in site.languages -%}
+                        {%- if lang == page_lang %} 
+                            [{{lang}}] 
+                            {% continue -%}
+                        {%- endif -%}
+                        {%- if lang == "en" -%}
+                            {%- assign _page_name = page_en | append: ".md" -%}
+                            {%- assign _other_page = site.pages 
+                                           | where: "name", _page_name
+                                           | where: "lang", lang
+                                           | where: "year", page_year | first -%}
+                        {%- else -%}
+                            {%- assign _other_page = site.pages 
+                                           | where: "en", page_en 
+                                           | where: "lang", lang
+                                           | where: "year", page_year | first -%}
+                        {%- endif -%}
+                        {%- if _other_page.url %}
+                            {%- assign href = site.baseurl | append: _other_page.url | replace: "www2.", "" | replace: ".html", "" | replace: 'http://', 'https://' -%}
+                            <a href="{{ href }}" class="{{ lang }}">{{ lang }}</a>  
+                        {%- else %}
+                            <a href="{{ site.baseurl }}{%- include i18n.html token='baseURL' lang=lang -%}" class="{{ lang }}">{{ lang }}</a>  
+                        {%- endif -%} 
+                    {%- endfor -%}
+                {%- endif -%}
+            </td>
+        </tr>
+        </table>
     <nav role="navigation" aria-label="navigate page">
         <table style="width: 100%;">
         <tr style="background-color: white; border: 0;">

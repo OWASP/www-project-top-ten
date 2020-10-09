@@ -31,7 +31,7 @@ We asked the community to provide insight into two forward looking weakness cate
 <br>
 **Merged or retired, but not forgotten:**<br>
 * [A4-Insecure Direct Object References](https://wiki.owasp.org/index.php/Top_10_2013-A4-Insecure_Direct_Object_References) and [A7-Missing Function Level Access Control](https://wiki.owasp.org/index.php/Top_10_2013-A7-Missing_Function_Level_Access_Control) merged into [A5:2017-Broken Access Control](A5_2017-Broken_Access_Control).<br>
-* [A8-Cross-Site Request Forgery (CSRF)](https://wiki.owasp.org/index.php/Top_10_2013-A8-Cross-Site_Request_Forgery_(CSRF)), as many frameworks include CSRF defenses, it was found in only 5% of applications.<br>
+* [A8-Cross-Site Request Forgery (CSRF)](https://wiki.owasp.org/index.php/Top_10_2013-A8-Cross-Site_Request_Forgery_(CSRF)), as many frameworks include [CSRF](/www-community/attacks/csrf) defenses, it was found in only 5% of applications.<br>
 * [A10-Unvalidated Redirects and Forwards](https://wiki.owasp.org/index.php/Top_10_2013-A10-Unvalidated_Redirects_and_Forwards), while found in approximately in 8% of applications, it was edged out overall by XXE.<br>
 
 {% include t10_subsection_end.html %}
