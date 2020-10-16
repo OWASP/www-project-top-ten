@@ -27,7 +27,7 @@ In dieser Auflage, sind Sicherheitsrisiken und Empfehlungen nachvollziehbar prä
 <br>
 Über die OWASP Top 10 hinaus existieren weitere Handreichungen für unterschiedliche Nutzer: So richtet sich <b>Nächste Schritte für Software-Entwickler</b>, <b>Nächste Schritte für Sicherheitstester</b> und <b>Nächste Schritte für Organisationen</b> primär an CIOs und CISOs, <b>Nächste Schritte für Anwendungs-Verantwortliche</b> eher an zuständige IT-Mitarbeiter.
 <br>
-Langfristig möchten wir Sie ermuntern, Ihre eigene Richtlinie zur Anwendungssicherheit zu erstellen, die zu Ihrer Firmenkultur und Technologie passt. Eine solche Richtlinie kann es in allen möglichen Varianten geben. Nutzen Sie die bestehenden Kompetenzen in Ihrer Organisation, um die Anwendungssicherheit auch mit Hilfe des [Software Assurance Maturity Model (OWASP-SAMM)](https://www.owasp.org/index.php/OWASP_SAMM_Project)-Projekts zu verbessern.
+Langfristig möchten wir Sie ermuntern, Ihre eigene Richtlinie zur Anwendungssicherheit zu erstellen, die zu Ihrer Firmenkultur und Technologie passt. Eine solche Richtlinie kann es in allen möglichen Varianten geben. Nutzen Sie die bestehenden Kompetenzen in Ihrer Organisation, um die Anwendungssicherheit auch mit Hilfe des [Software Assurance Maturity Model (OWASP-SAMM)](/www-project-samm/)-Projekts zu verbessern.
 <br>
 Wir hoffen, dass die OWASP Top 10 Ihnen bei der Verbesserung der Anwendungssicherheit helfen. Bei Fragen, Kommentare und Ideen besuchen Sie gerne die GitHub-Projektseite der englischen Original-Version:<br>
 * [https://github.com/OWASP/Top10/issues](https://github.com/OWASP/Top10/issues)<br>
@@ -44,5 +44,5 @@ Zuletzt möchten wir uns bei den Initiatoren des OWASP Top 10 Projekts, Dave Wic
 {%- include t10_subsection.html  pos="whole" text="Attribution / Projekt Sponsoren" -%}
 Unser Dank geht an [Autodesk](https://www.autodesk.com) für ihre finanzielle Unterstützung zur Erstellung der OWASP Top 10 - 2017.
 <br>
-Firmen und Personen, die Informationen zum Vorkommen von Schwachstellen beigesteuert haben oder die das Projekt auf andere Art und Weise unterstützt haben, sind auf der Seite <b>'[Danksagung](0xd1-data-contributors.md)'</b> erwähnt.
+Firmen und Personen, die Informationen zum Vorkommen von Schwachstellen beigesteuert haben oder die das Projekt auf andere Art und Weise unterstützt haben, sind auf der Seite <b>'[Danksagung](Danksagung)'</b> erwähnt.
 {%- include t10_subsection_end.html -%}
