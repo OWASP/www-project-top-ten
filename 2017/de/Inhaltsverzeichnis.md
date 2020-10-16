@@ -20,7 +20,7 @@ redirect_from:
 {%- include t10_subsection_begin.html -%}
 {%- include t10_subsection.html pos="firstLeft" text="Inhaltsverzeichnis" -%}
 </div>
-{%- assign top_ten_pages = site.pages | where:"document","OWASP Top Ten 2017 (de)" | sort: "order" %}
+{%- assign top_ten_pages = site.pages | where:"document","OWASP Top Ten 2017 (de)" | sort: "order" -%}
 {%- for ttp in top_ten_pages -%}
 &bull; <a href="{{site.baseurl}}{{ ttp.url }}">{{ ttp.title }}</a><br>
 {% endfor %}
@@ -37,18 +37,18 @@ Von OWASP kann man folgendes erwarten; stets frei verfügbar und jedermann zugä
 * Vorträge und [Videos](https://www.youtube.com/user/OWASPGLOBAL).<br>
 * ["Cheat sheets"](https://owasp.org/www-project-cheat-sheets/) zu vielen sicherheitsrelevanten Themen.<br>
 * Standard Security-Controls und Programm-Bibliotheken.<br>
-* [Lokale "Chapter" auf der ganzen Welt](https://owasp.org/chapters/) und <b>[Stammtische](0x01-foreword_de.md)</b>.<br>
+* [Lokale "Chapter" auf der ganzen Welt](https://owasp.org/chapters/) und <b>[Stammtische](/www-chapter-germany/stammtische/)</b>.<br>
 * Neueste Forschung.<br>
 * Große und häufige [Konferenzen auf der ganzen Welt](https://owasp.org/events/).<br>
 * [Mailinglisten](https://groups.google.com/a/owasp.org/forum/#!overview). <br>
 <br>
 Alle Informationen auf [https://www.owasp.org](https://www.owasp.org) bzw. [https://www.owasp.de](https://www.owasp.de).<br>
 <br>
-Alle OWASP Werkzeuge, Dokumente, Videos, Präsen-tationen und Chapter sind frei verfügbar und stehen jedem offen, der Anwendungssicherheit weiterentwickeln möchte. 
+Alle OWASP Werkzeuge, Dokumente, Videos, Präsentationen und Chapter sind frei verfügbar und stehen jedem offen, der Anwendungssicherheit weiterentwickeln möchte. 
 <br><br>
-Mangelnde Anwendungssicherheit begreifen wir als ein personen-, prozess- und technologie-bezogenes Problem, da die meisten wirksamen Ansätze für Anwendungs-sicherheit Verbesserungen in diesen Feldern erfordern.
+Mangelnde Anwendungssicherheit begreifen wir als ein personen-, prozess- und technologie-bezogenes Problem, da die meisten wirksamen Ansätze für Anwendungssicherheit Verbesserungen in diesen Feldern erfordern.
 <br><br>
-OWASP ist eine neue Art von Organisation. Wir unterliegen keinem kommerziellen Druck. Das erlaubt uns unvorein-genommene, praktikable und kosteneffiziente Informationen über Anwendungssicherheit bereitzustellen. 
+OWASP ist eine neue Art von Organisation. Wir unterliegen keinem kommerziellen Druck. Das erlaubt uns unvoreingenommene, praktikable und kosteneffiziente Informationen über Anwendungssicherheit bereitzustellen. 
 <br><br>
 OWASP ist nicht von Dritten abhängig, wenngleich wir die sachkundige Verwendung freier und kommerzieller Technologien unterstützen. OWASP erstellt viele unterschiedliche Materialien auf Basis eines kollaborativen, transparenten und offenen Ansatzes. 
 <br><br>
