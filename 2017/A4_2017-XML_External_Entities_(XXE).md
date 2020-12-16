@@ -77,7 +77,7 @@ Numerous public XXE issues have been discovered, including attacking embedded de
 * [OWASP Cheat Sheet: XML Security](https://cheatsheetseries.owasp.org/cheatsheets/XML_Security_Cheat_Sheet.html)<br>
 <br>
 **External**<br>
-* [CWE-611: mproper Restriction of XXE](https://cwe.mitre.org/data/definitions/611.html)<br>
+* [CWE-611: Improper Restriction of XXE](https://cwe.mitre.org/data/definitions/611.html)<br>
 * [Billion Laughs Attack](https://en.wikipedia.org/wiki/Billion_laughs_attack)<br>
 * [SAML Security XML External Entity Attack](https://secretsofappsecurity.blogspot.tw/2017/01/saml-security-xml-external-entity-attack.html)<br>
 * [Detecting and exploiting XXE in SAML Interfaces](https://web-in-security.blogspot.tw/2014/11/detecting-and-exploiting-xxe-in-saml.html)<br>
