@@ -1,6 +1,7 @@
 {%- comment -%} ---------------------------------------------------------------------------
  include:       risk_calculation_table.html
- description:   Table is included by the page 'Top_10-2017_Note_About_Risks.md'
+ description:   Table is included by the pages '2017/Note_About_Risks.md'
+                and '2017/de/Details zu den Risiko-Faktoren.md'
  usage:         {%- include risk_calculation_table.html -%}
  parameters:    (none)
 ------------------------------------------------------------------------ {%- endcomment -%} 
@@ -44,15 +45,15 @@
 </tr>
 <tr>
  <td colspan="3" style="border: 1px solid #444444; background-color: #D9D9D9; text-align: center; padding: 4px;">
- <span style="font-weight: bold; font-size: 150%; color: red;">Likelihood Rating: 3.0</span><br/>
- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Average of Exploitability, Prevalence and Detectability)</td>
+ <span style="font-weight: bold; font-size: 150%; color: red;">{%- include i18n.html token='likelihoodRating' -%}: 3.0</span><br/>
+ {%- include i18n.html token='likelihoodDescription' -%}</td>
  <td style="border: 1px solid #444444; background-color: #D9D9D9; text-align: center; padding: 4px;"><span style="font-weight: bold; font-size: 150%; color: red;">*&nbsp;2&nbsp;&nbsp;</span></td>
  </tr>
 <tr>
  <td style="border: 0px solid #444444; background-color: #F2F1FF;">&nbsp;</td>
  <td colspan="3"  style="border: 1px solid #444444; background-color: #D9D9D9; text-align: center; padding: 4px;">
-  <span style="font-weight: bold; font-size: 150%; color: red;">Risk Ranking: 6.0</span><br/>
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Likelihood * Impact)</td>
+  <span style="font-weight: bold; font-size: 150%; color: red;">{%- include i18n.html token='riskRanking' -%}: 6.0</span><br/>
+  {%- include i18n.html token='riskDescription' -%}</td>
 </tr>
 </table></center> <!-- End Risk Calculation Table -->
 <div markdown="span">

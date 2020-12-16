@@ -1,0 +1,55 @@
+<section class="member">
+    {% assign site_base_url = 'https://owasp.org' %}
+      <script type="text/javascript">
+        var members = [];
+        $(function() {
+          
+          corp_members = YAML.load('{{site_base_url}}/assets/sitedata/corp_members.yml');
+          $.each(corp_members, function (index) {
+            members.push(this);
+            });
+            var randomIndexUsed = [];
+            var counter = 0;
+            var numberOfImages = 7;
+            if(members.length > 0)
+            {
+              var htmlstring = "";
+              while (counter < numberOfImages)
+              {
+                  var randomIndex;
+                  var img;
+    
+                  randomIndex = Math.floor(Math.random() * members.length);
+    
+                  if (randomIndexUsed.indexOf(randomIndex) == "-1")
+                  {
+                      counter++;
+                      htmlstring += '<a href="'+ members[randomIndex]["url"] + '" class="alt-member-logo" rel="sponsored noopener noreferrer" target="_blank" onclick="handleOutboundLinkClicks(event);"><img src="https://owasp.org' + members[randomIndex]["image"] + '" alt="image"/></a>';
+                      
+                      randomIndexUsed.push(randomIndex);
+                  }
+              }
+    
+              $("#corp_member_div").html(htmlstring);
+              
+          var randi = Math.floor(Math.random() * members.length);
+          htmlstring = '<h3>Spotlight to supporter ' + members[randi]["name"] + ': </h3>';
+          htmlstring += '<a href="'+ members[randi]["url"] + '" rel="sponsored nopener noreferrer" target="_blank" onclick="handleOutboundLinkClicks(event);"><img src="https://owasp.org' + members[randi]["image"] + '" alt="image" /></a>';
+          htmlstring += '<p>' + members[randi]["description"] + '</p>';
+          $(".member-spotlight").html(htmlstring);
+            }
+        });
+      </script>
+      <div class="alt-member-wrapper" >
+        <section class="member-list">
+          <h2>Corporate Supporters</h2>
+          <div id="corp_member_div" style="width: 70%">
+          </div>
+          <section class="member-spotlight" style="width: 30%" >
+          </section>
+          <div class="member-cta">
+            <a class="callout-link" href="/supporters">Become a corporate supporter</a>
+          </div>
+        </section>
+      </div>
+    </section>

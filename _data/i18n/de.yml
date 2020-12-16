@@ -1,0 +1,43 @@
+baseURL:                        /2017/de/
+pdfDocument:                    /www-chapter-germany/projekte/top_10/
+pdfVersion:                     PDF Version
+tableOfContents:                Inhaltsverzeichnis
+applicationSpecific:            Anwendungs-<br>spezifisch
+appSpecific:                    Anw.-<br>spezifisch
+applicationBusinessSpecific:    Anwendungs-/<br>Geschäftsspezifisch
+appBusinessSpecific:            Anw.-/<br>Geschäftsspez.
+businessSpecific:               Geschäftsspezifisch
+risk:                           RISIKO
+threatAgents:                   Bedrohungsquellen
+attackVectors:                  Angriffsvektoren
+securityWeakness:               Schwachstellen
+weakness:                       Schwachstellen
+impacts:                        Auswirkungen
+technicalImpacts:               Technische Auswirkung
+technical:                      technisch
+business:                       Geschäftl.
+businessImpacts:                Auswirkung auf das Unternehmen
+businessQuestionmark:           Geschäftl. ?
+exploitability:                 Ausnutzbarkeit
+easy:                           EINFACH
+average:                        DURCHSCHNITTLICH
+difficult:                      SCHWIERIG
+prevalence:                     Verbreitung
+veryWidespread:                 AUSSERGEWÖHNLICH HÄUFIG
+widespread:                     SEHR HÄUFIG
+common:                         HÄUFIG
+uncommon:                       SELTEN
+detectability:                  Auffindbarkeit
+severe:                         SCHWERWIEGEND
+moderate:                       MITTEL
+minor:                          GERING
+undefined:                      undefiniert
+likelihoodRating:               Bewertung der Eintrittswahrscheinlichkeit
+likelihoodDescription:          (Durchschnitt von Ausnutzbarkeit, Verbreitung und Auffindbarkeit)
+riskRanking:                    Risikoeinstufung
+riskDescription:                (Wahrscheinlichkeit * technische Auswirkung)
+score:                          Wert
+isTheApplicationVulnerable:     Ist die Anwendung verwundbar?
+howToPrevent:                   Wie kann ich das verhindern?
+exampleAttackScenarios:         Mögliche Angriffsszenarien
+references:                     Referenzen

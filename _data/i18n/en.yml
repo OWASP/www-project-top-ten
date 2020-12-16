@@ -1,5 +1,6 @@
-baseURL:                        /OWASP_Top_Ten_2017/
+baseURL:                        /2017/
 pdfDocument:                    https://github.com/OWASP/Top10/raw/master/2017/OWASP%20Top%2010-2017%20(en).pdf
+pdfVersion:                     PDF version
 tableOfContents:                Table of Contents
 applicationSpecific:            Application Specific
 appSpecific:                    App. Specific
@@ -31,6 +32,10 @@ severe:                         SEVERE
 moderate:                       MODERATE
 minor:                          MINOR
 undefined:                      undefined
+likelihoodRating:               Likelihood Rating
+likelihoodDescription:          (Average of Exploitability, Prevalence and Detectability)
+riskRanking:                    Risk Ranking
+riskDescription:                (Likelihood * Impact)
 score:                          Score
 isTheApplicationVulnerable:     Is the Application Vulnerable?
 howToPrevent:                   How to Prevent
