@@ -35,7 +35,7 @@ In 2016, identifying a breach took an [average of 191 days](https://www-01.ibm.c
 
 {%- include t10_subsection_begin.html -%}
 {%- include t10_subsection.html token="isTheApplicationVulnerable" pos="firstLeft" -%}
-Insufficient logging, detection, monitoring and active response occurs any time:<br>
+Insufficient logging, detection, monitoring and active response never occurs:<br>
 * Auditable events, such as logins, failed logins, and high-value transactions are not logged.<br>
 * Warnings and errors generate no, inadequate, or unclear log messages.<br>
 * Logs of applications and APIs are not monitored for suspicious activity.<br>
