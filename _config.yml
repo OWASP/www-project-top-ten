@@ -1,4 +1,4 @@
-remote_theme:   "owasp/www--site-theme"
+remote_theme:   "owasp/www--site-theme@main"
 plugins:
  - jekyll-include-cache-0.2.0
  - jekyll-redirect-from
