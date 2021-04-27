@@ -39,7 +39,7 @@ There are a few ways that data can be contributed:
 1.	Email a CSV/Excel file with the dataset(s) to brian.glas@owasp.org
 2.	Upload a CSV/Excel file to a "contribution folder" (coming soon)
 
-Template examples can be found in GitHub: [https://github.com/OWASP/Top10/tree/master/2020/Data](https://github.com/OWASP/Top10/tree/master/2020/Data)
+Template examples can be found in GitHub: [https://github.com/OWASP/Top10/tree/master/2021/Data](https://github.com/OWASP/Top10/tree/master/2021/Data)
 
 <br/>
 
