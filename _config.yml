@@ -7,7 +7,7 @@ project:
     name:       "OWASP Top Ten Project"
 
 # The all languages used
-languages:      ["en", "de"]
+languages:      ["en", "de", "es"]
 
 # If not config, the first item of languages will be used as the default.
 default_lang:   'en'
@@ -15,3 +15,4 @@ default_lang:   'en'
 languageNames:
   de: Deutsch
   en: English
+  es: Español
