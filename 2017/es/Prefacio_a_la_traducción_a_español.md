@@ -22,7 +22,8 @@ La traducción a español y su respectivo PDF fue producido por:<br>
 * Cristian Borghello (Cristian.Borghello@owasp.org - [Twitter: @seguinfo])<br>
 <br>
 
-A partir de ese PDF, Vladimir Támara (vtamara@pasosdeJesus.org) preparó la 
-traducción de las páginas web.
+A partir de ese PDF y una propuesta de [Glosario](https://github.com/pasosdeJesus/www-project-top-ten/wiki/Glosario), 
+Vladimir Támara (vtamara@pasosdeJesus.org) preparó la 
+traducción de las páginas web.<br>
 
 {%- include t10_subsection_end.html -%}

@@ -4,7 +4,7 @@ document: OWASP Top Ten 2017 (es)
 year: 2017
 order: 11
 en: A5:2017-Broken Access Control
-title: A5:2017-Perdida de Control de Acceso
+title: A5:2017-Pérdida de Control de Acceso
 lang: es
 layout: full-width-document
 author:

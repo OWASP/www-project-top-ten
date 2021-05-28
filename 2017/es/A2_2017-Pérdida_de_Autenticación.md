@@ -3,7 +3,7 @@
 document: OWASP Top Ten 2017 (es)
 year: 2017
 en: A2:2017-Broken Authentication
-title: A2:2017-Perdida de la Autenticación
+title: A2:2017-Pérdida de la Autenticación
 order: 8
 lang: es
 layout: full-width-document
