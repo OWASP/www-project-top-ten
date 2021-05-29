@@ -17,30 +17,61 @@ redirect_from:
 
 {%- include t10_subsection_begin.html -%}
 {%- include t10_subsection.html text="¿Cuáles son los riesgos en la Seguridad de las Aplicaciones?" pos="firstWhole" -%}
-Attackers can potentially use many different paths through your application to do harm to your business or organization. Each of these paths represents a risk that may, or may not, be serious enough to warrant attention.<br>
+Los atacantes pueden, potencialmente, utilizar diferentes rutas a través 
+de su aplicación para perjudicar su negocio u organización. 
+Cada una de estas rutas representa un riesgo que puede o no ser
+suficientemente grave como para merecer atención.<br>
 <br>
 ![Risks 2017 Image]({{site.baseurl}}/assets/images/Risks-2017.png){:width="80%"}
 <br>
 <br>
-Sometimes these paths are trivial to find and exploit, and sometimes they are extremely difficult. Similarly, the harm that is caused may be of no consequence, or it may put you out of business. To determine the risk to your organization, you can evaluate the likelihood associated with each threat agent, attack vector, and security weakness and combine it with an estimate of the technical and business impact to your organization. Together, these factors determine your overall risk.
+  Algunas veces, estas rutas son fáciles de encontrar y explotar, mientras que
+  otras son extremadamente difíciles.
+  De la misma manera, el perjuicio ocasionado puede no tener consecuencias, o
+  puede dejarlo en la quiebra. 
+  A fin de determinar el riesgo para su organización, 
+  puede evaluar la probabilidad asociada a cada agente de amenaza, vector
+  de ataque, debilidad de seguridad y combinarlo con una estimación del 
+  impacto técnico y de negocio para su organización. 
+  Juntos, estos factores determinan su riesgo general.
 
-{%- include t10_subsection.html text="What is My Risk?" pos="left" width='70%' -%}
-The [OWASP Top 10](https://owasp.org/www-project-top-ten) focuses on identifying the most serious web application security risks for a broad array of organizations. For each of these risks, we provide generic information about likelihood and technical impact using the following simple ratings scheme, which is based on the [OWASP Risk Rating Methodology](/www-community/OWASP_Risk_Rating_Methodology).<br>
+{%- include t10_subsection.html text="¿Cuál es mi Riesgo?" pos="left" width='70%' -%}
+El [OWASP Top 10](https://owasp.org/www-project-top-ten) se enfoca en 
+identificar los riesgos más críticos para un amplio tipo de organizaciones. 
+Para cada uno de estos riesgos, se proporciona información genérica sobre 
+la probabilidad y el impacto técnico, utilizando el siguiente esquema 
+de evaluación, basado en la 
+[Metodología de Evaluación de Riesgos de OWASP](/www-community/OWASP_Risk_Rating_Methodology).<br>.
 <br>
 {% include risk_factor_names_table.html %}
 <br>
-In this edition, we have updated the risk rating system to assist in calculating the likelihood and impact of any given risk. For more details, please see [Note About Risks](Top_10-2017_Note_About_Risks). 
+En esta edición, hemos actualizado el sistema de clasificación de riesgo en
+comparación con la versión anterior, para ayudar a calcular la probabilidad 
+y el impacto de cualquier riesgo determinado. 
+Para obtener más información, consulte las [Notas sobre los riesgos](Top_10-2017_Notas_sobre_los_Riesgos).
 <br>
-Each organization is unique, and so are the threat actors for that organization, their goals, and the impact of any breach. If a public interest organization uses a content management system (CMS) for public information and a health system uses that same exact CMS for sensitive health records, the threat actors and business impacts can be very different for the same software. It is critical to understand the risk to your organization based on applicable threat agents and business impacts.
+Cada organización es única, y también lo son los agentes de amenaza para esa
+organización, sus objetivos y el impacto de cualquier brecha. Si una
+organización de interés público utiliza un sistema de gestión de 
+contenido (CMS) para manipular información pública y el sistema de 
+salud utiliza el mismo CMS para tratar datos sensibles, los agentes 
+de amenaza y los impactos en el negocio son muy distintos para el mismo 
+software. Es fundamental comprender el riesgo para su organización en 
+función de los agentes de amenaza aplicables a su negocio y los 
+impactos comerciales.
 <br>
-Where possible, the names of the risks in the Top 10 are aligned with [Common Weakness Enumeration (CWE)](https://cwe.mitre.org/) weaknesses to promote generally accepted naming conventions and to reduce confusion.
+En la medida de lo posible, los nombres de los riesgos en el Top 10 están
+alineados con el marco de las 
+[Enumeración de Debilidades Comunes (CWE)](https://cwe.mitre.org/) 
+para promover prácticas de seguridad generalmente aceptadas 
+y reducir la confusión. 
 
-{%- include t10_subsection.html text="References" pos="right" -%}
+{%- include t10_subsection.html text="Referencias" pos="right" -%}
 **OWASP**<br>
-* [OWASP Risk Rating Methodology](/www-community/OWASP_Risk_Rating_Methodology)<br>
-* [Article on Threat/Risk Modeling (old wiki)](https://wiki.owasp.org/index.php/Application_Threat_Modeling)<br>
+* [Metodología de evaluación de riesgos de OWASP](/www-community/OWASP_Risk_Rating_Methodology)<br>
+* [Modelado de amenazas y riesgos](https://wiki.owasp.org/index.php/Application_Threat_Modeling)<br>
 <br>
-**External**<br>
+**Externas**<br>
 * [ISO 31000: Risk Management Std](https://www.iso.org/iso-31000-risk-management.html)<br>
 * [ISO 27001: ISMS](https://www.iso.org/isoiec-27001-information-security.html)<br>
 * [NIST Cyber Framework (US)](https://www.nist.gov/cyberframework)<br>

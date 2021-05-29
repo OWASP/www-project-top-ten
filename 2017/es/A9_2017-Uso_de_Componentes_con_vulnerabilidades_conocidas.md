@@ -4,7 +4,7 @@ document: OWASP Top Ten 2017 (es)
 year: 2017
 order: 15
 en: A9:2017-Using Components with Known Vulnerabilities
-title: A9:2017-Componentes con vulnerabilidades conocidas
+title: A9:2017-Uso de Componentes con vulnerabilidades conocidas
 lang: es
 layout: full-width-document
 author:

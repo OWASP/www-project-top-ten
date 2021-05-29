@@ -22,7 +22,7 @@ necesitaba actualizarse.
 Hemos rediseñado completamente el OWASP Top 10, mejorado la metodología,
 utilizado un nuevo proceso de obtención de datos, trabajamos con la
 comunidad, reordenamos los riesgos y los reescribimos desde cero, y agregamos
-referencias a marcos de trabajo (del inglés __frameworks__) y lenguajes que 
+referencias a Marcos de trabajo (del inglés __frameworks__) y lenguajes que 
 son utilizados actualmente.
 En los últimos años, la tecnología base y la arquitectura de las
 aplicaciones ha cambiado significativamente:<br>
@@ -35,7 +35,7 @@ aplicaciones ha cambiado significativamente:<br>
   aplicaciones de una sola página (SPAs) y aplicaciones móviles.
   Las suposiciones arquitectónicas del código, como las llamadas
   confiables, ya no son válidas.<br>
-* Las aplicaciones de una sola página, escritas en marcos de trabajo 
+* Las aplicaciones de una sola página, escritas en Marcos de trabajo 
   JavaScript como
   Angular y React, permiten la creación de interfaces de usuario altamente
   modulares con múltiples características. Las funcionalidades en el lado
@@ -67,9 +67,9 @@ a Datos Sensibles y XXE), los dos nuevos riesgos son: <br>
 **Fusionados o retirados, pero no olvidados:**<br>
 * [A4 – Referencia Directa Insegura a Objetos](https://wiki.owasp.org/index.php/Top_10_2013-A4-Insecure_Direct_Object_References) y
   [A7 – Ausencia de Control de Acceso a las Funciones](https://wiki.owasp.org/index.php/Top_10_2013-A7-Missing_Function_Level_Access_Control) fueron
-  fusionados en [A5:2017 – Pérdida de Control de Acceso](A5_2017–Pérdida_de_Control_de_Acceso]).<br>
-* [A8 – Falsificación de Peticiones en Sitios Cruzados (CSRF)](https://wiki.owasp.org/index.php/Top_10_2013-A8-Cross-Site_Request_Forgery_(CSRF)
-  dado que varios Marcos de trabajo (del inglés __Framework__) incluyen
+  fusionados en [A5:2017 – Pérdida de Control de Acceso](A5_2017–Pérdida_de_Control_de_Acceso).<br>
+* [A8 – Falsificación de Peticiones en Sitios Cruzados (CSRF)](https://wiki.owasp.org/index.php/Top_10_2013-A8-Cross-Site_Request_Forgery_(CSRF))
+  dado que varios Marcos de trabajo incluyen
   defensas contra CSRF, sólo se encontró en el 5% de las aplicaciones.<br>
 * [A10 – Redirecciones y reenvíos no validados](https://wiki.owasp.org/index.php/Top_10_2013-A10-Unvalidated_Redirects_and_Forwards),
   aunque se encuentra en aproximadamente el 8% de las aplicaciones,
