@@ -21,11 +21,18 @@ redirect_from:
 
 {% include risk_begin.html %}
 {%- include risk_description.html pos="firstLeft" -%}
-Rather than directly attacking crypto, attackers steal keys, execute man-in-the-middle attacks, or steal clear text data off the server, while in transit, or from the user’s client, e.g. browser. A manual attack is generally required. Previously retrieved password databases could be brute forced by Graphics Processing Units (GPUs). 
+
+En lugar de atacar la criptografía, los atacantes roban claves, ejecutan
+ataques de Hombre en el Medio (Man in the Middle) o roban datos en texto
+plano del servidor, en tránsito, o desde el cliente.
+Se requiere un ataque manual pero pueden utilizase bases de datos con
+hashes que han sido hechas públicas para obtener las contraseñas originales
+utilizando GPUs.
+Rather than directly attacking crypto, attackers steal keys, execute man-in-the-middle attacks, or steal clear text data off the server, while in transit, or from the user’s client, e.g. browser. A manual attack is generally required. Previously retrieved password databases could be brute forced by Graphics Processing Units (GPUs).
 {%- include risk_description.html pos="mid" -%}
 Over the last few years, this has been the most common impactful attack. The most common flaw is simply not encrypting sensitive data. When crypto is employed, weak key generation and management, and weak algorithm, protocol and cipher usage is common, particularly for weak password hashing storage techniques. For data in transit, server-side weaknesses are mainly easy to detect, but hard for data at rest.
 {%- include risk_description.html pos="right" -%}
-Failure frequently compromises all data that should have been protected. Typically, this information includes sensitive personal information (PII) data such as health records, credentials, personal data, and credit cards, which often require protection as defined by laws or regulations such as the EU GDPR or local privacy laws. 
+Failure frequently compromises all data that should have been protected. Typically, this information includes sensitive personal information (PII) data such as health records, credentials, personal data, and credit cards, which often require protection as defined by laws or regulations such as the EU GDPR or local privacy laws.
 {%- include risk_end.html -%}
 
 {%- include t10_subsection_begin.html -%}
