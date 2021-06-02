@@ -28,42 +28,106 @@ plano del servidor, en tránsito, o desde el cliente.
 Se requiere un ataque manual pero pueden utilizase bases de datos con
 hashes que han sido hechas públicas para obtener las contraseñas originales
 utilizando GPUs.
-Rather than directly attacking crypto, attackers steal keys, execute man-in-the-middle attacks, or steal clear text data off the server, while in transit, or from the user’s client, e.g. browser. A manual attack is generally required. Previously retrieved password databases could be brute forced by Graphics Processing Units (GPUs).
 {%- include risk_description.html pos="mid" -%}
-Over the last few years, this has been the most common impactful attack. The most common flaw is simply not encrypting sensitive data. When crypto is employed, weak key generation and management, and weak algorithm, protocol and cipher usage is common, particularly for weak password hashing storage techniques. For data in transit, server-side weaknesses are mainly easy to detect, but hard for data at rest.
+En los últimos años, este ha sido el ataque de mayor impacto. 
+El error más común es simplemente no cifrar los datos sensibles. 
+Cuando se emplea criptografía, es común la generación y gestión de claves, 
+algoritmos, cifradores y protocolos débiles. En particular algoritmos
+de resumen débiles para el almacenamiento de
+contraseñas. Para los datos en tránsito las debilidades
+son fáciles de detectar, mientras que para los datos
+almacenados es muy difícil. Ambos tienen una
+explotabilidad muy variable
+
 {%- include risk_description.html pos="right" -%}
-Failure frequently compromises all data that should have been protected. Typically, this information includes sensitive personal information (PII) data such as health records, credentials, personal data, and credit cards, which often require protection as defined by laws or regulations such as the EU GDPR or local privacy laws.
+
+Los fallos con frecuencia comprometen datos que deberían estar protegidos.
+Típicamente, esta información incluye Información Personal Sensible (PII)
+como registros de salud, datos personales, credenciales y tarjetas de
+crédito, que a menudo requieren mayor protección, según lo definido por las
+leyes o reglamentos como el PIBR de la UE o las leyes locales de privacidad.
+
 {%- include risk_end.html -%}
 
 {%- include t10_subsection_begin.html -%}
 {%- include t10_subsection.html token="isTheApplicationVulnerable" pos="firstLeft" -%}
-The first thing is to determine the protection needs of data in transit and at rest. For example, passwords, credit card numbers, health records, personal information and business secrets require extra protection, particularly if that data falls under privacy laws, e.g. EU's General Data Protection Regulation (GDPR), or regulations, e.g. financial data protection such as PCI Data Security Standard (PCI DSS). For all such data:<br>
-* Is any data transmitted in clear text? This concerns protocols such as HTTP, SMTP, and FTP. External internet traffic is especially dangerous. Verify all internal traffic e.g. between load balancers, web servers, or back-end systems.<br>
-* Are any old or weak cryptographic algorithms used either by default or in older code?<br>
-* Are default crypto keys in use, weak crypto keys generated or re-used, or is proper key management or rotation missing?<br>
-* Is encryption not enforced, e.g. are any user agent (browser) security directives or headers missing?<br>
-* Does the user agent (e.g. app, mail client) not verify if the received server certificate is valid?<br>
+Lo primero es determinar las necesidades de protección de los datos
+en tránsito y en almacenamiento. Por ejemplo, contraseñas, números
+de tarjetas de crédito, registros médicos, información personal y datos
+sensibles del negocio requieren protección adicional, especialmente si
+se encuentran en el ámbito de aplicación de leyes de privacidad,
+como por ejemplo el Reglamento General de Protección de Datos
+(RGPD) o regulaciones financieras, como PCI Data Security Standard
+(PCI DSS). Para todos estos datos:<br>
 
-See [ASVS Crypto (V7), Data Protection (V9), and SSL/TLS (V10)](/www-project-application-security-verification-standard)
+* ¿Se transmite datos en texto claro? Esto se refiere a protocolos
+como HTTP, SMTP, TELNET, FTP. El tráfico en Internet es
+especialmente peligroso. Verifique también todo el tráfico interno,
+por ejemplo, entre los balanceadores de carga, servidores web o
+sistemas de backend.<br>
+* ¿Se utilizan algoritmos criptográficos obsoletos o débiles, ya sea
+por defecto o en código heredado? Por ejemplo MD5, SHA1, etc.<br>
+* ¿Se utilizan claves criptográficas predeterminadas, se generan o
+reutilizan claves criptográficas débiles, o falta una gestión o
+rotación adecuada de las claves?<br>
+* Por defecto, ¿se aplica cifrado? ¿se han establecido las directivas
+de seguridad o encabezados para el navegador web?<br>
+* ¿El User-Agent del usuario (aplicación o cliente de correo), verifica
+que el certificado enviado por el servidor sea válido?<br>
+
+Véase también [criptografía en el almacenamiento (V7), protección de datos (V9) y seguridad de la comunicaciones (V10) del ASVS](/www-project-application-security-verification-standard).<br>
 
 {%- include t10_subsection.html token="howToPrevent" pos="right" -%}
-Do the following, at a minimum, and consult the references:<br>
-* Classify data processed, stored or transmitted by an application. Identify which data is sensitive according to privacy laws, regulatory requirements, or business needs.<br>
-* Apply controls as per the classification.<br>
-* Don't store sensitive data unnecessarily. Discard it as soon as possible or use PCI DSS compliant tokenization or even truncation. Data that is not retained cannot be stolen.<br>
-* Make sure to encrypt all sensitive data at rest.<br>
-* Ensure up-to-date and strong standard algorithms, protocols, and keys are in place; use proper key management.<br>
-* Encrypt all data in transit with secure protocols such as TLS with perfect forward secrecy (PFS) ciphers, cipher prioritization by the server, and secure parameters. Enforce encryption using directives like HTTP Strict Transport Security ([HSTS](https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html)).<br>
-* Disable caching for response that contain sensitive data.<br>
-* Store passwords using strong adaptive and salted hashing functions with a work factor (delay factor), such as [Argon2](https://www.cryptolux.org/index.php/Argon2), [scrypt](https://wikipedia.org/wiki/Scrypt), [bcrypt](https://wikipedia.org/wiki/Bcrypt) or [PBKDF2](https://wikipedia.org/wiki/PBKDF2).<br>
-* Verify independently the effectiveness of configuration and settings.
-
+Como mínimo, siga las siguientes recomendaciones y consulte las
+referencias:<br>
+* Clasifique los datos procesados, almacenados o transmitidos por
+  el sistema. Identifique qué información es sensible de acuerdo a
+  las regulaciones, leyes o requisitos del negocio y del país.<br>
+* Aplique los controles adecuados para cada clasificación.<br>
+* No almacene datos sensibles innecesariamente. Descártelos tan
+  pronto como sea posible o utilice un sistema de tokenizacion que
+  cumpla con PCI DSS. Los datos que no se almacenan no pueden
+  ser robados.<br>
+* Cifre todos los datos sensibles cuando sean almacenados.<br>
+* Cifre todos los datos en tránsito utilizando protocolos seguros
+  como TLS con cifradores que utilicen Perfect Forward Secrecy
+  (PFS), priorizando los algoritmos en el servidor. Aplique el cifrado
+  utilizando directivas como HTTP Strict Transport Security 
+  ([HSTS](https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html)).<br>
+* Utilice únicamente algoritmos y protocolos estándares y fuertes e
+  implemente una gestión adecuada de claves. No cree sus propios
+  algoritmos de cifrado.<br>
+* Deshabilite el almacenamiento en cache de datos sensibles.<br>
+* Almacene contraseñas utilizando funciones de hashing adaptables
+  con un factor de trabajo (retraso) además de SALT, como 
+  [Argon2](https://www.cryptolux.org/index.php/Argon2),
+  [scrypt](https://wikipedia.org/wiki/Scrypt), 
+  [bcrypt](https://wikipedia.org/wiki/Bcrypt) o 
+  [PBKDF2](https://wikipedia.org/wiki/PBKDF2).<br>
+• Verifique la efectividad de sus configuraciones y parámetros de
+  forma independiente.<br>
 {%- include t10_subsection.html token="exampleAttackScenarios" pos="left" -%}
-**Scenario #1**: An application encrypts credit card numbers in a database using automatic database encryption. However, this data is automatically decrypted when retrieved, allowing a SQL injection flaw to retrieve credit card numbers in clear text.<br>
 
-**Scenario #2**: A site doesn't use or enforce TLS for all pages or supports weak encryption. An attacker monitors network traffic (e.g. at an insecure wireless network), downgrades connections from HTTPS to HTTP, intercepts requests, and steals the user's session cookie. The attacker then replays this cookie and hijacks the user's (authenticated) session, accessing or modifying the user's private data. Instead of the above they could alter all transported data, e.g. the recipient of a money transfer.<br>
+**Escenario #1**: una aplicación cifra números de tarjetas de crédito
+  en una base de datos utilizando su cifrado automático. Sin
+  embargo, estos datos son automáticamente descifrados al ser
+  consultados, permitiendo que, si existe un error de inyección SQL
+  se obtengan los números de tarjetas de crédito en texto plano.<br>
 
-**Scenario #3**: The password database uses unsalted or simple hashes to store everyone's passwords. A file upload flaw allows an attacker to retrieve the password database. All the unsalted hashes can be exposed with a rainbow table of pre-calculated hashes. Hashes generated by simple or fast hash functions may be cracked by GPUs, even if they were salted.<br>
+**Escenario #2**: un sitio web no utiliza o fuerza el uso de TLS para
+  todas las páginas, o utiliza cifradores débiles. Un atacante
+  monitorea el tráfico de la red (por ejemplo en una red Wi-Fi
+  insegura), degrada la conexión de HTTPS a HTTP e intercepta los
+  datos, robando las cookies de sesión del usuario. El atacante
+  reutiliza estas cookies y secuestra la sesión del usuario (ya
+  autenticado), accediendo o modificando datos privados. También
+  podría alterar los datos enviados.<br>
+
+**Escenario #3**: se utilizan hashes simples o hashes sin SALT para
+  almacenar las contraseñas de los usuarios en una base de datos.
+  Una falla en la carga de archivos permite a un atacante obtener
+  las contraseñas. Utilizando una Rainbow Table de valores precalculados, 
+  se pueden recuperar las contraseñas originales.<br>
 
 {%- include t10_subsection.html token="references" pos="right" -%}
 **OWASP**<br>
@@ -75,7 +139,7 @@ Do the following, at a minimum, and consult the references:<br>
 * [OWASP Cheat Sheet: HSTS](https://cheatsheetseries.owasp.org/cheatsheets/HTTP_Strict_Transport_Security_Cheat_Sheet.html)<br>
 * [OWASP Testing Guide: Testing for weak cryptography](/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/09-Testing_for_Weak_Cryptography/README)<br>
 <br>
-**External**<br>
+**Externos**<br>
 * [CWE-202: Exposure of sens. information through data queries](https://cwe.mitre.org/data/definitions/202.html)<br>
 * [CWE-310: Cryptographic Issues](https://cwe.mitre.org/data/definitions/310.html)<br>
 * [CWE-311: Missing Encryption](https://cwe.mitre.org/data/definitions/311.html)<br>

@@ -25,7 +25,7 @@ Los atacantes tienen acceso a millones de combinaciones de pares de usuario
 y contraseña conocidas (debido a fugas de información), además de
 cuentas administrativas por defecto. Pueden realizar ataques mediante
 herramientas de fuerza bruta o diccionarios para romper los
-condensados (hashes) de las contraseñas.
+resúmenes (hashes) de las contraseñas.
 Los ataques al manejo de la sesión, son bien entendidos, en particular
 respecto a la relación con los testigos de sesión no expirados.
 
@@ -68,7 +68,7 @@ válidos.<br>
   tales como “respuestas basadas en el conocimiento”, que no puedan
   implementarse de manera segura.<br>
 * Almacena las contraseñas en texto claro o cifradas o con
-  condensados (**hashing**) de claves débiles (vea
+  resúmenes (**hashing**) de claves débiles (vea
   [A3:2017-Exposición de Datos Sensibles](A3_2017-Exposición_de_datos_sensibles)).<br>
 * No posee autenticación multi-factor o fue implementada de forma
   ineficaz.<br>
