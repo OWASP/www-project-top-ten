@@ -21,52 +21,118 @@ redirect_from:
 
 {% include risk_begin.html %}
 {%- include risk_description.html pos="firstLeft" -%}
-Attackers can exploit vulnerable XML processors if they can upload XML or include hostile content in an XML document, exploiting vulnerable code, dependencies or integrations.
+
+Los atacantes pueden explotar procesadores XML vulnerables si pueden cargar
+o incluir contenido hostil en un documento XML, explotando código
+vulnerable, dependencias o integraciones.
+
 {%- include risk_description.html pos="mid" -%}
-By default, many older XML processors allow specification of an external entity, a URI that is dereferenced and evaluated during XML processing.<br>
-[SAST](/www-community/Source_Code_Analysis_Tools) tools can discover this issue by inspecting dependencies and configuration. [DAST](/www-community/Vulnerability_Scanning_Tools) tools require additional manual steps to detect and exploit this issue. Manual testers need to be trained in how to test for XXE, as it not commonly tested as of 2017.
+
+De forma predeterminada, muchos procesadores XML antiguos permiten 
+especificar una entidad externa, una URI que se referencia y evalúa 
+durante el procesamiento XML. Las herramientas 
+[SAST](/www-community/Source_Code_Analysis_Tools) pueden descubrir 
+estos problemas inspeccionando las dependencias y la configuración. 
+Las herramientas [DAST](/www-community/Vulnerability_Scanning_Tools) requieren 
+pasos manuales adicionales para detectar y explotar estos problemas. 
+Los testers necesitan ser entrenados para hacer estas pruebas, ya que no 
+eran realizadas antes de 2017
+
 {%- include risk_description.html pos="right" -%}
-These flaws can be used to extract data, execute a remote request from the server, scan internal systems, perform a denial-of-service attack, as well as execute other attacks. The business impact depends on the protection needs of all affected application and data.
+
+Estos defectos se pueden utilizar para extraer datos, ejecutar una solicitud
+remota desde el servidor, escanear sistemas internos, realizar un ataque
+de denegación de servicio y ejecutar otro tipo de ataques.
+El impacto al negocio depende de las necesidades de la aplicación y de los
+datos.
+
 {%- include risk_end.html -%}
 
 {%- include t10_subsection_begin.html -%}
 {%- include t10_subsection.html token="isTheApplicationVulnerable" pos="firstLeft" -%}
-Applications and in particular XML-based web services or downstream integrations might be vulnerable to attack if:<br>
-* The application accepts XML directly or XML uploads, especially from untrusted sources, or inserts untrusted data into XML documents, which is then parsed by an XML processor.<br>
-* Any of the XML processors in the application or SOAP based web services has [document type definitions (DTDs)](https://en.wikipedia.org/wiki/Document_type_definition) enabled. As the exact mechanism for disabling DTD processing varies by processor, it is good practice to consult a reference such as the [OWASP Cheat Sheet 'XXE Prevention'](https://cheatsheetseries.owasp.org/cheatsheets/XML_External_Entity_Prevention_Cheat_Sheet.html).<br>
-* If the application uses SAML for identity processing within federated security or single sign on (SSO) purposes. SAML uses XML for identity assertions, and may be vulnerable.<br>
-* If the application uses SOAP prior to version 1.2, it is likely susceptible to XXE attacks if XML entities are being passed to the SOAP framework.<br>
-Being vulnerable to XXE attacks likely means that the application is vulnerable to denial of service attacks including the Billion Laughs attack
+
+Las aplicaciones y, en particular los servicios web basados en XML, o
+integraciones que utilicen XML, pueden ser vulnerables a este
+ataque si:<br>
+
+* La aplicación acepta XML directamente, carga XML desde
+fuentes no confiables o inserta datos no confiables en
+documentos XML. Por último, estos datos son analizados
+sintácticamente por un procesador XML.<br>
+
+* Cualquiera de los procesadores XML utilizados en la aplicación
+o los servicios web basados en SOAP, poseen habilitadas las
+[definiciones de tipo de documento (DTDs)](https://en.wikipedia.org/wiki/Document_type_definition). 
+Dado que los mecanismos exactos para deshabilitar el procesamiento de
+DTDs varía para cada procesador, se recomienda consultar la
+[hoja de trucos para prevención de XXE de OWASP](https://cheatsheetseries.owasp.org/cheatsheets/XML_External_Entity_Prevention_Cheat_Sheet.html).<br>
+
+* La aplicación utiliza SAML para el procesamiento de
+identidades dentro de la seguridad federada o para propósitos
+de Single Sign-On (SSO). SAML utiliza XML para garantizar la
+identidad de los usuarios y puede ser vulnerable.<br>
+* La aplicación utiliza SOAP en una versión previa a la 1.2 y, si
+las entidades XML son pasadas a la infraestructura SOAP,
+probablemente sea susceptible a ataques XXE.<br>
+* Ser vulnerable a ataques XXE significa que probablemente la
+aplicación también es vulnerable a ataques de denegación de
+servicio, incluyendo el ataque Billion Laughs.<br>
 
 {%- include t10_subsection.html token="howToPrevent" pos="right" -%}
-Developer training is essential to identify and mitigate XXE. Besides that, preventing XXE requires:<br>
-* Whenever possible, use less complex data formats such as JSON, and avoiding serialization of sensitive data.<br>
-* Patch or upgrade all XML processors and libraries in use by the application or on the underlying operating system. Use dependency checkers. Update SOAP to SOAP 1.2 or higher.<br>
-* Disable XML external entity and DTD processing in all XML parsers in the application, as per the [OWASP Cheat Sheet 'XXE Prevention'](https://cheatsheetseries.owasp.org/cheatsheets/XML_External_Entity_Prevention_Cheat_Sheet.html).<br>
-* Implement positive ("whitelisting") server-side input validation, filtering, or sanitization to prevent hostile data within XML documents, headers, or nodes.<br>
-* Verify that XML or XSL file upload functionality validates incoming XML using XSD validation or similar.<br>
-* [SAST](/www-community/Source_Code_Analysis_Tools) tools can help detect XXE in source code, although manual code review is the best alternative in large, complex applications with many integrations.<br>
-If these controls are not possible, consider using virtual patching, API security gateways, or Web Application Firewalls (WAFs) to detect, monitor, and block XXE attacks.
+
+El entrenamiento del desarrollador es esencial para identificar y
+mitigar defectos de XXE. Aparte de esto, prevenir XXE requiere:<br>
+
+* De ser posible, utilice formatos de datos menos complejos
+como JSON y evite la serialización de datos confidenciales.<br>
+
+* Actualice los procesadores y bibliotecas XML que utilice la
+aplicación o el sistema subyacente. Utilice validadores de
+dependencias. Actualice SOAP a la versión 1.2 o superior.<br>
+
+* Deshabilite las entidades externas de XML y procesamiento
+DTD en todos los analizadores sintácticos XML en su
+aplicación, según se indica en la 
+[hoja de trucos para prevención de XXE de OWASP](https://cheatsheetseries.owasp.org/cheatsheets/XML_External_Entity_Prevention_Cheat_Sheet.html).<br>
+
+* Implemente validación de entrada positiva en el servidor (“lista
+blanca”), filtrado y saneado para prevenir el ingreso de
+datos dañinos dentro de documentos, cabeceras y nodos XML.<br>
+
+* Verifique que la funcionalidad de carga de archivos XML o XSL
+valide el XML entrante, usando validación XSD o similar.<br>
+
+* Las herramientas [SAST](/www-community/Source_Code_Analysis_Tools) pueden 
+ayudar a detectar XXE en el código fuente, aunque la revisión manual de 
+código es la mejor alternativa en aplicaciones grandes y complejas.<br>
+
+Si estos controles no son posibles, considere usar parcheo
+virtual, gateways de seguridad de API, o Cortafuegos de
+Aplicaciones Web (WAFs) para detectar, monitorear y bloquear
+ataques XXE.
 
 {%- include t10_subsection.html token="exampleAttackScenarios" pos="left" -%}
-Numerous public XXE issues have been discovered, including attacking embedded devices. XXE occurs in a lot of unexpected places, including deeply nested dependencies. The easiest way is to upload a malicious XML file, if accepted:<br>
 
-**Scenario #1**: The attacker attempts to extract data from the server:<br>
+Han sido publicados numerosos XXE, incluyendo ataques a
+dispositivos embebidos. Los XXE ocurren en una gran cantidad
+de lugares inesperados, incluyendo dependencias
+profundamente anidadas. La manera más fácil es cargar un
+archivo XML malicioso, si es aceptado: <br>
 
+**Escenario #1**: el atacante intenta extraer datos del servidor:<br>
     {% include code_begin.html -%} &lt;?xml version="1.0" encoding="ISO-8859-1"?&gt; {%- include code_end.html %}
     {% include code_begin.html -%} <!DOCTYPE foo [     {%- include code_end.html %}
     {% include code_begin.html -%} <!ELEMENT foo ANY > {%- include code_end.html %}
     {% include code_red_begin.html -%} <!ENTITY xxe SYSTEM "file:///etc/passwd" >]> {%- include code_red_end.html %}
     {% include code_red_begin.html -%} &lt;foo&gt;&xxe;&lt;/foo&gt; {%- include code_red_end.html %}
 
-**Scenario #2**: An attacker probes the server's private network by changing the above ENTITY line to:<br>
-
+**Escenario #2**: cambiando la línea ENTITY anterior, un atacante
+escanea la red privada del servidor:<br>
     {% include code_red_begin.html -%}<!ENTITY xxe SYSTEM "https://192.168.1.1/private" >]>{%- include code_red_end.html %}
 
-**Scenario #3**: An attacker attempts a denial-of-service attack by including a potentially endless file:<br>
-
+**Escenario #3**: incluyendo un archivo potencialmente infinito, un
+atacante intenta un ataque de denegación de servicio:<br>
     {% include code_red_begin.html -%}<!ENTITY xxe SYSTEM "file:///dev/random" >]>{%- include code_red_end.html %}
-
 
 {%- include t10_subsection.html token="references" pos="right" -%}
 **OWASP**<br>
@@ -76,7 +142,7 @@ Numerous public XXE issues have been discovered, including attacking embedded de
 * [OWASP Cheat Sheet: XXE Prevention](https://cheatsheetseries.owasp.org/cheatsheets/XML_External_Entity_Prevention_Cheat_Sheet.html)<br>
 * [OWASP Cheat Sheet: XML Security](https://cheatsheetseries.owasp.org/cheatsheets/XML_Security_Cheat_Sheet.html)<br>
 <br>
-**External**<br>
+**Externos**<br>
 * [CWE-611: Improper Restriction of XXE](https://cwe.mitre.org/data/definitions/611.html)<br>
 * [Billion Laughs Attack](https://en.wikipedia.org/wiki/Billion_laughs_attack)<br>
 * [SAML Security XML External Entity Attack](https://secretsofappsecurity.blogspot.tw/2017/01/saml-security-xml-external-entity-attack.html)<br>
