@@ -21,41 +21,116 @@ redirect_from:
 
 {% include risk_begin.html %}
 {%- include risk_description.html pos="firstLeft" -%}
-Attackers will often attempt to exploit unpatched flaws or access default accounts, unused pages, unprotected files and directories, etc to gain unauthorized access or knowledge of the system.
+
+Los atacantes a menudo intentarán explotar vulnerabilidades sin parchear
+o acceder a cuentas por defecto, páginas no utilizadas, archivos y
+directorios desprotegidos, etc. para obtener acceso o conocimiento del
+sistema o del negocio.
+
 {%- include risk_description.html pos="mid" -%}
-Security misconfiguration can happen at any level of an application stack, including the network services, platform, web server, application server, database, frameworks, custom code, and pre-installed virtual machines, containers, or storage. Automated scanners are useful for detecting misconfigurations, use of default accounts or configurations, unnecessary services, legacy options, etc.
+
+Las configuraciones incorrectas de seguridad pueden ocurrir en cualquier 
+nivel de la pila tecnológica, incluidos los servicios de red, 
+la plataforma, el servidor web, el servidor de aplicaciones, 
+la base de datos, marcos de trabajo, el código personalizado y máquinas
+virtuales preinstaladas, contenedores, etc. 
+Los escáneres automatizados son útiles para detectar configuraciones 
+erróneas, el uso de cuentas o configuraciones predeterminadas, 
+servicios innecesarios, opciones heredadas, etc
+
 {%- include risk_description.html pos="right" -%}
-Such flaws frequently give attackers unauthorized access to some system data or functionality. Occasionally, such flaws result in a complete system compromise.<br>
-The business impact depends on the protection needs of the application and data.
+
+Los defectos frecuentemente dan a los atacantes acceso no autorizado a
+algunos datos o funciones del sistema.
+Ocasionalmente, estos errores resultan en un completo compromiso
+del sistema. 
+El impacto al negocio depende de las necesidades de la aplicación y de los
+datos.
+
 {%- include risk_end.html -%}
 
 {%- include t10_subsection_begin.html -%}
 {%- include t10_subsection.html token="isTheApplicationVulnerable" pos="firstLeft" -%}
-The application might be vulnerable if the application is:<br>
-* Missing appropriate security hardening across any part of the application stack, or improperly configured permissions on cloud services.<br>
-* Unnecessary features are enabled or installed (e.g. unnecessary ports, services, pages, accounts, or privileges).<br>
-* Default accounts and their passwords still enabled and unchanged.<br>
-* Error handling reveals stack traces or other overly informative error messages to users.<br>
-* For upgraded systems, latest security features are disabled or not configured securely.<br>
-* The security settings in the application servers, application frameworks (e.g. Struts, Spring, ASP.NET), libraries, databases, etc. not set to secure values.<br>
-* The server does not send security headers or directives or they are not set to secure values.<br>
-* The software is out of date or vulnerable (see [A9:2017-Using Components with Known Vulnerabilities](A9_2017-Using_Components_with_Known_Vulnerabilities)).<br>
-Without a concerted, repeatable application security configuration process, systems are at a higher risk.
+
+La aplicación puede ser vulnerable si:<br>
+* Falta protección adecuada en cualquier parte de la pila
+tecnológica, o si quedan permisos mal configurados en los servicios de la
+nube.<br>
+* Se encuentran instaladas o habilitadas características
+innecesarias (ej. puertos, servicios, páginas, cuentas o permisos).<br>
+* Las cuentas predeterminadas y sus contraseñas siguen activas y
+sin cambios.<br>
+* El manejo de errores revela a los usuarios trazas de la aplicación
+u otros mensajes demasiado informativos.<br>
+* Para los sistemas actualizados, las nuevas funciones de
+seguridad se encuentran desactivadas o no se encuentran
+configuradas de forma adecuada o segura.<br>
+* Las configuraciones de seguridad en el servidor de aplicaciones,
+en el marco de trabajo de aplicación (ej., Struts, Spring, ASP.NET),
+bibliotecas o bases de datos no se encuentran especificados con
+valores seguros.<br>
+* El servidor no envía directrices o cabeceras de seguridad a los
+clientes o se encuentran configurados con valores inseguros.<br>
+* El software se encuentra desactualizado o posee vulnerabilidades
+(ver [A9: 2017 Uso de componentes con vulnerabilidades conocidas](A9_2017-Uso_de_componentes_con_vulnerabilidades_conocidas)).<br>
+
+Sin un proceso de configuración de seguridad de aplicación
+concertado y repetible, los sistemas corren un mayor riesgo.
 
 {%- include t10_subsection.html token="howToPrevent" pos="right" -%}
-Secure installation processes should be implemented, including:<br>
-* A repeatable hardening process that makes it fast and easy to deploy another environment that is properly locked down. Development, QA, and production environments should all be configured identically, with different credentials used in each environment. This process should be automated to minimize the effort required to setup a new secure environment.<br>
-* A minimal platform without any unnecessary features, components, documentation, and samples. Remove or do not install unused features and frameworks.<br>
-* A task to review and update the configurations appropriate to all security notes, updates and patches as part of the patch management process (see [A9:2017-Using Components with Known Vulnerabilities](A9_2017-Using_Components_with_Known_Vulnerabilities)). In particular, review cloud storage permissions (e.g. S3 bucket permissions).<br>
-* A segmented application architecture that provides effective, secure separation between components or tenants, with segmentation, containerization, or cloud security groups (ACLs).<br>
-* Sending security directives to clients, e.g. [Security Headers](/www-project-secure-headers).<br>
-* An automated process to verify the effectiveness of the configurations and settings in all environments.
+
+Deben implementarse procesos seguros de instalación, incluyendo:<br>
+* Un proceso de fortalecimiento reproducible que agilice y facilite la
+implementación de otro entorno asegurado. Los entornos de
+desarrollo, de control de calidad (QA) y de Producción deben
+configurarse de manera idéntica y con diferentes credenciales
+para cada entorno. Este proceso puede automatizarse para
+minimizar el esfuerzo requerido para configurar cada nuevo
+entorno seguro. <br> 
+* Use una plataforma minimalista sin funcionalidades
+innecesarias, componentes, documentación o ejemplos. Elimine
+o no instale marcos de trabajo y funcionalidades no utilizadas.<br>
+* Siga un proceso para revisar y actualizar las configuraciones
+apropiadas de acuerdo a las advertencias de seguridad y siga
+un proceso de gestión de parches (Ver [A9: 2017 Uso de componentes con vulnerabilidades conocidas](A9_2017-Uso_de_componentes_con_vulnerabilidades_conocidas)).
+En particular, revise los permisos de almacenamiento en la nube (por ejemplo, 
+los permisos de buckets S3).<br>
+* La aplicación debe tener una arquitectura segmentada que
+proporcione una separación efectiva y segura entre
+componentes y acceso a terceros, contenedores o grupos de
+seguridad en la nube (ACLs).<br>
+* Envíe directivas de seguridad a los clientes (por ej. [cabeceras de seguridad](/www-project-secure-headers)).<br>
+* Utilice un proceso automatizado para verificar la efectividad de
+los ajustes y configuraciones en todos los ambientes.<br>
 
 {%- include t10_subsection.html token="exampleAttackScenarios" pos="left" -%}
-**Scenario #1**: The application server comes with sample applications that are not removed from the production server. These sample applications have known security flaws attackers use to compromise the server. If one of these applications is the admin console, and default accounts weren't changed the attacker logs in with default passwords and takes over.<br>
-**Scenario #2**: Directory listing is not disabled on the server. An attacker discovers they can simply list directories. The attacker finds and downloads the compiled Java classes, which they decompile and reverse engineer to view the code. The attacker then finds a serious access control flaw in the application.<br>
-**Scenario #3**: The application server's configuration allows detailed error messages, e.g. stack traces, to be returned to users. This potentially exposes sensitive information or underlying flaws such as component versions that are known to be vulnerable.<br>
-**Scenario #4**: A cloud service provider has default sharing permissions open to the Internet by other CSP users. This allows sensitive data stored within cloud storage to be accessed.
+**Escenario #1**: oceso automatizado para verificar la efectividad de
+los ajustes y configuraciones en todos los ambientes.<br>
+
+{%- include t10_subsection.html token="exampleAttackScenarios" pos="left" -%}
+**Escenario #1**:  el servidor de aplicaciones viene con ejemplos que
+no se eliminan del ambiente de producción. Estas aplicaciones
+poseen defectos de seguridad conocidos que los atacantes usan
+para comprometer el servidor. Si una de estas aplicaciones es la
+consola de administración, y las cuentas predeterminadas no se han
+cambiado, el atacante puede iniciar una sesión<<br>
+
+**Escenario #2**: el listado de directorios se encuentra activado en el
+servidor y un atacante descubre que puede listar los archivos. El
+atacante encuentra y descarga las clases de Java compiladas, las
+descompila, realiza ingeniería inversa y encuentra un defecto en el
+control de acceso de la aplicación.<br>
+
+**Escenario #3**: la configuración del servidor de aplicaciones permite
+retornar mensajes de error detallados a los usuarios, por ejemplo,
+las trazas de pila. Potencialmente esto expone información sensible
+o fallas subyacentes, tales como versiones de componentes que se
+sabe que son vulnerables. <br>
+
+**Escenario #4**: un proveedor de servicios en la nube (PSN o _CSP_) por
+defecto permite a otros usuarios del CSP acceder a sus archivos
+desde Internet. Esto permite el acceso a datos sensibles
+almacenados en la nube.<br>
 
 {%- include t10_subsection.html token="references" pos="right" -%}
 **OWASP**<br>
@@ -63,7 +138,7 @@ Secure installation processes should be implemented, including:<br>
 * [OWASP Testing Guide: Testing for Error Codes](/www-project-web-security-testing-guide/latest/4-Web_Application_Security_Testing/08-Testing_for_Error_Handling/01-Testing_for_Error_Code)<br>
 For additional requirements in this area, see the [Application Security Verification Standard V19 Configuration](/www-project-application-security-verification-standard).<br>
 <br>
-**External**<br>
+**Externos**<br>
 * [NIST Guide to General Server Hardening](https://csrc.nist.gov/publications/detail/sp/800-123/final)<br>
 * [CWE-2: Environmental Security Flaws](https://cwe.mitre.org/data/definitions/2.html)<br>
 * [CWE-16: Configuration](https://cwe.mitre.org/data/definitions/16.html)<br>
