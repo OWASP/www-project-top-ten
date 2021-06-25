@@ -21,46 +21,100 @@ redirect_from:
 
 {% include risk_begin.html %}
 {%- include risk_description.html pos="firstLeft" -%}
-Exploitation of deserialization is somewhat difficult, as off the shelf exploits rarely work without changes or tweaks to the underlying exploit code.
+
+Lograr la explotación de deserialización es difícil, ya que los
+exploits distribuidos raramente funcionan sin cambios o ajustes en
+su código fuente.
+
 {%- include risk_description.html pos="mid" -%}
-This issue is included in the Top 10 based on an [industry survey](https://owasp.blogspot.com/2017/08/owasp-top-10-2017-project-update.html) and not on quantifiable data.<br>
-Some tools can discover deserialization flaws, but human assistance is frequently needed to validate the problem. It is expected that prevalence data for deserialization flaws will increase as tooling is developed to help identify and address it.
+
+Este ítem se incluye en el Top 10 basado en una
+[encuesta a la industria](https://owasp.blogspot.com/2017/08/owasp-top-10-2017-project-update.html) 
+y no en datos cuantificables.<br/>
+Algunas herramientas pueden descubrir 
+defectos de deserialización, pero con frecuencia se necesita ayuda humana 
+para validarlo. Se espera que los datos de prevalencia de estos
+errores aumenten a medida que se desarrollen más
+herramientas para ayudar a identificarlos y abordarlos.
+
 {%- include risk_description.html pos="right" -%}
-The impact of deserialization flaws cannot be overstated. These flaws can lead to remote code execution attacks, one of the most serious attacks possible.<br>
-The business impact depends on the protection needs of the application and data.
+
+No se debe desvalorizar el impacto de los errores de deserialización.
+Pueden llevar a la ejecución remota de código, uno de los ataques más
+serios posibles. El impacto al negocio depende de las
+necesidades de la aplicación y de los datos.
+
 {%- include risk_end.html -%}
 
 {%- include t10_subsection_begin.html -%}
 {%- include t10_subsection.html token="isTheApplicationVulnerable" pos="firstLeft" -%}
-Applications and APIs will be vulnerable if they deserialize hostile or tampered objects supplied by an attacker. This can result in two primary types of attacks:<br>
-* Object and data structure related attacks where the attacker modifies application logic or achieves arbitrary remote code execution if there are classes available to the application that can change behavior during or after deserialization.<br>
-* Typical data tampering attacks such as access-control-related attacks where existing data structures are used but the content is changed.<br>
 
-Serialization may be used in applications for:<br>
-* Remote- and inter-process communication (RPC/IPC)<br>
-* Wire protocols, web services, message brokers<br>
-* Caching/Persistence<br>
-* Databases, cache servers, file systems<br>
-* HTTP cookies, HTML form parameters, API authentication tokens<br>
+Aplicaciones y APIs serán vulnerables si deserializan objetos
+hostiles o manipulados por un atacante.
+Esto da como resultado dos tipos primarios de ataques:<br/>
+* Ataques relacionados con la estructura de datos y objetos;
+donde el atacante modifica la lógica de la aplicación o logra
+una ejecución remota de código que puede cambiar el
+comportamiento de la aplicación durante o después de la
+deserialización.<br/>
+* Ataques típicos de manipulación de datos; como ataques
+relacionados con el control de acceso, en los que se utilizan
+estructuras de datos existentes pero se modifica su
+contenido.<br/>
+
+La serialización puede ser utilizada en aplicaciones para:<br>
+* Comunicación remota e Inter-Procesos (RPC/IPC)<br>
+* Protocolo de comunicaciones, Servicios Web y _Brokers_ de
+mensajes.<br>
+* _Caching_ y Persistencia.<br>
+* Bases de datos, servidores de caché y sistemas de archivos.<br>
+* Galletas HTTP cookies, parametros de formularios HTML, testigos de 
+  autenteicacíond de una API<br>
 
 {%- include t10_subsection.html token="howToPrevent" pos="right" -%}
-The only safe architectural pattern is not to accept serialized objects from untrusted sources or to use serialization mediums that only permit primitive data types. If that is not possible, consider one of more of the following:<br>
-* Implementing integrity checks such as digital signatures on any serialized objects to prevent hostile object creation or data tampering.<br>
-* Enforcing strict type constraints during deserialization before object creation as the code typically expects a definable set of classes. Bypasses to this technique have been demonstrated, so reliance solely on this is not advisable.<br>
-* Isolating and running code that deserializes in low privilege environments when possible.<br>
-* Log deserialization exceptions and failures, such as where the incoming type is not the expected type, or the deserialization throws exceptions.<br>
-* Restricting or monitoring incoming and outgoing network connectivity from containers or servers that deserialize.<br>
-* Monitoring deserialization, alerting if a user deserializes constantly.<br>
+
+El único patrón de arquitectura seguro es no aceptar objetos
+serializados de fuentes no confiables o utilizar medios de
+serialización que sólo permitan tipos de datos primitivos.
+Si esto no es posible, considere alguno de los siguientes puntos:<br>
+* Implemente verificaciones de integridad tales como firmas
+digitales en cualquier objeto serializado, con el fin de detectar
+modificaciones no autorizadas.<br>
+* Durante la deserialización y antes de la creación del objeto,
+exija el cumplimiento estricto de verificaciones de tipo de dato,
+ya que el código normalmente espera un conjunto de clases
+definibles. Se ha demostrado que se puede pasar por alto esta
+técnica, por lo que no es aconsejable confiar sólo en ella.<br>
+* Aísle el código que realiza la deserialización, de modo que se
+ejecute en un entorno con los mínimos privilegios posibles.<br>
+* Registre las excepciones y fallas en la deserialización, tales
+como cuando el tipo recibido no es el esperado, o la
+deserialización produce algún tipo de error.<br>
+* Restrinja y monitoree las conexiones (I/O) de red desde
+contenedores o servidores que utilizan funcionalidades de
+deserialización.<br>
+* Monitoree los procesos de deserialización, alertando si un
+usuario deserializa constantemente.
+<br>
 
 {%- include t10_subsection.html token="exampleAttackScenarios" pos="left" -%}
-**Scenario #1**: A React application calls a set of Spring Boot microservices. Being functional programmers, they tried to ensure that their code is immutable. The solution they came up with is serializing user state and passing it back and forth with each request. An attacker notices the "R00" Java object signature, and uses the Java Serial Killer tool to gain remote code execution on the application server.<br>
 
-**Scenario #2**: A PHP forum uses PHP object serialization to save a "super" cookie, containing the user's user ID, role, password hash, and other state:<br>
-
+**Escenario #1**: una aplicación _React_ invoca a un conjunto de
+microservicios _Spring Boot_. Por ser programadores funcionales,
+intentaron asegurar que su código fuera inmutable. La solución a
+la que llegaron fue serializar el estado del usuario y pasarlo en
+ambos sentidos con cada solicitud. Un atacante advierte la firma
+“R00” del objeto Java, y usa la herramienta Java Serial Killer
+para alcanzar ejecución de código remoto en el servidor de la
+aplicación.<br>
+**Escenario #2**: un foro PHP utiliza serialización de objetos PHP
+para almacenar una “super" galleta HTML, que contiene el ID, rol, hash
+de la contraseña y otros datos del estado del usuario:<br>
     {% include code_red_begin.html -%} a:4:{i:0;i:132;i:1;s:7:"Mallory";i:2;s:4:"user"; {%- include code_red_end.html %}
     {% include code_red_begin.html -%} i:3;s:32:"b6a8b3bea87fe0e05022f8f3c88bc960";} {%- include code_red_end.html %}
 
-An attacker changes the serialized object to give themselves admin privileges:<br>
+Un atacante modifica el objeto serializado para darse privilegios
+de administrador a sí mismo:<br>
 
     {% include code_red_begin.html -%} a:4:{i:0;i:1;i:1;s:5:"Alice";i:2;s:5:"admin"; {%- include code_red_end.html %}
     {% include code_red_begin.html -%} i:3;s:32:"b6a8b3bea87fe0e05022f8f3c88bc960";} {%- include code_red_end.html %}
@@ -73,7 +127,7 @@ An attacker changes the serialized object to give themselves admin privileges:<b
 * [OWASP AppSecEU 2016: Surviving the Java Deserialization Apocalypse](https://speakerdeck.com/pwntester/surviving-the-java-deserialization-apocalypse)<br>
 * [OWASP AppSecUSA 2017: Friday the 13th JSON Attacks](https://speakerdeck.com/pwntester/friday-the-13th-json-attacks)<br>
 <br>
-**External**<br>
+**Externos**<br>
 * [CWE-502: Deserialization of Untrusted Data](https://cwe.mitre.org/data/definitions/502.html)<br>
 * [Java Unmarshaller Security](https://github.com/mbechler/marshalsec)<br>
 * [OWASP AppSec Cali 2015: Marshalling Pickles](http://frohoff.github.io/appseccali-marshalling-pickles/)
