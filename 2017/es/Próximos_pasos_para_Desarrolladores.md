@@ -15,30 +15,53 @@ redirect_from:
 
 ---
 {%- include t10_subsection_begin.html -%}
-{%- include t10_subsection.html text="Establish & Use Repeatable Security Processes and Standard Security Controls" pos="firstWhole" -%}
-Whether you are new to web application security or already very familiar with these risks, the task of producing a secure web application or fixing an existing one can be difficult. If you have to manage a large application portfolio, this task can be daunting.<br>
-To help organizations and developers reduce their application security risks in a cost-effective manner, OWASP has produced numerous free and open resources that you can use to address application security in your organization. The following are some of the many resources OWASP has produced to help organizations produce secure web applications and APIs. On the next page, we present additional OWASP resources that can assist organizations in verifying the security of their applications and APIs.<br>
+{%- include t10_subsection.html text="Establezca y utilice procesos de seguridad repetibles y controles estándar de seguridad" pos="firstWhole" -%}
+
+Independientemente de si usted es nuevo en la seguridad de aplicaciones web o ya
+está familiarizado con estos
+riesgos, la tarea de producir una aplicación web segura o arreglar una ya
+existente puede ser difícil. Si debe gestionar
+una gran cartera de aplicaciones, esta tarea puede resultar desalentadora.<br>
+
+Para ayudar a organizaciones y desarrolladores a reducir los riesgos de
+seguridad de sus aplicaciones de un modo
+rentable, OWASP ha producido un gran número de recursos gratuitos y abiertos,
+que los puede utilizar para gestionar
+la seguridad de las aplicaciones en su organización. A continuación, 
+se muestran algunos de los muchos recursos que OWASP ha producido para ayudar 
+a las organizaciones a generar aplicaciones web y APIs seguras. 
+En las páginas siguientes, presentamos recursos adiciones de OWASP que 
+pueden ayudar a las organizaciones a verificar la
+seguridad de sus aplicaciones y APIs.<br>
 <br>
+
 {% include t10_subsection_inner_round_box.html
-   topic='**Application Security Requirements:**'
-   description="To produce a secure web application, you must define what secure means for that application. OWASP recommends you use the [OWASP Application Security Verification Standard (ASVS)](/www-project-application-security-verification-standard) as a guide for setting the security requirements for your application(s). If you’re outsourcing, consider the [OWASP Secure Software Contract Annex](/www-community/OWASP_Secure_Software_Contract_Annex).
-    **Note**: The annex is for US contract law, so please consult qualified legal advice before using the sample annex."
+   topic='**Requisitos de Seguridad en Aplicaciones**'
+   description="Para producir aplicaciones web seguras, se debe definir qué significa “seguro” para una aplicación en particular. OWASP recomienda utilizar el [Estándar de Verificación de Seguridad en Aplicaciones de OWASP (ASVS)](/www-project-application-security-verification-standard), como una guía para ajustar los requisitos de seguridad de sus aplicaciones. Si el servicio es externo, vea el Anexo [Contrato de software seguro de OWASP](/www-community/OWASP_Secure_Software_Contract_Annex).
+   **Nota**: ese anexo toma en cuenta las leyes de los EE.UU. y por lo tanto se recomienda realizar las consultas legales correspondientes a cada país antes de utilizarlo."
 %}
 {% include t10_subsection_inner_round_box.html
-   topic='**Application Security Architecture:**'
-   description="Rather than retrofitting security into your applications and APIs, it is far more cost effective to design the security in from the start. OWASP recommends the [OWASP Prevention Cheat Sheets](/www-project-cheat-sheets) as a good starting point for guidance on how to design security in from the beginning."
+   topic='**Arquitectura de seguridad en aplicaciones**'
+   description="En lugar de adaptar la seguridad en su aplicación y APIs, es mucho más efectivo en costos diseñar la seguridad desde el principio. OWASP recomienda las [Hojas de trucos de prevención de OWASP](/www-project-cheat-sheets) como punto inicial para guiarlo en comor diseñar la seguridad desde el principio."
 %}
 {% include t10_subsection_inner_round_box.html
-   topic='**Security Standard Controls:**'
-   description="Building strong and usable security controls is difficult. Using a set of standard security controls radically simplifies the development of secure applications and APIs. The [OWASP Prevention Cheat Sheets](/www-project-cheat-sheets) is a good starting point for developers, and many modern frameworks now come with standard and effective security controls for authorization, validation, CSRF prevention, etc."
+   topic='**Controles Estándar de Seguridad:**'
+   description="Construir controles de seguridad fuertes y usables es difícil. Un conjunto de controles estándar de seguridad simplifican radicalmente el desarrollo de aplicaciones y APIs seguras.
+   Las [Hojas de trucos de prevención de OWASP](/www-project-cheat-sheets) son un buen punto de inicio para desarrolladores, y muchos de los marcos de trabajo modernos incluyen controles estándares y efectivos para autorización, validación, prevención de CSRF, etc."
 %}
 {% include t10_subsection_inner_round_box.html
-   topic='**Secure Development Lifecycle:**'
-   description="To improve the process your organization follows when building applications and APIs, OWASP recommends the [OWASP Software Assurance Maturity Model (SAMM)](/www-project-samm). This model helps organizations formulate and implement a strategy for software security that is tailored to the specific risks facing their organization."
+   topic='**Ciclo de vida de desarrollo seguro:**'
+   description="Para mejorar el proceso que su organización utiliza para crear aplicaciones y APIs, OWASP recomienda el [Modelo de Garantía de la Madurez del Software (SAMM)](/www-project-samm). Este modelo ayuda a las organizaciones a formular e implementar estrategias para el software seguro, adaptado a los riesgos específicos para su negocio y organización."
 %}
 {% include t10_subsection_inner_round_box.html
-   topic='**Application Security Education:**'
-   description="The OWASP Education Project provides training materials to help educate developers on web application security. For hands-on learning about vulnerabilities, try [OWASP WebGoat](/www-project-webgoat), [OWASP Juice Shop Project](/www-project-juice-shop) or the [OWASP Broken Web Applications Project](/www-project-broken-web-applications) [(old wiki)](https://wiki.owasp.org/index.php/OWASP_Broken_Web_Applications_Project). To stay current, come to an [OWASP AppSec Conference](/events), [OWASP Conference Training](/events), or local [OWASP Chapter meetings](/chapters)."
+   topic='**Educación en seguridad de aplicaciones:**'
+   description="El proyecto educativo de OWASP proporciona material de formación para ayudar a educar a los desarrolladores en seguridad en aplicaciones web. Para una formación práctica acerca de vulnerabilidades, pruebe los proyectos [WebGoat de OWASP](/www-project-webgoat), [Proyecto tienda de jugos OWASP](/www-project-juice-shop) or the [Proyecto Aplicaciones web quebradas OWASP](/www-project-broken-web-applications) [(wiki anterior)](https://wiki.owasp.org/index.php/OWASP_Broken_Web_Applications_Project). Para mantenerse al día, asista a una [Conferencia AppSec de OWASP](/events), [Entrenamiento en Conferencia OWASP](/events), o a las [reuniones de capítulos locales de OWASP](/chapters)."
 %}
-There are numerous additional OWASP resources available for your use. Please visit the [OWASP Projects page](/projects), which lists all the Flagship, Labs, and Incubator projects in the OWASP project inventory. Most OWASP resources are available on our [website](https://owasp.org), and many OWASP documents can be ordered in [hardcopy or as eBooks](https://stores.lulu.com/owasp).
+
+Hay numerosos recursos adicionales de OWASP disponibles para su uso.  Por favor
+visite la [página de proyectos OWASP](/projects), que lista todos los
+proyectos Insignia, Laboratorios, proyectos en incubadora en el inventario de
+proyectos OWASP.  La mayoría de recursos OWASP están disponibles en 
+nuestro [sitio web](https://owasp.org), y muchos documentos OWASP pueden 
+ordenarse en [papel o como libros electrónicos](https://stores.lulu.com/owasp).
 {%- include t10_subsection_end.html -%}
