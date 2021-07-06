@@ -16,28 +16,42 @@ redirect_from:
 ---
 
 {%- include t10_subsection_begin.html -%}
-{%- include t10_subsection.html text="Establish Continuous Application Security Testing" pos="firstWhole" -%}
-Building code securely is important. But it’s critical to verify that the security you intended to build is actually present, correctly implemented, and used everywhere it is supposed to be. The goal of application security testing is to provide this evidence. The work is difficult and complex, and modern high-speed development processes like Agile and DevOps have put extreme pressure on traditional approaches and tools. So we strongly encourage you to put some thought into how you are going to focus on what’s important across your entire application portfolio, and do it cost-effectively.<br>
-Modern risks move quickly, so the days of scanning or penetration testing an application for vulnerabilities once every year or so are long gone. Modern software development requires continuous application security testing across the entire software development lifecycle. Look to enhance existing development pipelines with security automation that doesn’t slow development. Whatever approach you choose, consider the annual cost to test, triage, remediate, retest, and redeploy a single application, multiplied by the size of your application portfolio.<br>
+{%- include t10_subsection.html text="Establecer auditorias continuas de seguridad de las aplicaciones" pos="firstWhole" -%}
+
+Construir código de modo seguro es importante. Pero es crítico verificar que la seguridad que pretende construir
+está realmente presente, correctamente implementada, y es utilizada en todos los lugares donde se supone que debe
+serlo. El objetivo de las pruebas de seguridad es proveer esta evidencia. El trabajo es difícil y complejo, y los procesos
+modernos de desarrollo a alta velocidad como Agile y DevOps han colocado una presión extrema en los enfoques y
+las herramientas tradicionales. Por lo tanto lo alentamos a pensar en cómo va a enfocarse en lo que es importante
+para su portafolio de aplicaciones, y hacerlo efectivo en términos de costo.<br>
+
+Los riesgos modernos cambian rápidamente, así que los días de escanear o hacer un test de penetración a una
+aplicación para encontrar vulnerabilidades una vez al año han pasado hace tiempo. El desarrollo moderno de software
+requiere revisión continua de seguridad de la aplicación a través de todo el ciclo de vida del desarrollo de software. Se
+debe analizar cómo mejorar los canales de desarrollo existentes automatizando la seguridad para que no retrase el
+desarrollo. Cualquiera sea el enfoque que elija, considere el costo anual de revisar, clasificar, remediar, revisar de
+nuevo, y volver a poner en producción una sola aplicación, multiplicado por la cantidad de aplicaciones.<br>
+
 <br>
 {% include t10_subsection_inner_round_box.html
-   topic='**Understand the Threat Model:**'
-   description="Before you start testing, be sure you understand what’s important to spend time on. Priorities come from the threat model, so if you don’t have one, you need to create one before testing. Consider using [OWASP ASVS](/www-project-application-security-verification-standard) and the [OWASP Web Security Testing Guide](https://owasp.org/www-project-web-security-testing-guide/) as an input and don’t rely on tool vendors to decide what’s important for your business."
+   topic='**Comprender el Modelo de las Amenazas:**'
+   description="Antes de comenzar la revisión, asegúrese de comprender en qué es importante emplear el tiempo. Las prioridades vienen del Modelado de Amenazas, así que si Ud. no tiene uno, necesita crearlo antes de la revisión.
+Considere usar [OWASP ASVS](/www-project-application-security-verification-standard) y la [Guía de pruebas de seguridad OWASP](https://owasp.org/www-project-web-security-testing-guide/) como un insumo y no confíe en vendedores de herramientas para decidir qué es importante para su negocio."
 %}
 {% include t10_subsection_inner_round_box.html
-   topic='**Understand Your SDLC:**'
-   description="Your approach to application security testing must be highly compatible with the people, processes, and tools you use in your software development lifecycle (SDLC). Attempts to force extra steps, gates, and reviews are likely to cause friction, get bypassed, and struggle to scale. Look for natural opportunities to gather security information and feed it back into your process."
+   topic='**Comprender su SDLC:**'
+   description="Su enfoque de la revisión de seguridad de aplicaciones debe ser altamente compatible con las personas, procesos y herramientas que usa en su SDLC. Intentos de forzar pasos, flujos de autorizaciones y revisiones extra probablemente causarán fricción, serán evitados y difíciles de superar. Busque oportunidades naturales para recabar información de seguridad y retroalimente su proceso con ella."
 %}
 {% include t10_subsection_inner_round_box.html
-   topic='**Testing Strategies:**'
-   description="Choose the simplest, fastest, most accurate technique to verify each requirement. The [OWASP Security Knowledge Framework](/www-project-security-knowledge-framework) and [OWASP Application Security Verification Standard](/www-project-application-security-verification-standard) can be great sources of functional and nonfunctional security requirements in your unit and integration testing. Be sure to consider the human resources required to deal with false positives from the use of automated tooling as well as the serious dangers of false negatives."
+   topic='**Estrategias de pruebas:**'
+   description="Escoja la técnica más simple, rápida y precisa para verificar cada requerimiento. El [Marco de Trabajo de Conocimiento en Seguridad de OWASP](/www-project-security-knowledge-framework) y el  [Estándar de Verificación de Seguridad de Aplicaciones de OWASP](/www-project-application-security-verification-standard) pueden ser buenas fuentes de requerimientos de seguridad funcionales y no funcionales en la revisión y en las pruebas de unidad y de integración. Considere los recursos humanos requeridos para lidiar con falsos positivos provenientes del uso de herramientas automáticas, así como con los serios peligros de los falsos negativos."
 %}
 {% include t10_subsection_inner_round_box.html
-   topic='**Achieving Coverage and Accuracy:**'
-   description="You don’t have to start out testing everything. Focus on what’s important and expand your verification program over time. That means expanding the set of security defenses and risks that are being automatically verified as well as expanding the set of applications and APIs being covered. The goal is to achieve a state where the essential security of all your applications and APIs is verified continuously."
+   topic='**Lograr Cobertura y Precisión:**'
+   description="No comience por probarlo todo. Concéntrese en lo que es importante y amplíe su programa de verificación con el tiempo. Esto significa ampliar el conjunto de defensas y riesgos de seguridad que se prueban automáticamente, así como ampliar el conjunto de aplicaciones y APIs que se incluyen en el alcance. El objetivo es lograr un estado en el que la seguridad esencial de todas sus aplicaciones y API se verifique continuamente."
 %}
 {% include t10_subsection_inner_round_box.html
-   topic='**Clearly Communicate Findings:**'
-   description="No matter how good you are at testing, it won’t make any difference unless you communicate it effectively. Build trust by showing you understand how the application works. Describe clearly how it can be abused without “lingo” and include an attack scenario to make it real. Make a realistic estimation of how hard the vulnerability is to discover and exploit, and how bad that would be. Finally, deliver findings in the tools development teams are already using, not PDF files."
+   topic='**Comunicar los hallazgos claramente:**'
+   description="No importa que tan buena sea su revisión, no hará ninguna diferencia a menos que la comunique efectivamente. Construya confianza mostrando que comprende cómo funciona la aplicación. Describa claramente y sin jerga técnica como puede ser abusada e incluya un escenario de ataque para hacerlo real. Haga una estimación realista de qué tan difícil es descubrir una vulnerabilidad y explotarla, y que tan malo podría ser. Finalmente, distribuya los hallazgos en las herramientas de desarrollo que los equipos ya usan, no en archivos PDF."
 %}
 {%- include t10_subsection_end.html -%}
