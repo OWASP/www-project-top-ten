@@ -16,44 +16,66 @@ redirect_from:
 ---
 
 {%- include t10_subsection_begin.html -%}
-{%- include t10_subsection.html text="Start Your Application Security Program Now" pos="firstWhole" -%}
-Application security is no longer optional. Between increasing attacks and regulatory pressures, organizations must establish effective processes and capabilities for securing their applications and APIs. Given the staggering amount of code in the numerous applications and APIs already in production, many organizations are struggling to get a handle on the enormous volume of vulnerabilities.<br>
-OWASP recommends organizations establish an application security program to gain insight and improve security across their applications and APIs. Achieving application security requires many different parts of an organization to work together efficiently, including security and audit, software development, business, and executive management. Security should be visible and measurable, so that all the different players can see and understand the organization’s application security posture. Focus on the activities and outcomes that actually help improve enterprise security by eliminating or reducing risk. [OWASP SAMM](/www-project-samm) and the [OWASP Application Security Guide for CISOs: V1 (old wiki)](https://wiki.owasp.org/index.php/Application_Security_Guide_For_CISOs) is the source of most of the key activities in this list.<br>
+{%- include t10_subsection.html text="Comience hoy su programa de seguridad en aplicaciones" pos="firstWhole" -%}
+
+La seguridad en las aplicaciones ya no es opcional. Entre el aumento de los
+ataques y las presiones de cumplimiento normativo, las organizaciones deben
+establecer un mecanismo eficaz para asegurar sus aplicaciones y APIs.
+Dado el asombroso número de líneas de código que ya están en producción,
+muchas organizaciones luchan para conseguir gestionar un enorme
+volumen de vulnerabilidades.<br>
+
+
+OWASP recomienda a las organizaciones establecer un programa para aumentar el
+conocimiento y mejorar la seguridad en todo su catálogo de aplicaciones y APIs.
+Conseguir un nivel de seguridad adecuado requiere que diversas partes de la
+organización trabajen juntos de manera eficiente, incluidos los departamentos
+de seguridad y auditoria, desarrollo, gestión y el negocio.
+Se requiere que la seguridad sea visible y medible, para que todos los
+involucrados puedan entender la postura de la organización en cuanto a la
+seguridad en aplicaciones. También es necesario centrarse en las actividades
+y resultados que realmente ayuden a mejorar la seguridad de la empresa
+mediante la reducción de riesgo de la forma más rentable posible. Algunas de
+las actividades clave en la efectiva aplicación de los programas de seguridad
+incluyen [OWASP SAMM](/www-project-samm) y la
+[Guía OWASP de seguridad de aplicaciones para CISOs](https://wiki.owasp.org/index.php/Application_Security_Guide_For_CISOs) que es la fuente para la
+mayoría de actividades clave en esta lista.<br>
+
 <br>
-{% include t10_subsection_inner_round_box.html 
-   topic='**Get Started:**' 
+{% include t10_subsection_inner_round_box.html
+   topic='**Inicio:**'
    description="
-       * Document all applications and associated data assets. Larger organizations should consider implementing a Configuration Management Database (CMDB) for this purpose.<br>
-       * Establish an [application security program](/www-project-samm) and drive adoption.<br>
-       * Conduct a [capability gap analysis](/www-project-samm) comparing your organization to your peers to define key improvement areas and an execution plan.<br>
-       * Gain management approval and establish an [application security awareness campaign](/www-project-samm) for the entire IT organization."
+        * Documentar todas las aplicaciones y sus activos de información asociados. Las organizaciones grandes deben considerar el uso de una Base de Datos de Gestión de la Configuración (CMDB) para esto.<br>
+        * Establecer un [programa de seguridad de aplicaciones](/www-project-samm) e impulsar su adopción.<br>
+        * Realizar un [análisis de brecha de capacidades](/www-project-samm) entre su organización y otras similares para definir las áreas clave de mejora y un plan de ejecución.<br>
+        * Obtener la aprobación de la dirección y establecer una [campaña de concietización de seguridad en las aplicaciones](/www-project-samm) para toda la organización TI."
 %}
-{% include t10_subsection_inner_round_box.html 
-   topic='**Risk Based Portfolio Approach:**' 
+{% include t10_subsection_inner_round_box.html
+   topic='**Enfoque basado en el catálogo de riesgos:**'
    description="
-       * Identify the [protection needs](/www-project-samm) of your [application portfolio](/www-project-samm) from a business perspective. This should be driven in part by privacy laws and other regulations relevant to the data asset being protected.<br>
-       * Establish a [common risk rating model](/www-community/OWASP_Risk_Rating_Methodology) with a consistent set of likelihood and impact factors reflective of your organization's tolerance for risk.<br>
-       * Accordingly measure and prioritize all your applications and APIs. Add the results to your CMDB.<br>
-       * Establish assurance guidelines to properly define coverage and level of rigor required."
+       * Identificar y establecer las [necesidades de protección](/www-project-samm) de su [catálogo de aplicaciones](/www-project-samm) en base al riesgo inherente asociado al negocio, guiadas por las leyes de privacidad aplicables y otras regulaciones relevantes a los activos de datos a ser protegidos.<br>
+       * Establecer un [modelo de calificación de riesgo común](/www-community/OWASP_Risk_Rating_Methodology), con un conjunto consistente de factores de impacto y probabilidad, que reflejen la tolerancia al riesgo de la organización.<br>
+       * Medir y priorizar de forma acorde todas sus aplicaciones y APIs. Agregue los resultados al CMDB.<br>
+       * Establecer directrices para garantizar y definir los niveles de cobertura y rigor requeridos."
 %}
-{% include t10_subsection_inner_round_box.html 
-   topic='**Enable with a Strong Foundation:**' 
+{% include t10_subsection_inner_round_box.html
+   topic='**Contar con una base sólida:**'
    description="
-       * Establish a set of focused [policies and standards](/www-project-samm) that provide an application security baseline for all development teams to adhere to.<br>
-       * Define a [common set of reusable security controls](/www-project-security-knowledge-framework) that complement these policies and standards and provide design and development guidance on their use.<br>
-       * Establish an [application security training curriculum](/www-project-samm) that is required and targeted to different development roles and topics."
+       * Establecer un conjunto de [políticas y estándares](/www-project-samm) enfocado, que proporcione una base de referencia de seguridad de las aplicaciones, a las cuales todo el equipo de desarrollo debe adherirse.<br>
+       * Definir [un conjunto de controles de seguridad reutilizables](/www-project-security-knowledge-framework), que complemente esas políticas y estándares y proporcionen una guía en su uso en el diseño y desarrollo.<br>
+       * Establecer un [currículo de formación en seguridad en aplicaciones](/www-project-samm) que sea un requisito, dirigido a los diferentes roles y tecnologías de desarrollo."
 %}
-{% include t10_subsection_inner_round_box.html 
-   topic='**Integrate Security into Existing Processes:**' 
+{% include t10_subsection_inner_round_box.html
+   topic='**Integrar la Seguridad en los procesos existentes:**'
    description="
-       * Define and integrate [secure implementation and verification](/www-project-samm) activities into existing development and operational processes.<br>
-       * Activities include [threat modeling, secure design and design review, secure coding and code review, penetration testing](/www-project-samm), and remediation.<br>
-       * Provide subject matter experts and [support services for development and project teams](/www-project-samm) to be successful."
+       * Definir actividades de [implementación segura y verificación](/www-project-samm) en los procesos operativos y de desarrollo existentes.<br>
+       * Definir actividades como el [modelado de amenazas, diseño y revisión de seguridad, revisión de código, pruebas de intrusión](/www-project-samm) y remediación.<br>
+       * Para tener éxito, proporcionar expertos en la materia y [servicios de apoyo a los equipos de desarrollo y del proyecto](/www-project-samm)."
 %}
-{% include t10_subsection_inner_round_box.html 
-   topic='**Provide Management Visibility:**' 
+{% include t10_subsection_inner_round_box.html
+   topic='**Proporcionar visibilidad a la gestión:**'
    description="
-       * Manage with metrics. Drive improvement and funding decisions based on the metrics and analysis data captured. Metrics include adherence to security practices and activities, vulnerabilities introduced, vulnerabilities mitigated, application coverage, defect ensity by type and instance counts, etc.<br>
-       * Analyze data from the implementation and verification activities to look for root cause and vulnerability patterns to drive strategic and systemic improvements across the enterprise. Learn from mistakes and offer positive incentives to promote improvements."
+       * Gestionar a través de las métricas. Manejar las decisiones de mejora y provisión de recursos económicos, basándose en las métricas y el análisis de los datos capturados. Las métricas incluyen el seguimiento de las prácticas y actividades de seguridad, las vulnerabilidades presentes y las mitigadas, la cobertura de la aplicación, densidad de defectos por tipo y cantidad de instancias, etc.<br>
+       * Analizar los datos de las actividades de implementación y verificación para buscar el origen de la causa y los patrones en las vulnerabilidades, para poder determinar mejoras estratégicas en la organización y el negocio. Aprender de los errores y ofrecer incentivos positivos para promover mejoras."
 %}
 {%- include t10_subsection_end.html -%}
