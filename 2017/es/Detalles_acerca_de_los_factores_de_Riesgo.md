@@ -15,11 +15,19 @@ redirect_from:
 
 ---
 {%- include t10_subsection_begin.html -%}
-{%- include t10_subsection.html text="Top 10 Risk Factor Summary" pos="firstWhole" -%}
-The following table presents a summary of the 2017 Top 10 Application Security Risks, and the risk factors we have assigned to each risk. 
-These factors were determined based on the available statistics and the experience of the OWASP Top 10 team. 
-To understand these risks for a particular application or organization, <u>you must consider your own specific threat agents and business impacts</u>.
-Even severe software weaknesses may not present a serious risk if there are no threat agents in a position to perform the necessary attack or the business impact is negligible for the assets involved.
+{%- include t10_subsection.html text="Resumen de factores de Riesgo del Top 10" pos="firstWhole" -%}
+
+La siguiente tabla presenta un resumen del Top 10 y los factores de riesgo 
+que hemos asignado a cada uno de ellos. <br>
+
+Estos factores fueron determinados basándose en las estadísticas disponibles 
+y la experiencia del equipo del OWASP Top 10. 
+Para entender estos riesgos en 
+una aplicación en particular u organización, <u>usted debe considerar sus 
+propios agentes de amenaza e impactos de negocio específicos</u>. Incluso las 
+vulnerabilidades graves de software podrían no representar un riesgo serio 
+si no hay agentes de amenaza en posición para ejecutar el ataque necesario, 
+o el impacto al negocio es insignificante para los activos involucrados.
 
 {% include risk_factor_summary_table.html %}
 
