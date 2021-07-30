@@ -59,7 +59,7 @@ Nota: este anexo toma en cuenta las leyes de los EE.UU. y por lo tanto se recomi
         * Crear casos de “uso” y de “abuso” tanto desde el punto de vista técnico como del negocio.<br>
         * Administrar pruebas de seguridad de acuerdo a los procesos internos, las necesidades de protección y el nivel de amenazas asumido para la aplicación.<br>
         * Poner la aplicación en operación y migrar las aplicaciones usadas previamente en caso de ser necesario.<br>
-        * Finalizar toda la documentación, incluyendo la base de datos de gestión de cambios (CMDB) y la arquitectura de seguridad.<br>
+        * Finalizar toda la documentación, incluyendo la base de datos de gestión de cambios (CMDB) y la arquitectura de seguridad.<br>'
 %}
 {% include t10_subsection_inner_round_box.html
    topic='**Operación y gestión del cambio:**'
