@@ -33,7 +33,7 @@ de 2017. Se obtuvieron 516 respuestas y luego se clasificaron las
 vulnerabilidades.
 
 <br>
-{% include industry_ranked_survey_table.html %}
+{% include 2017/es/tabla_encuesta_industria.html %}
 <br>
 
 La exposición de la información privada es claramente la vulnerabilidad de 

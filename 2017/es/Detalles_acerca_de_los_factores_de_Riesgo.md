@@ -32,7 +32,14 @@ o el impacto al negocio es insignificante para los activos involucrados.
 {% include risk_factor_summary_table.html %}
 
 {%- include t10_subsection.html text="Project Sponsorship" pos="whole" -%}
-The Top 10 covers a lot of ground, but there are many other risks you should consider and evaluate in your organization. Some of these have appeared in previous versions of the Top 10, and others have not, including new attack techniques that are being identified all the time. Other important application security risks (ordered by CWE-ID) that you should additionally consider include:<br>
+
+El Top 10 cubre una gran cantidad de terreno, pero existen otros riesgos que
+debería considerar y evaluar en su organización. Algunos de éstos se han 
+publicado en versiones previas del Top 10, y otros no, incluyendo nuevas
+técnicas de ataque que son identificadas constantemente. Estos son algunos 
+otros riesgos importantes de seguridad en aplicaciones que también debería 
+considerar, ordenados según su identificador de CWE:<br>
+
 * [CWE-352: Cross-Site Request Forgery (CSRF)](https://cwe.mitre.org/data/definitions/352.html)<br>
 * [CWE-400: Uncontrolled Resource Consumption ('Resource Exhaustion', 'AppDoS')](https://cwe.mitre.org/data/definitions/400.html)<br>
 * [CWE-434: Unrestricted Upload of File with Dangerous Type](https://cwe.mitre.org/data/definitions/434.html)<br>

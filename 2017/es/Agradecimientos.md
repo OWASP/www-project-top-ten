@@ -38,5 +38,5 @@ electrónico y otros medios.<br>
 Seríamos negligentes si dejáramos de mencionar a Dirk Wetter, Jim Manico y 
 Osama Elnaggar por habernos provisto asistencia. También, a Chris Frohoff y 
 Gabriel Lawrence por su invaluable aporte en la escritura del nuevo riesgo
-[A8:2017-Deserialización Insegura][A8_2017-Deserialización_Insegura].
+[A8:2017-Deserialización Insegura](A8_2017-Deserialización_Insegura).
 
