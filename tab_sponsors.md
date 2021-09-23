@@ -16,7 +16,7 @@ The OWASP Top 10:2021 is sponsored by Secure Code Warrior.
 
 The OWASP Top 10 - 2017 project was sponsored by Autodesk, and supported by the [OWASP NoVA Chapter](https://owasp.org/www-chapter-northern-virginia/).
 
-![Autodesk](assets/images/autodesk.png =256x)
+![Autodesk](assets/images/autodesk.png)
 
 ## 2003-2013 Project Sponsors
 
