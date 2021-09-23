@@ -1,5 +1,5 @@
 ### Project Information
-* &bull; [OWASP Top 10:2021 (DRAFT FOR PEER REVIEW)](https://owasp.org/Top10), [DRAFT's reop](https://github.com/OWASP/Top10/tree/master/2021)
+* &bull; [OWASP Top 10:2021 (DRAFT FOR PEER REVIEW)](https://owasp.org/Top10), [DRAFT's repo](https://github.com/OWASP/Top10/tree/master/2021)
 * &bull; [NEW Website](https://www.owasptopten.org/)
 * <i class="fas fa-flag" style="font-size: 1.2em; color:#2ADA08;"></i><span style="font-size:1.0em;padding-left:12px;">Flagship Project</span>
 * <i class="fas fa-book" style="font-size: 1.2em; color:#233e81;"></i><span style="font-size:1.0em;padding-left:12px;">Documentation</span>
