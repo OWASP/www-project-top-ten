@@ -10,7 +10,7 @@ tags: top10
 
 The OWASP Top 10:2021 is sponsored by Secure Code Warrior.
 
-[Secure Code Warrior](https://securecodewarrior.com)
+[![Secure Code Warrior](assets/images/securecodewarrior.png)](https://securecodewarrior.com)
 
 ## 2017 Project Sponsors
 
