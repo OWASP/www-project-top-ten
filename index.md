@@ -22,7 +22,7 @@ Companies should adopt this document and start the process of ensuring that thei
 
 There are three new categories, four categories with naming and scoping changes, and some consolidation in the Top 10 for 2021.
 
-![Mapping](assets/mapping.png)
+![Mapping](assets/images/mapping.png)
 
 - [**A01:2021-Broken Access Control**](https://owasp.org/Top10/A01_2021-Broken_Access_Control/) moves up from the fifth position; 94% of applications were tested for some form of broken access control. The 34 Common Weakness Enumerations (CWEs) mapped to Broken Access Control had more occurrences in applications than any other category.
 - [**A02:2021-Cryptographic Failures**](https://owasp.org/Top10/A02_2021-Cryptographic_Failures/) shifts up one position to #2, previously known as Sensitive Data Exposure, which was broad symptom rather than a root cause. The renewed focus here is on failures related to cryptography which often leads to sensitive data exposure or system compromise.
