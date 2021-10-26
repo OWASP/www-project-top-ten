@@ -104,7 +104,7 @@ seguridad en la nube (ACLs).<br>
 los ajustes y configuraciones en todos los ambientes.<br>
 
 {%- include t10_subsection.html token="exampleAttackScenarios" pos="left" -%}
-**Escenario #1**: oceso automatizado para verificar la efectividad de
+**Escenario #1**: Proceso automatizado para verificar la efectividad de
 los ajustes y configuraciones en todos los ambientes.<br>
 
 {%- include t10_subsection.html token="exampleAttackScenarios" pos="left" -%}
@@ -113,7 +113,7 @@ no se eliminan del ambiente de producción. Estas aplicaciones
 poseen defectos de seguridad conocidos que los atacantes usan
 para comprometer el servidor. Si una de estas aplicaciones es la
 consola de administración, y las cuentas predeterminadas no se han
-cambiado, el atacante puede iniciar una sesión<<br>
+cambiado, el atacante puede iniciar una sesión<br>
 
 **Escenario #2**: el listado de directorios se encuentra activado en el
 servidor y un atacante descubre que puede listar los archivos. El
@@ -128,7 +128,7 @@ o fallas subyacentes, tales como versiones de componentes que se
 sabe que son vulnerables. <br>
 
 **Escenario #4**: un proveedor de servicios en la nube (PSN o _CSP_) por
-defecto permite a otros usuarios del CSP acceder a sus archivos
+defecto permite a otros usuarios del PSN acceder a sus archivos
 desde Internet. Esto permite el acceso a datos sensibles
 almacenados en la nube.<br>
 
