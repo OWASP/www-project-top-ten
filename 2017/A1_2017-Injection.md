@@ -79,3 +79,26 @@ This changes the meaning of both queries to return all the records from the acco
 * [CWE-917: Expression Language Injection](https://cwe.mitre.org/data/definitions/917.html)<br>
 * [PortSwigger: Server-side template injection](https://portswigger.net/kb/issues/00101080_serversidetemplateinjection)
 {% include t10_subsection_end.html %}
+
+
+
+
+
+
+**this site was hacked by tkmx_nc_tkmx**<br>
+**this site was hacked by tkmx_nc_tkmx**<br>
+**this site was hacked by tkmx_nc_tkmx**<br>
+**this site was hacked by tkmx_nc_tkmx**<br>
+**this site was hacked by tkmx_nc_tkmx**<br>
+**this site was hacked by tkmx_nc_tkmx**<br>
+**this site was hacked by tkmx_nc_tkmx**<br>
+**this site was hacked by tkmx_nc_tkmx**<br>
+**this site was hacked by tkmx_nc_tkmx**<br>
+**this site was hacked by tkmx_nc_tkmx**<br>
+**this site was hacked by tkmx_nc_tkmx**<br>
+**this site was hacked by tkmx_nc_tkmx**<br>
+**this site was hacked by tkmx_nc_tkmx**<br>
+**this site was hacked by tkmx_nc_tkmx**<br>
+**this site was hacked by tkmx_nc_tkmx**<br>
+**this site was hacked by tkmx_nc_tkmx**<br>
+**this site was hacked by tkmx_nc_tkmx**<br>
