@@ -10,7 +10,7 @@
 
 ### Downloads or Social Links
 
-- [OWASP Top 10 2017](/www-pdf-archive/OWASP_Top_10-2017_%28en%29.pdf.pdf){:target='_blank' rel='noopener'}
+- [OWASP Top 10 2017](https://github.com/OWASP/Top10/blob/master/2017/OWASP%20Top%2010-2017%20(en).pdf){:target='_blank' rel='noopener'}
 - [Other languages &rarr; tab 'Translation Efforts']({{site.baseurl}}/#div-translation_efforts)
 
 ### Social
