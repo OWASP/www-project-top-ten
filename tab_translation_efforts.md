@@ -8,9 +8,21 @@ tags: top10
 ---
 # Translation Efforts
 Efforts have been made in numerous languages to translate the OWASP Top 10 - 2017. If you are interested in helping, please contact the members of the team for the language you are interested in contributing to, or if you don't see your language listed (neither here nor at [github](https://github.com/OWASP/Top10/issues?utf8=%E2%9C%93&q=is%3Aissue)), please email owasp-topten@lists.owasp.org to let us know that you want to help and we'll form a volunteer group for your language.
-We have compiled this [README.TRANSLATIONS](https://github.com/OWASP/Top10/blob/master/2017/translations/README.TRANSLATIONS) with some hints to help you with your translation.
+We have compiled this [readme](https://github.com/OWASP/Top10/tree/master/2021#translating-the-owasp-top-10-2021) with some hints to help you with your translation.
 
-### 2017 Completed Translations:
+### Top10:2021 Completed Translations:
+* [<b>ar - العربية</b>](https://owasp.org/Top10/ar/)
+* [<b>es - Español</b>](https://owasp.org/Top10/es/)
+* [<b>fr - Français</b>](https://owasp.org/Top10/fr/)
+* [<b>id - Indonesian</b>](https://owasp.org/Top10/id/)
+* [<b>it - Italiano</b>](https://owasp.org/Top10/it/)
+* [<b>ja - 日本語]</b>](https://owasp.org/Top10/ja/)
+* [<b>pt_BR - Português (Brasil)</b>](https://owasp.org/Top10/pt_BR/)
+* [<b>zh_CN - 简体中文</b>](https://owasp.org/Top10/zh_CN/)
+* [<b>zh_TW - 繁體中文</b>](https://owasp.org/Top10/zh_TW/)
+                
+## Historic:
+### Top10:2017 Completed Translations:
 * <b>Chinese:</b> [OWASP Top 10-2017 - 中文版（PDF)](https://wiki.owasp.org/?title=Special:Redirect/file/OWASP_Top_10_2017_%E4%B8%AD%E6%96%87%E7%89%88v1.3.pdf)<br/>
   * 项目组长：[王颉](https://wiki.owasp.org/index.php/User:Jie_Wang)（wangj@owasp.org.cn）
   * 翻译人员：陈亮、王厚奎、王颉、王文君、王晓飞、吴楠、徐瑞祝、夏天泽、杨璐、张剑钟、赵学文（排名不分先后，按姓氏拼音排列）
@@ -27,8 +39,7 @@ We have compiled this [README.TRANSLATIONS](https://github.com/OWASP/Top10/blob/
   * [Gerardo Canedo](https://wiki.owasp.org/index.php/User:Gerardo_Canedo)（Gerardo.Canedo@owasp.org - [Twitter: @GerardoMCanedo])
   * [Cristian Borghello](https://wiki.owasp.org/index.php/User:Cristian_Borghello)（Cristian.Borghello@owasp.org - [Twitter: @seguinfo])
 
-## Historic:
-### 2017 Release Candidate Translation Teams:
+### Top10:2017 Release Candidate Translation Teams:
 
 * Azerbaijanian: Rashad Aliyev (rashad@aliev.info)
 <!-- * Chinese RC1:Rip、包悦忠、顾凌志、王颉、王厚奎、王文君、吴楠、夏天泽、夏玉明、杨天识、袁明坤、张镇(排名不分先后，按姓氏拼音排列) [OWASP Top10 2017 RC1 - Chinese PDF](https://www.owasp.org/images/8/8f/OWASP_Top_10_2017（RC1）中文版（V1.0）.pdf) -->
@@ -36,7 +47,7 @@ We have compiled this [README.TRANSLATIONS](https://github.com/OWASP/Top10/blob/
 * French: Ludovic Petit: Ludovic.Petit@owasp.org, Sébastien Gioria: Sebastien.Gioria@owasp.org. 
 * Others to be listed.
 
-### 2013 Completed Translations: 
+### Top10:2013 Completed Translations: 
 * Arabic: [OWASP Top 10 2013 - Arabic PDF](https://www.owasp.org/images/6/6a/OWASP_TOP_10_2013_Arabic.pdf)<br>Translated by: Mohannad Shahat: Mohannad.Shahat@owasp.org, Fahad: @SecurityArk, Abdulellah Alsaheel: cs.saheel@gmail.com, Khalifa Alshamsi: Khs1618@gmail.com and Sabri(KING SABRI): king.sabri@gmail.com, Mohammed Aldossary: mohammed.aldossary@owasp.org
 * Chinese 2013：中文版2013 [OWASP Top 10 2013 - Chinese (PDF)](https://www.owasp.org/images/5/51/OWASP_Top_10_2013-Chinese-V1.2.pdf).<br>项目组长： Rip、王颉， 参与人员： 陈亮、 顾庆林、 胡晓斌、 李建蒙、 王文君、 杨天识、 张在峰
 * Czech 2013: [OWASP Top 10 2013 - Czech (PDF)](https://www.owasp.org/images/f/f3/OWASP_Top_10_-_2013_Final_-_Czech_V1.1.pdf) [OWASP Top 10 2013 - Czech (PPTX)](https://www.owasp.org/images/0/02/OWASP_Top_10_-_2013_Final_-_Czech_V1.1.pptx)<br>CSIRT.CZ - CZ.NIC, z.s.p.o. (.cz domain registry): Petr Zavodsky: petr.zavodsky@owasp.org, Vaclav Klimes, Zuzana Duracinska, Michal Prokop, Edvard Rejthar, Pavel Basta
