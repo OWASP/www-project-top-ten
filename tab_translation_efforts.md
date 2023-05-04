@@ -7,7 +7,7 @@ order: 2
 tags: top10
 ---
 # Translation Efforts
-Efforts have been made in numerous languages to translate the OWASP Top 10 - 2017. If you are interested in helping, please contact the members of the team for the language you are interested in contributing to, or if you don't see your language listed (neither here nor at [github](https://github.com/OWASP/Top10/issues?utf8=%E2%9C%93&q=is%3Aissue)), please email owasp-topten@lists.owasp.org to let us know that you want to help and we'll form a volunteer group for your language.
+Efforts have been made in numerous languages to translate the OWASP Top 10 - 2021. If you are interested in helping, please contact the members of the team for the language you are interested in contributing to, or if you don't see your language listed (neither here nor at [github](https://github.com/OWASP/Top10/issues?utf8=%E2%9C%93&q=is%3Aissue)), please email owasp-topten@lists.owasp.org to let us know that you want to help and we'll form a volunteer group for your language.
 We have compiled this [readme](https://github.com/OWASP/Top10/tree/master/2021#translating-the-owasp-top-10-2021) with some hints to help you with your translation.
 
 ### Top10:2021 Completed Translations:
