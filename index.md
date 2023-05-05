@@ -11,8 +11,7 @@ pitch: The OWASP Top 10 is the reference standard for the most critical web appl
 
 ---
 
-The OWASP Top 10 is a standard awareness document for developers and web application security. It represents a 
-consensus about the most critical security risks to web applications.
+The OWASP Top 10 is a standard awareness document for developers and web application security. It represents a broad consensus about the most critical security risks to web applications.
 
 <p class="callout-mono right">Globally recognized by developers as the first step towards more secure coding.</p>
 
