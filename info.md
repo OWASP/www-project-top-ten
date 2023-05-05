@@ -11,7 +11,10 @@
 
 ### Downloads or Social Links
 
-- &bull; [OWASP Top 10 2017](/www-pdf-archive/OWASP_Top_10-2017_%28en%29.pdf.pdf){:target='_blank' rel='noopener'}
+- <a href="https://owasp.org/www-pdf-archive/OWASP_Top_10-2017_%28en%29.pdf.pdf" target="_blank" rel="noopener">
+  OWASP Top 10 2017
+</a>
+
 - &bull; [Other languages &rarr; tab 'Translation Efforts']({{site.baseurl}}/#div-translation_efforts)
 
 ### Social
