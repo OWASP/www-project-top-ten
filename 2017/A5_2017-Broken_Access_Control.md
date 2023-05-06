@@ -44,7 +44,7 @@ Access control is only effective if enforced in trusted server-side code or serv
 * With the exception of public resources, deny by default.<br>
 * Implement access control mechanisms once and re-use them throughout the application, including minimizing CORS usage.<br>
 * Model access controls should enforce record ownership, rather than accepting that the user can create, read, update, or delete any record.<br>
-* Unique application business limit requirements should be enforced by domain models.<br>
+* Business logic related to access should be enforced by domain models.<br>
 * Disable web server directory listing and ensure file metadata (e.g. .git) and backup files are not present within web roots.<br>
 * Log access control failures, alert admins when appropriate (e.g. repeated failures).<br>
 * Rate limit API and controller access to minimize the harm from automated attack tooling.<br>
