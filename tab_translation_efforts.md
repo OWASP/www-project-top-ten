@@ -35,9 +35,10 @@ We have compiled this [readme](https://github.com/OWASP/Top10/tree/master/2021#t
 * <b>Korean:</b> [OWASP Top 10-2017 - 한글 (PDF)](https://wiki.owasp.org/?title=Special:Redirect/file/OWASP_Top_10-2017-ko.pdf)&nbsp; [(PPTX)](https://wiki.owasp.org/?title=Special:Redirect/file/OWASP_Top_10-2017-ko.pptx)<br/> 번역 프로젝트 관리 및 감수 : 박형근(Hyungkeun Park) / 감수(ㄱㄴㄷ순) : 강용석(YongSeok Kang), 박창렴(Park Changryum), 조민재(Johnny Cho) / 편집 및 감수 : 신상원(Shin Sangwon) / 번역(ㄱㄴㄷ순) : 김영하(Youngha Kim), 박상영(Sangyoung Park), 이민욱(MinWook Lee), 정초아(JUNG CHOAH), 조광렬(CHO KWANG YULL), 최한동(Handong Choi)
 * <b>Portuguese:</b> [OWASP Top 10 2017 - Portuguese (PDF)](https://wiki.owasp.org/?title=Special:Redirect/file/OWASP_Top_10-2017-pt_pt.pdf)&nbsp;[(ODP)](https://github.com/OWASP/Top10/raw/master/2017/OWASP%20Top%2010-2017-pt_pt.odp)<br/> translated by Anabela Nogueira, Carlos Serrão, Guillaume Lopes, João Pinto, João Samouco, Kembolle A. Oliveira, Paulo A. Silva, Ricardo Mourato, Rui Silva, Sérgio Domingues, Tiago Reis, Vítor Magano.
 * <b>Russian:</b> [OWASP Top 10-2017 - на русском языке (PDF)](https://wiki.owasp.org/?title=Special:Redirect/file/OWASP Top 10-2017-ru.pdf)<br/> translated and reviewed by JZDLin ([@JZDLin](https://github.com/JZDLin)),  Oleksii Skachkov ([@hamster4n](https://github.com/hamster4n)), Ivan Kochurkin ([@KvanTTT](https://github.com/KvanTTT)) and [Taras Ivashchenko](https://wiki.owasp.org/index.php/User:Taras_Ivashchenko)
-* <b>Spanish:</b> [OWASP Top 10-2017 - Español (PDF)](https://wiki.owasp.org/?title=Special:Redirect/file/OWASP-Top-10-2017-es.pdf)<br/>
+* <b>Spanish:</b> [OWASP Top 10-2017 - Español (PDF)](https://wiki.owasp.org/?title=Special:Redirect/file/OWASP-Top-10-2017-es.pdf)  [(web pages)](2017/es/)<br/>
   * [Gerardo Canedo](https://wiki.owasp.org/index.php/User:Gerardo_Canedo)（Gerardo.Canedo@owasp.org - [Twitter: @GerardoMCanedo])
   * [Cristian Borghello](https://wiki.owasp.org/index.php/User:Cristian_Borghello)（Cristian.Borghello@owasp.org - [Twitter: @seguinfo])
+  * Vladimir Támara Patiño （vtamara@pasosdeJesus.org - [Twitter: @VladimirTamara])
 
 ### Top10:2017 Release Candidate Translation Teams:
 
