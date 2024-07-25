@@ -1,13 +1,13 @@
 ---
-title: Data_2020
-displaytext: Data 2020
+title: Data_2021
+displaytext: Data 2021
 layout:  col-sidebar
 tab: true
 order: 4
 tags: top10
 ---
 
-# OWASP Top 10 2020 Data Analysis Plan
+# OWASP Top 10 2021 Data Analysis Plan
 
 ## Goals
 To collect the most comprehensive dataset related to identified application vulnerabilities to-date to enable analysis for the Top 10 and other future research as well. This data should come from a variety of sources; security vendors and consultancies, bug bounties, along with company/organizational contributions. Data will be normalized to allow for level comparison between Human assisted Tooling and Tooling assisted Humans.
