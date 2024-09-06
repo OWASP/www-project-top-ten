@@ -1,13 +1,13 @@
 ---
-title: Data_2021
-displaytext: Data 2021
+title: Data_2025
+displaytext: Data 2025
 layout:  col-sidebar
 tab: true
 order: 4
 tags: top10
 ---
 
-# OWASP Top 10 2021 Data Analysis Plan
+# OWASP Top 10 2025 Data Analysis Plan
 
 ## Goals
 To collect the most comprehensive dataset related to identified application vulnerabilities to-date to enable analysis for the Top 10 and other future research as well. This data should come from a variety of sources; security vendors and consultancies, bug bounties, along with company/organizational contributions. Data will be normalized to allow for level comparison between Human assisted Tooling and Tooling assisted Humans.
@@ -37,14 +37,14 @@ The analysis of the data will be conducted with a careful distinction when the u
 ## Contribution Process
 There are a few ways that data can be contributed:
 1.	Email a CSV/Excel file with the dataset(s) to brian.glas@owasp.org
-2.	Upload a CSV/Excel file to a "contribution folder" (coming soon)
+2.	Upload a CSV/Excel file to https://bit.ly/OWASPTop10Data
 
 Template examples can be found in GitHub: [https://github.com/OWASP/Top10/tree/master/2021/Data](https://github.com/OWASP/Top10/tree/master/2021/Data)
 
 <br/>
 
 ## Contribution Period
-We plan to accept contributions to the new Top 10 from May to Nov 30, 2020 for data dating from 2017 to current.
+We plan to accept contributions to the new Top 10 until Dec 31, 2024 for data dating from 2021 to current.
 
 <br/>
 
@@ -58,7 +58,7 @@ If at all possible, please provide the additional metadata, because that will gr
 ### Metadata
 * Contributor Name (org or anon)<br/>
 * Contributor Contact Email<br/>
-* **Time period (2019, 2018, 2017)**<br/>
+* **Time period (2024, 2023, 2022, 2021)**<br/>
 * **Number of applications tested**<br/>
 * Type of testing (TaH, HaT, Tools)<br/>
 * Primary Language (code)<br/>
@@ -81,7 +81,7 @@ If a contributor has two types of datasets, one from HaT and one from TaH source
 <br/>
 
 ## Survey
-Similarly to the Top Ten 2017, we plan to conduct a survey to identify up to two categories of the Top Ten that the community believes are important, but may not be reflected in the data yet. We plan to conduct the survey in May or June 2020, and will be utilizing Google forms in a similar manner as last time. The CWEs on the survey will come from current trending findings, CWEs that are outside the Top Ten in data, and other potential sources.
+Similarly to the Top Ten 2021, we plan to conduct a survey to identify up to two categories of the Top Ten that the community believes are important, but may not be reflected in the data yet. We plan to conduct the survey in early 2025, and will be utilizing Google forms in a similar manner as last time. The CWEs on the survey will come from current trending findings, CWEs that are outside the Top Ten in data, and other potential sources.
 
 
 <br/>
@@ -89,7 +89,7 @@ Similarly to the Top Ten 2017, we plan to conduct a survey to identify up to two
 ## Process
 At a high level, we plan to perform a level of data normalization; however, we will keep a version of the raw data contributed for future analysis. We will analyze the CWE distribution of the datasets and potentially reclassify some CWEs to consolidate them into larger buckets. We will carefully document all normalization actions taken so it is clear what has been done.
 
-We plan to calculate likelihood following the model we developed in 2017 to determine incidence rate instead of frequency to rate how likely a given app may contain at least one instance of a CWE. This means we aren't looking for the frequency rate (number of findings) in an app, rather, we are looking for the number of applications that had one or more instances of a CWE. We can calculate the incidence rate based on the total number of applications tested in the dataset compared to how many applications each CWE was found in.
+We plan to calculate likelihood following the model we continued in 2021 to determine incidence rate instead of frequency to rate how likely a given app may contain at least one instance of a CWE. This means we aren't looking for the frequency rate (number of findings) in an app, rather, we are looking for the number of applications that had one or more instances of a CWE. We can calculate the incidence rate based on the total number of applications tested in the dataset compared to how many applications each CWE was found in.
 
 In addition, we will be developing base CWSS scores for the top 20-30 CWEs and include potential impact into the Top 10 weighting.
 
