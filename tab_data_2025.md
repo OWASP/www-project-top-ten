@@ -37,7 +37,7 @@ The analysis of the data will be conducted with a careful distinction when the u
 ## Contribution Process
 There are a few ways that data can be contributed:
 1.	Email a CSV/Excel file with the dataset(s) to brian.glas@owasp.org
-2.	Upload a CSV/Excel file to https://bit.ly/OWASPTop10Data
+2.	Upload a CSV/Excel file to [https://bit.ly/OWASPTop10Data](https://bit.ly/OWASPTop10Data)
 
 Template examples can be found in GitHub: [https://github.com/OWASP/Top10/tree/master/2024/Data](https://github.com/OWASP/Top10/tree/master/2024/Data)
 
