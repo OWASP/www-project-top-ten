@@ -12,7 +12,8 @@ pitch: The OWASP Top 10 is the reference standard for the most critical web appl
 ---
 
 ## Important note:
-### OWASP Top Ten 2025
+### OWASP Top Ten 205
+5
 Current project status as of September 2024:
 
 * We are planning to announce the release of the **OWASP Top 10:2025** in the first half of 2025.
