@@ -13,10 +13,9 @@ pitch: The OWASP Top 10 is the reference standard for the most critical web appl
 
 ## Important note:
 ### OWASP Top Ten 2025
-Current project status as of September 2024:
+Current project status as of July 2025:
 
-* We are planning to announce the release of the **OWASP Top 10:2025** in the first half of 2025.
-* **Data Collection (Now - December 2024)**: Please donate your application penetration testing statistics.
+* We are on track to announce the release of the **OWASP Top 10:2025** in the late summer/early fall 2025.
 
 [Stay Tuned!](https://www.owasptopten.org/)
 
