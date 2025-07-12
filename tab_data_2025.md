@@ -44,7 +44,7 @@ Template examples can be found in GitHub: [https://github.com/OWASP/Top10/tree/m
 <br/>
 
 ## Contribution Period
-We plan to accept contributions to the new Top 10 until Dec 31, 2024 for data dating from 2021 to current.
+We plan to accept contributions to the new Top 10 until July 31, 2025, for data dating from 2021 to 2024.
 
 <br/>
 
