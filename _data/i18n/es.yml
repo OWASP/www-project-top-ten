@@ -1,0 +1,43 @@
+baseURL:                        /2017/es/
+pdfDocument:                    https://wiki.owasp.org/?title=Special:Redirect/file/OWASP-Top-10-2017-es.pdf
+pdfVersion:                     Versión PDF
+tableOfContents:                Tabla de Contenidos
+applicationSpecific:            Específico<br>de la Apl.
+appSpecific:                    Específico<br>de la Apl.
+applicationBusinessSpecific:    Aplicación-/<br>Especifica del Neogocio
+appBusinessSpecific:            Apl.-/<br>Esp. Negocio.
+businessSpecific:               Especifico del Negocio
+risk:                           RIESGO
+threatAgents:                   Agente de amenaza
+attackVectors:                  Vector de ataque
+securityWeakness:               Debilidades de seguridad
+weakness:                       Debilidad
+impacts:                        Impacto
+technicalImpacts:               Impacto Técnico
+technical:                      Técnico
+business:                       Negocio
+businessImpacts:                Impacto en el Negocio
+businessQuestionmark:           ¿Negocio?
+exploitability:                 Explotabilidad
+easy:                           Fácil
+average:                        Promedio
+difficult:                      Difícil
+prevalence:                     Prevalencia
+veryWidespread:                 Muy difundido
+widespread:                     Difundido
+common:                         Común
+uncommon:                       Inusual
+detectability:                  Detectabilidad
+severe:                         Grave
+moderate:                       Moderado
+minor:                          Menor
+undefined:                      indefinido
+likelihoodRating:               Probabilidad de ocurrencia
+likelihoodDescription:          Descripción de la probabilidad
+riskRanking:                    Prioridad del Riesgo
+riskDescription:                Descripción del riesgo
+score:                          Puntaje
+isTheApplicationVulnerable:     ¿La aplicación es vulnerable?
+howToPrevent:                   Cómo se previene
+exampleAttackScenarios:         Ejemplos de escenarios de ataque
+references:                     Referencias
