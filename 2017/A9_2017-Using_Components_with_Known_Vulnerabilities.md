@@ -67,6 +67,5 @@ There are automated tools to help attackers find unpatched or misconfigured syst
 * [MITRE Common Vulnerabilities and Exposures (CVE) search](https://www.cvedetails.com/version-search.php)<br>
 * [National Vulnerability Database (NVD)](https://nvd.nist.gov/)<br>
 * [Retire.js for detecting known vulnerable JavaScript libraries](https://github.com/retirejs/retire.js/)<br>
-* [Node Libraries Security Advisories](https://nodesecurity.io/advisories)<br>
 * [Ruby Libraries Security Advisory Database and Tools](https://rubysec.com/)
 {% include t10_subsection_end.html %}
