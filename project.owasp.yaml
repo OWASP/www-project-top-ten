@@ -1,0 +1,37 @@
+audience:
+  - builder
+  - defender
+community:
+  - name: project-top-10
+    platform: slack
+    url: https://owasp.slack.com/archives/C1QBMGU69
+leaders:
+  - name: Andrew van der Stock
+    email: vanderaj@owasp.org
+    github: vanderaj
+  - name: Brian Glas
+    email: brian.glas@owasp.org
+    github: infosecdad
+  - name: Neil Smithline
+    email: neil.smithline@owasp.org
+    github: Neil-Smithline
+  - name: Torsten Gigler
+    email: torsten.gigler@owasp.org
+    github: sslHello
+level: 4
+name: OWASP Top Ten
+pitch: The OWASP Top 10 is the reference standard for the most critical web application security risks. Adopting the OWASP Top 10 is perhaps the most effective
+  first step towards changing your software development culture focused on producing secure code.
+repositories:
+  - name: www-project-top-ten
+    url: https://github.com/OWASP/www-project-top-ten
+    description: OWASP Foundation Web Repository
+  - name: Top10
+    url: https://github.com/OWASP/Top10
+    description: Official OWASP Top 10 Document Repository
+tags:
+  - top10
+  - custom-tag-1
+  - custom-tag-2
+type: documentation
+website: https://owasp.org/www-project-top-ten
