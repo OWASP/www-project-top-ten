@@ -15,7 +15,7 @@ pitch: The OWASP Top 10 is the reference standard for the most critical web appl
 ### OWASP Top Ten 2025
 OWASP Top Ten 2025 Release Candidate announced on 6 November 2025. 
 
-We need your comments (file issues) and PRs filed by **20 November 2025**. Start at [2025 Release Candidate & 2021 Final!](https://www.owasptopten.org/)
+We need your comments (file issues) and PRs filed by **20 November 2025**. Start at [2025 Release Candidate & 2021 Final!](https://owasp.org/Top10/).
 
 
 ---
