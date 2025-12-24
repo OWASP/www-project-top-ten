@@ -20,4 +20,4 @@
 
 ### Code Repository
 
-- [repo](https://github.com/OWASP/Top10){:target='_blank' rel='noopener'}
+- [Github repo](https://github.com/OWASP/Top10){:target='_blank' rel='noopener'}
