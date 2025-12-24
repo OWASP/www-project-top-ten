@@ -13,7 +13,7 @@ pitch: The OWASP Top 10 is the reference standard for the most critical web appl
 
 The most current released version is the [OWASP Top Ten 2025](https://owasp.org/Top10/2025/).
 
-The previous version is available at [OWASP Top Ten 2021](https://owasp.org/Top10/2021/).
+Previous versions are available at [OWASP Top Ten 2021](https://owasp.org/Top10/2021/) and [OWASP Top 10 2017 (PDF)](/www-pdf-archive/OWASP_Top_10-2017_%28en%29.pdf.pdf).
 
 The OWASP Top 10 is a standard awareness document for developers and web application security. It represents a broad consensus about the most critical security risks to web applications.
 
