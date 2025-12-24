@@ -7,9 +7,12 @@ order: 2
 tags: top10
 ---
 # Translation Efforts
-Efforts have been made in numerous languages to translate the OWASP Top 10 - 2021. If you are interested in helping, please contact the members of the team for the language you are interested in contributing to, or if you don't see your language listed (neither here nor at [github](https://github.com/OWASP/Top10/issues?utf8=%E2%9C%93&q=is%3Aissue)), please email owasp-topten@lists.owasp.org to let us know that you want to help and we'll form a volunteer group for your language.
-We have compiled this [readme](https://github.com/OWASP/Top10/tree/master/2021#translating-the-owasp-top-10-2021) with some hints to help you with your translation.
+Efforts have been made in numerous languages to translate the OWASP Top 10 - 2025. If you are interested in helping, please contact the members of the team for the language you are interested in contributing to, or if you don't see your language listed (neither here nor at [github](https://github.com/OWASP/Top10/issues?utf8=%E2%9C%93&q=is%3Aissue)), please email owasp-topten@lists.owasp.org to let us know that you want to help and we'll form a volunteer group for your language.
 
+### Top10:2025 Completed Translations:
+*Translations in progress - check back soon!*
+
+## Historic:
 ### Top10:2021 Completed Translations:
 * [<b>ar - العربية</b>](https://owasp.org/Top10/ar/)
 * [<b>es - Español</b>](https://owasp.org/Top10/es/)
@@ -20,8 +23,7 @@ We have compiled this [readme](https://github.com/OWASP/Top10/tree/master/2021#t
 * [<b>pt_BR - Português (Brasil)</b>](https://owasp.org/Top10/pt_BR/)
 * [<b>zh_CN - 简体中文</b>](https://owasp.org/Top10/zh_CN/)
 * [<b>zh_TW - 繁體中文</b>](https://owasp.org/Top10/zh_TW/)
-                
-## Historic:
+
 ### Top10:2017 Completed Translations:
 * <b>Chinese:</b> [OWASP Top 10-2017 - 中文版（PDF)](https://wiki.owasp.org/?title=Special:Redirect/file/OWASP_Top_10_2017_%E4%B8%AD%E6%96%87%E7%89%88v1.3.pdf)<br/>
   * 项目组长：[王颉](https://wiki.owasp.org/index.php/User:Jie_Wang)（wangj@owasp.org.cn）
